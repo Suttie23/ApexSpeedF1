@@ -1,0 +1,15 @@
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\bin\Debug\net7.0\F1_21_Telemetry.exe
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\bin\Debug\net7.0\F1_21_Telemetry.deps.json
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\bin\Debug\net7.0\F1_21_Telemetry.runtimeconfig.json
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\bin\Debug\net7.0\F1_21_Telemetry.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\bin\Debug\net7.0\F1_21_Telemetry.pdb
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\F1_21_Telemetry.csproj.AssemblyReference.cache
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\F1_21_Telemetry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\F1_21_Telemetry.AssemblyInfoInputs.cache
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\F1_21_Telemetry.AssemblyInfo.cs
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\F1_21_Telemetry.csproj.CoreCompileInputs.cache
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\F1_21_Telemetry.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\refint\F1_21_Telemetry.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\F1_21_Telemetry.pdb
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\F1_21_Telemetry.genruntimeconfig.cache
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_21_Telemetry\F1_21_Telemetry\obj\Debug\net7.0\ref\F1_21_Telemetry.dll

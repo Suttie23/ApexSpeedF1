@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "F1_21_Telemetry/1.0.0": {
+        "runtime": {
+          "F1_21_Telemetry.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "F1_21_Telemetry/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
