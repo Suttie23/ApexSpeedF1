@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Suttie\\Desktop\\Honours Project - F1 Telemetry\\F1_Telemetry_App\\F1_Telemetry_App\\F1_Telemetry_App.csproj",
+      "projectUniqueName": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\F1_Telemetry_App\\F1_Telemetry_App\\F1_Telemetry_App.csproj",
       "projectName": "F1_Telemetry_App",
-      "projectPath": "C:\\Users\\Suttie\\Desktop\\Honours Project - F1 Telemetry\\F1_Telemetry_App\\F1_Telemetry_App\\F1_Telemetry_App.csproj",
+      "projectPath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\F1_Telemetry_App\\F1_Telemetry_App\\F1_Telemetry_App.csproj",
       "packagesPath": "C:\\Users\\Suttie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Suttie\\Desktop\\Honours Project - F1 Telemetry\\F1_Telemetry_App\\F1_Telemetry_App\\obj\\",
+      "outputPath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\F1_Telemetry_App\\F1_Telemetry_App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

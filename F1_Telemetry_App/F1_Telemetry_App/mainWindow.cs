@@ -62,10 +62,13 @@ namespace F1_Telemetry_App
                 // If unsupported version
                 else
                 {
-                    MessageBox.Show("UDP Format Error!", "UDP Format " + packetHeader.packetFormat.ToString() + " is unsupported" + "\n\nPlease change UDP Format to 2021 (Settings > Telemetry Settings > UDP Format", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("UDP Format " + packetHeader.packetFormat.ToString() + " is unsupported" + "\n\nPlease change UDP Format to 2021 (Settings > Telemetry Settings > UDP Format" ,"UDP Format Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     VerLabel.Text = "Running Unsupported Version: " + packetHeader.packetFormat;
-                    // Need to close the UDP connection properly when there is a format mismatch
-                    //receivingUdpClient.Close();
+
+                    // Exit the application if there is a version mismatch!
+                    this.Close();
+                    Environment.Exit(0);
+
                 }
 
             }));
