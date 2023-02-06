@@ -1,0 +1,17 @@
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\F1_Telemetry_App.exe
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\F1_Telemetry_App.deps.json
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\F1_Telemetry_App.runtimeconfig.json
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\F1_Telemetry_App.dll
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\F1_Telemetry_App.pdb
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.csproj.AssemblyReference.cache
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.mainWindow.resources
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.csproj.GenerateResource.cache
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.AssemblyInfoInputs.cache
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.AssemblyInfo.cs
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.csproj.CoreCompileInputs.cache
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.dll
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\refint\F1_Telemetry_App.dll
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.pdb
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\F1_Telemetry_App.genruntimeconfig.cache
+C:\Users\Suttie\Desktop\Honours Project - F1 Telemetry\F1_Telemetry_App\F1_Telemetry_App\obj\Debug\net7.0-windows\ref\F1_Telemetry_App.dll
