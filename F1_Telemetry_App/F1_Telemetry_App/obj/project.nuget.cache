@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "g1SC3r2ZMnvNkMrTA3F9xCpr+vROlZ9hfRSQhbvm4rNM7ibgdokz8vrYdur2D44JDcAWGYD+S6e79onsrQ66AA==",
+  "dgSpecHash": "txdAzK6YTlf1CgQ1ccncqrytURyzLW6z6nMmNnpIynxLPaNa6XvxZDp9M4OLhxURlik26QWgdKUdut4iAMW7cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\F1_Telemetry_App\\F1_Telemetry_App\\F1_Telemetry_App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Suttie\\.nuget\\packages\\harfbuzzsharp\\2.8.2.3\\harfbuzzsharp.2.8.2.3.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\2.8.2.3\\harfbuzzsharp.nativeassets.macos.2.8.2.3.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\2.8.2.3\\harfbuzzsharp.nativeassets.win32.2.8.2.3.nupkg.sha512",
-    "C:\\Users\\Suttie\\.nuget\\packages\\livechartscore\\2.0.0-beta.701\\livechartscore.2.0.0-beta.701.nupkg.sha512",
-    "C:\\Users\\Suttie\\.nuget\\packages\\livechartscore.skiasharpview\\2.0.0-beta.701\\livechartscore.skiasharpview.2.0.0-beta.701.nupkg.sha512",
-    "C:\\Users\\Suttie\\.nuget\\packages\\livechartscore.skiasharpview.winforms\\2.0.0-beta.701\\livechartscore.skiasharpview.winforms.2.0.0-beta.701.nupkg.sha512",
+    "C:\\Users\\Suttie\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\Suttie\\.nuget\\packages\\livecharts.winforms\\0.9.7.1\\livecharts.winforms.0.9.7.1.nupkg.sha512",
+    "C:\\Users\\Suttie\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
+    "C:\\Users\\Suttie\\.nuget\\packages\\livechartscore\\2.0.0-beta.700\\livechartscore.2.0.0-beta.700.nupkg.sha512",
+    "C:\\Users\\Suttie\\.nuget\\packages\\livechartscore.skiasharpview\\2.0.0-beta.700\\livechartscore.skiasharpview.2.0.0-beta.700.nupkg.sha512",
+    "C:\\Users\\Suttie\\.nuget\\packages\\livechartscore.skiasharpview.winforms\\2.0.0-beta.700\\livechartscore.skiasharpview.winforms.2.0.0-beta.700.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\opentk\\3.1.0\\opentk.3.1.0.nupkg.sha512",
@@ -23,6 +26,36 @@
     "C:\\Users\\Suttie\\.nuget\\packages\\system.drawing.common\\4.5.1\\system.drawing.common.4.5.1.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LiveCharts 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LiveCharts",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LiveCharts.WinForms 0.9.7.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LiveCharts.WinForms",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LiveCharts.Wpf 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        "net7.0-windows7.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

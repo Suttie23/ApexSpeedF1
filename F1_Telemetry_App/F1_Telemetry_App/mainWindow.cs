@@ -10,9 +10,13 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Timers;
 using F1_Telemetry_App;
+using LiveChartsCore.Measure;
+using System.Security.Permissions;
 
 namespace F1_Telemetry_App
 {
+
+
     public partial class mainWindow : Form
     {
 
@@ -21,6 +25,17 @@ namespace F1_Telemetry_App
         public mainWindow()
         {
             InitializeComponent();
+
+            pieChart1.EasingFunction = null;
+
+            pieChart1.Total = 4000000;
+
+            pieChart1.Series = new GaugeBuilder()
+                .WithLabelsSize(15)
+                .WithInnerRadius(100)
+                .WithBackgroundInnerRadius(70)
+                .AddValue(4000000, "ERS")
+                .BuildSeries();
 
         }
 
@@ -96,6 +111,14 @@ namespace F1_Telemetry_App
                     TyreCompundLabel.Text = "Tyre Compound: " + packet.carStatusData[packetHeader.playerCarIndex].actualTyreCompound;
                     ERSModeLabel.Text = "ERS Deployment Mode: " + packet.carStatusData[packetHeader.playerCarIndex].ersDeployMode;
                     ERSStorageLabel.Text = "ERS Stored: " + packet.carStatusData[packetHeader.playerCarIndex].ersStoreEnergy + " Joules";
+
+                    pieChart1.Series = new GaugeBuilder()
+                        .WithLabelsSize(15)
+                        .WithInnerRadius(50)
+                        .WithOffsetRadius(10)
+                        .WithBackgroundInnerRadius(50)
+                        .AddValue(packet.carStatusData[packetHeader.playerCarIndex].ersStoreEnergy)
+                        .BuildSeries();
 
                 }));
 

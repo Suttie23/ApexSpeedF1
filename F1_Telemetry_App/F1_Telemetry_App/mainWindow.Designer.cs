@@ -33,18 +33,23 @@
             VerLabel = new Label();
             SessionTimeLabel = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            panel1 = new Panel();
-            LiveTelemetryLabel = new Label();
             TyreCompundLabel = new Label();
             ERSModeLabel = new Label();
             ERSStorageLabel = new Label();
+            pieChart1 = new LiveChartsCore.SkiaSharpView.WinForms.PieChart();
+            DebugPanel = new Panel();
+            DebugPanelTop = new Panel();
+            DebugPanel.SuspendLayout();
             SuspendLayout();
             // 
             // ListenerButton
             // 
-            ListenerButton.Location = new Point(226, 543);
+            ListenerButton.FlatAppearance.BorderSize = 0;
+            ListenerButton.FlatStyle = FlatStyle.Flat;
+            ListenerButton.ForeColor = SystemColors.ButtonHighlight;
+            ListenerButton.Location = new Point(0, 76);
             ListenerButton.Name = "ListenerButton";
-            ListenerButton.Size = new Size(75, 41);
+            ListenerButton.Size = new Size(220, 60);
             ListenerButton.TabIndex = 0;
             ListenerButton.Text = "Start Session";
             ListenerButton.UseVisualStyleBackColor = true;
@@ -52,16 +57,16 @@
             // 
             // StatusBox
             // 
-            StatusBox.Location = new Point(12, 429);
+            StatusBox.Location = new Point(7, 922);
             StatusBox.Name = "StatusBox";
-            StatusBox.Size = new Size(501, 108);
+            StatusBox.Size = new Size(205, 108);
             StatusBox.TabIndex = 1;
             StatusBox.Text = "";
             // 
             // VerLabel
             // 
             VerLabel.AutoSize = true;
-            VerLabel.Location = new Point(12, 9);
+            VerLabel.Location = new Point(242, 9);
             VerLabel.Name = "VerLabel";
             VerLabel.Size = new Size(77, 15);
             VerLabel.TabIndex = 2;
@@ -70,33 +75,16 @@
             // SessionTimeLabel
             // 
             SessionTimeLabel.AutoSize = true;
-            SessionTimeLabel.Location = new Point(12, 35);
+            SessionTimeLabel.Location = new Point(242, 35);
             SessionTimeLabel.Name = "SessionTimeLabel";
             SessionTimeLabel.Size = new Size(118, 15);
             SessionTimeLabel.TabIndex = 4;
             SessionTimeLabel.Text = "Session Time Elapsed";
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Red;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(525, 66);
-            panel1.TabIndex = 5;
-            // 
-            // LiveTelemetryLabel
-            // 
-            LiveTelemetryLabel.AutoSize = true;
-            LiveTelemetryLabel.Location = new Point(207, 81);
-            LiveTelemetryLabel.Name = "LiveTelemetryLabel";
-            LiveTelemetryLabel.Size = new Size(109, 15);
-            LiveTelemetryLabel.TabIndex = 6;
-            LiveTelemetryLabel.Text = "Live Telemetry Data";
-            // 
             // TyreCompundLabel
             // 
             TyreCompundLabel.AutoSize = true;
-            TyreCompundLabel.Location = new Point(21, 132);
+            TyreCompundLabel.Location = new Point(363, 521);
             TyreCompundLabel.Name = "TyreCompundLabel";
             TyreCompundLabel.Size = new Size(98, 15);
             TyreCompundLabel.TabIndex = 7;
@@ -105,7 +93,7 @@
             // ERSModeLabel
             // 
             ERSModeLabel.AutoSize = true;
-            ERSModeLabel.Location = new Point(21, 158);
+            ERSModeLabel.Location = new Point(358, 456);
             ERSModeLabel.Name = "ERSModeLabel";
             ERSModeLabel.Size = new Size(103, 15);
             ERSModeLabel.TabIndex = 8;
@@ -114,28 +102,62 @@
             // ERSStorageLabel
             // 
             ERSStorageLabel.AutoSize = true;
-            ERSStorageLabel.Location = new Point(21, 183);
+            ERSStorageLabel.Location = new Point(370, 401);
             ERSStorageLabel.Name = "ERSStorageLabel";
-            ERSStorageLabel.Size = new Size(72, 15);
+            ERSStorageLabel.Size = new Size(69, 15);
             ERSStorageLabel.TabIndex = 9;
-            ERSStorageLabel.Text = "ERS Storage:";
+            ERSStorageLabel.Text = "ERS Storage";
+            // 
+            // pieChart1
+            // 
+            pieChart1.BorderStyle = BorderStyle.FixedSingle;
+            pieChart1.Font = new Font("Segoe UI", 6F, FontStyle.Regular, GraphicsUnit.Point);
+            pieChart1.InitialRotation = 0D;
+            pieChart1.IsClockwise = true;
+            pieChart1.Location = new Point(255, 85);
+            pieChart1.Margin = new Padding(2);
+            pieChart1.MaxAngle = 360D;
+            pieChart1.Name = "pieChart1";
+            pieChart1.Size = new Size(300, 314);
+            pieChart1.TabIndex = 10;
+            pieChart1.Total = null;
+            // 
+            // DebugPanel
+            // 
+            DebugPanel.BackColor = Color.FromArgb(255, 24, 1);
+            DebugPanel.Controls.Add(DebugPanelTop);
+            DebugPanel.Controls.Add(ListenerButton);
+            DebugPanel.Controls.Add(StatusBox);
+            DebugPanel.Dock = DockStyle.Left;
+            DebugPanel.Location = new Point(0, 0);
+            DebugPanel.Name = "DebugPanel";
+            DebugPanel.Size = new Size(220, 1041);
+            DebugPanel.TabIndex = 11;
+            // 
+            // DebugPanelTop
+            // 
+            DebugPanelTop.BackColor = Color.FromArgb(210, 24, 1);
+            DebugPanelTop.Dock = DockStyle.Top;
+            DebugPanelTop.Location = new Point(0, 0);
+            DebugPanelTop.Name = "DebugPanelTop";
+            DebugPanelTop.Size = new Size(220, 80);
+            DebugPanelTop.TabIndex = 0;
             // 
             // mainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(525, 596);
+            ClientSize = new Size(1904, 1041);
+            Controls.Add(DebugPanel);
+            Controls.Add(pieChart1);
             Controls.Add(ERSStorageLabel);
             Controls.Add(ERSModeLabel);
             Controls.Add(TyreCompundLabel);
-            Controls.Add(LiveTelemetryLabel);
             Controls.Add(SessionTimeLabel);
             Controls.Add(VerLabel);
-            Controls.Add(StatusBox);
-            Controls.Add(ListenerButton);
-            Controls.Add(panel1);
             Name = "mainWindow";
             Text = "Form1";
+            DebugPanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -147,10 +169,11 @@
         private Label VerLabel;
         private Label SessionTimeLabel;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Panel panel1;
-        private Label LiveTelemetryLabel;
         private Label TyreCompundLabel;
         private Label ERSModeLabel;
         private Label ERSStorageLabel;
+        private LiveChartsCore.SkiaSharpView.WinForms.PieChart pieChart1;
+        private Panel DebugPanel;
+        private Panel DebugPanelTop;
     }
 }
