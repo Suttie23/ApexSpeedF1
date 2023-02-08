@@ -31,7 +31,13 @@
             ListenerButton = new Button();
             StatusBox = new RichTextBox();
             VerLabel = new Label();
-            SessionTime = new Label();
+            SessionTimeLabel = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            panel1 = new Panel();
+            LiveTelemetryLabel = new Label();
+            TyreCompundLabel = new Label();
+            ERSModeLabel = new Label();
+            ERSStorageLabel = new Label();
             SuspendLayout();
             // 
             // ListenerButton
@@ -46,9 +52,9 @@
             // 
             // StatusBox
             // 
-            StatusBox.Location = new Point(12, 381);
+            StatusBox.Location = new Point(12, 429);
             StatusBox.Name = "StatusBox";
-            StatusBox.Size = new Size(501, 156);
+            StatusBox.Size = new Size(501, 108);
             StatusBox.TabIndex = 1;
             StatusBox.Text = "";
             // 
@@ -61,25 +67,74 @@
             VerLabel.TabIndex = 2;
             VerLabel.Text = "UDP Format: ";
             // 
-            // SessionTime
+            // SessionTimeLabel
             // 
-            SessionTime.AutoSize = true;
-            SessionTime.Location = new Point(12, 35);
-            SessionTime.Name = "SessionTime";
-            SessionTime.Size = new Size(77, 15);
-            SessionTime.TabIndex = 4;
-            SessionTime.Text = "UDP Format: ";
+            SessionTimeLabel.AutoSize = true;
+            SessionTimeLabel.Location = new Point(12, 35);
+            SessionTimeLabel.Name = "SessionTimeLabel";
+            SessionTimeLabel.Size = new Size(118, 15);
+            SessionTimeLabel.TabIndex = 4;
+            SessionTimeLabel.Text = "Session Time Elapsed";
             // 
-            // Form1
+            // panel1
+            // 
+            panel1.BackColor = Color.Red;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(525, 66);
+            panel1.TabIndex = 5;
+            // 
+            // LiveTelemetryLabel
+            // 
+            LiveTelemetryLabel.AutoSize = true;
+            LiveTelemetryLabel.Location = new Point(207, 81);
+            LiveTelemetryLabel.Name = "LiveTelemetryLabel";
+            LiveTelemetryLabel.Size = new Size(109, 15);
+            LiveTelemetryLabel.TabIndex = 6;
+            LiveTelemetryLabel.Text = "Live Telemetry Data";
+            // 
+            // TyreCompundLabel
+            // 
+            TyreCompundLabel.AutoSize = true;
+            TyreCompundLabel.Location = new Point(21, 132);
+            TyreCompundLabel.Name = "TyreCompundLabel";
+            TyreCompundLabel.Size = new Size(98, 15);
+            TyreCompundLabel.TabIndex = 7;
+            TyreCompundLabel.Text = "Tyre Compound: ";
+            // 
+            // ERSModeLabel
+            // 
+            ERSModeLabel.AutoSize = true;
+            ERSModeLabel.Location = new Point(21, 158);
+            ERSModeLabel.Name = "ERSModeLabel";
+            ERSModeLabel.Size = new Size(103, 15);
+            ERSModeLabel.TabIndex = 8;
+            ERSModeLabel.Text = "ERS Deploy Mode:";
+            // 
+            // ERSStorageLabel
+            // 
+            ERSStorageLabel.AutoSize = true;
+            ERSStorageLabel.Location = new Point(21, 183);
+            ERSStorageLabel.Name = "ERSStorageLabel";
+            ERSStorageLabel.Size = new Size(72, 15);
+            ERSStorageLabel.TabIndex = 9;
+            ERSStorageLabel.Text = "ERS Storage:";
+            // 
+            // mainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(525, 596);
-            Controls.Add(SessionTime);
+            Controls.Add(ERSStorageLabel);
+            Controls.Add(ERSModeLabel);
+            Controls.Add(TyreCompundLabel);
+            Controls.Add(LiveTelemetryLabel);
+            Controls.Add(SessionTimeLabel);
             Controls.Add(VerLabel);
             Controls.Add(StatusBox);
             Controls.Add(ListenerButton);
-            Name = "Form1";
+            Controls.Add(panel1);
+            Name = "mainWindow";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -90,6 +145,12 @@
         private Button ListenerButton;
         private RichTextBox StatusBox;
         private Label VerLabel;
-        private Label SessionTime;
+        private Label SessionTimeLabel;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Panel panel1;
+        private Label LiveTelemetryLabel;
+        private Label TyreCompundLabel;
+        private Label ERSModeLabel;
+        private Label ERSStorageLabel;
     }
 }
