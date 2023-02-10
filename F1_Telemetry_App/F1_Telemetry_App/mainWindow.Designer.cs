@@ -84,7 +84,7 @@
             // TyreCompundLabel
             // 
             TyreCompundLabel.AutoSize = true;
-            TyreCompundLabel.Location = new Point(363, 521);
+            TyreCompundLabel.Location = new Point(363, 457);
             TyreCompundLabel.Name = "TyreCompundLabel";
             TyreCompundLabel.Size = new Size(98, 15);
             TyreCompundLabel.TabIndex = 7;
@@ -93,7 +93,7 @@
             // ERSModeLabel
             // 
             ERSModeLabel.AutoSize = true;
-            ERSModeLabel.Location = new Point(358, 456);
+            ERSModeLabel.Location = new Point(363, 430);
             ERSModeLabel.Name = "ERSModeLabel";
             ERSModeLabel.Size = new Size(103, 15);
             ERSModeLabel.TabIndex = 8;
