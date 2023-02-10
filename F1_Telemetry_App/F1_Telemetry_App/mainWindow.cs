@@ -12,10 +12,10 @@ using System.Timers;
 using F1_Telemetry_App;
 using LiveChartsCore.Measure;
 using System.Security.Permissions;
+using LiveCharts.Defaults;
 
 namespace F1_Telemetry_App
 {
-
 
     public partial class mainWindow : Form
     {
@@ -26,16 +26,49 @@ namespace F1_Telemetry_App
         {
             InitializeComponent();
 
-            pieChart1.EasingFunction = null;
+            ThrottleGauge.EasingFunction = null;
+            ThrottleGauge.Total = 1;
+            ThrottleGauge.InitialRotation = -225;
+            ThrottleGauge.MaxAngle = 270;
+            ThrottleGauge.Series = new GaugeBuilder()
+                .WithLabelsSize(25)
+                .WithInnerRadius(50)
+                .WithBackgroundInnerRadius(50)
+                .AddValue(0, "Throttle")
+                .BuildSeries();
 
-            pieChart1.Total = 4000000;
+            SpeedGauge.EasingFunction = null;
+            SpeedGauge.Total = 210;
+            SpeedGauge.InitialRotation = -225;
+            SpeedGauge.MaxAngle = 270;
+            SpeedGauge.Series = new GaugeBuilder()
+                .WithLabelsSize(25)
+                .WithInnerRadius(50)
+                .WithBackgroundInnerRadius(50)
+                .AddValue(0, "Speed")
+                .BuildSeries();
 
-            pieChart1.Series = new GaugeBuilder()
-                .WithLabelsSize(15)
+            BrakeGauge.EasingFunction = null;
+            BrakeGauge.Total = 1;
+            BrakeGauge.InitialRotation = -225;
+            BrakeGauge.MaxAngle = 270;
+            BrakeGauge.Series = new GaugeBuilder()
+                .WithLabelsSize(25)
+                .WithInnerRadius(50)
+                .WithBackgroundInnerRadius(50)
+                .AddValue(0, "Brake")
+                .BuildSeries();
+
+
+            ERSGauge.EasingFunction = null;
+            ERSGauge.Total = 4000000;
+            ERSGauge.Series = new GaugeBuilder()
+                .WithLabelsSize(25)
                 .WithInnerRadius(100)
                 .WithBackgroundInnerRadius(70)
                 .AddValue(4000000, "ERS")
                 .BuildSeries();
+
 
         }
 
@@ -46,12 +79,13 @@ namespace F1_Telemetry_App
             {
                 // Begin asynchronous listening
                 receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
+                DebugBox.Text = "Listening for UDP Data...";
 
             }
             catch (Exception ex)
             {
                 // Display error
-                StatusBox.Text += ex.Message.ToString();
+                DebugBox.Text += ex.Message.ToString();
 
             }
 
@@ -100,6 +134,44 @@ namespace F1_Telemetry_App
             else if (packetHeader.packetId == 6) // Car Telemetry
             {
 
+                var packet = PacketCarTelemetryData.FromByteArray(receiveBytes);
+
+                this.Invoke(new MethodInvoker(delegate
+                {
+
+                    ThrottleGauge.EasingFunction = null;
+                    ThrottleGauge.Total = 1;
+                    ThrottleGauge.InitialRotation = -225;
+                    ThrottleGauge.MaxAngle = 270;
+                    ThrottleGauge.Series = new GaugeBuilder()
+                        .WithLabelsSize(25)
+                        .WithInnerRadius(50)
+                        .WithBackgroundInnerRadius(50)
+                        .AddValue(Math.Round(packet.carTelemetryData[packetHeader.playerCarIndex].throttle, 2))
+                        .BuildSeries();
+
+                    SpeedGauge.EasingFunction = null;
+                    SpeedGauge.Series = new GaugeBuilder()
+                        .WithLabelsSize(25)
+                        .WithInnerRadius(50)
+                        .WithOffsetRadius(10)
+                        .WithBackgroundInnerRadius(50)
+                        .AddValue(Math.Round(packet.carTelemetryData[packetHeader.playerCarIndex].speed * 0.621371192))
+                        .BuildSeries();
+
+                    BrakeGauge.EasingFunction = null;
+                    BrakeGauge.Total = 1;
+                    BrakeGauge.InitialRotation = -225;
+                    BrakeGauge.MaxAngle = 270;
+                    BrakeGauge.Series = new GaugeBuilder()
+                        .WithLabelsSize(25)
+                        .WithInnerRadius(50)
+                        .WithBackgroundInnerRadius(50)
+                        .AddValue(Math.Round(packet.carTelemetryData[packetHeader.playerCarIndex].brake, 2))
+                        .BuildSeries();
+
+                }));
+
             }
             else if (packetHeader.packetId == 7) //Car status
             {
@@ -112,7 +184,8 @@ namespace F1_Telemetry_App
                     ERSModeLabel.Text = "ERS Deployment Mode: " + packet.carStatusData[packetHeader.playerCarIndex].ersDeployMode;
                     ERSStorageLabel.Text = "ERS Stored: " + packet.carStatusData[packetHeader.playerCarIndex].ersStoreEnergy + " Joules";
 
-                    pieChart1.Series = new GaugeBuilder()
+                    ERSGauge.EasingFunction = null;
+                    ERSGauge.Series = new GaugeBuilder()
                         .WithLabelsSize(15)
                         .WithInnerRadius(50)
                         .WithOffsetRadius(10)
@@ -123,7 +196,7 @@ namespace F1_Telemetry_App
                 }));
 
             }
-           
+
             // Begin Call Async Method
             receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
 

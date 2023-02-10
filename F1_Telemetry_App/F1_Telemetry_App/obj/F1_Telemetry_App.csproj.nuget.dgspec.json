@@ -54,7 +54,19 @@
             },
             "LiveChartsCore.SkiaSharpView.WinForms": {
               "target": "Package",
-              "version": "[2.0.0-beta.700, )"
+              "version": "[2.0.0-beta.701, )"
+            },
+            "Microsoft.VisualStudio.Utilities": {
+              "target": "Package",
+              "version": "[17.4.33103.184, )"
+            },
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.1.97, )"
             }
           },
           "imports": [
