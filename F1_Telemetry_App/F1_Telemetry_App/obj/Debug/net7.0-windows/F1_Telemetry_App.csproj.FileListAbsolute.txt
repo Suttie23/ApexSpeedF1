@@ -177,3 +177,5 @@ C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\runtimes\win7-x64\native\libuv.dll
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\runtimes\win7-x86\native\libuv.dll
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\Codemasters.F1_2021.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\F1_Telemetry_App\F1_Telemetry_App\bin\Debug\net7.0-windows\TimHanewich.Toolkit.dll

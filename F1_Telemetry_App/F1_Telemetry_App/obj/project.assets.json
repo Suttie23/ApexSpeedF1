@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net7.0-windows7.0": {
+      "Codemasters.F1_2021/0.1.3": {
+        "type": "package",
+        "dependencies": {
+          "TimHanewich.Toolkit": "3.1.1"
+        },
+        "compile": {
+          "lib/net5.0/Codemasters.F1_2021.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Codemasters.F1_2021.dll": {}
+        }
+      },
       "CommonServiceLocator/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -3573,10 +3585,34 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "TimHanewich.Toolkit/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/TimHanewich.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/TimHanewich.Toolkit.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Codemasters.F1_2021/0.1.3": {
+      "sha512": "9DGnsXkVz0u8fKQ8+G/SYptr43Umk977O3DNUq79gU8QYwf1LD8TMFar0UOfxRBmxamPDEXY7B6oUWF/ydW11g==",
+      "type": "package",
+      "path": "codemasters.f1_2021/0.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "codemasters.f1_2021.0.1.3.nupkg.sha512",
+        "codemasters.f1_2021.nuspec",
+        "lib/net5.0/Codemasters.F1_2021.dll",
+        "lib/netstandard2.0/Codemasters.F1_2021.dll",
+        "license.md",
+        "package_icon.png"
+      ]
+    },
     "CommonServiceLocator/2.0.2": {
       "sha512": "OeAz2cDGiQuaxpJ2pUm1xyZyklT2HgP5LHoumI0o/pcXdTweJMjKHu92JKa33pZRCrRI0DdPcE5MGHk6GCpDMQ==",
       "type": "package",
@@ -10295,10 +10331,24 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "TimHanewich.Toolkit/3.1.1": {
+      "sha512": "kRKhZTNEiGKPlxt8oWQ+QqDeIG5K04EyS1AKnuWvmsiZgsMXG8ue5S1sZA/NUWL9wsxF6iHW8+tqagzjBQR75Q==",
+      "type": "package",
+      "path": "timhanewich.toolkit/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ToolIcon.jpg",
+        "lib/netstandard2.0/TimHanewich.Toolkit.dll",
+        "timhanewich.toolkit.3.1.1.nupkg.sha512",
+        "timhanewich.toolkit.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
+      "Codemasters.F1_2021 >= 0.1.3",
       "LiveCharts >= 0.9.7",
       "LiveCharts.WinForms >= 0.9.7.1",
       "LiveChartsCore.SkiaSharpView.WinForms >= 2.0.0-beta.701",
@@ -10351,6 +10401,10 @@
       "net7.0-windows7.0": {
         "targetAlias": "net7.0-windows",
         "dependencies": {
+          "Codemasters.F1_2021": {
+            "target": "Package",
+            "version": "[0.1.3, )"
+          },
           "LiveCharts": {
             "target": "Package",
             "version": "[0.9.7, )"
