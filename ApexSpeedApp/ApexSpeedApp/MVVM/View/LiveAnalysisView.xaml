@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="ApexSpeedApp.MVVM.View.LiveAnalysisView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ApexSpeedApp.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="704.604" d:DesignWidth="966.721">
+    <Grid>
+        <Button x:Name="UDPListenerButton" Content="Button" HorizontalAlignment="Center" Margin="0,151,0,0" VerticalAlignment="Top" Height="243" Width="534" Click="UDPListenerButton_Click"/>
+        <Label x:Name="ListenerTestLabel" Content="Label" HorizontalAlignment="Center" Margin="0,515,0,0" VerticalAlignment="Top" Height="65" Width="921" FontSize="40" Foreground="White"/>
+        <Label x:Name="ListeningLabel" Content="Label" HorizontalAlignment="Center" Margin="0,445,0,0" VerticalAlignment="Top" Height="65" Width="921" FontSize="40" Foreground="White"/>
+
+    </Grid>
+</UserControl>
