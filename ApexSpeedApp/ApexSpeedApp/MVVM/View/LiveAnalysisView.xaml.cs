@@ -185,10 +185,10 @@ namespace ApexSpeedApp.MVVM.View
                     }   
                    
                         // IF Car CarStatus Packet
-                        if (pt == PacketType.CarStatus)
-                        {
-                            CarStatusPacket statusPack = new CarStatusPacket();
-                            statusPack.LoadBytes(receiveBytes);
+                    if (pt == PacketType.CarStatus)
+                    {
+                        CarStatusPacket statusPack = new CarStatusPacket();
+                        statusPack.LoadBytes(receiveBytes);
 
                         Dispatcher.BeginInvoke(new Action(delegate
                         {
@@ -251,7 +251,7 @@ namespace ApexSpeedApp.MVVM.View
 
                         string Overtake = statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString();
 
-                        if (Overtake == "Medium")
+                        if (Overtake == "Medium" || Overtake == "None")
                         {
                             Dispatcher.BeginInvoke(new Action(delegate
                             {
@@ -260,7 +260,7 @@ namespace ApexSpeedApp.MVVM.View
 
 
                             }));
-                        }  else
+                        }else
                         {
                             Dispatcher.BeginInvoke(new Action(delegate
                             {
