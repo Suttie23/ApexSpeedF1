@@ -74,6 +74,8 @@
         <Label x:Name="FuelDLapsRemainingDisplay" Content="Laps Of Fuel: 0.0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="48" Width="193" FontSize="22" Foreground="White" Margin="0,487,0,0"/>
         <Label x:Name="TyreTempLabel" Content="Tyre Temps" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="124" FontSize="22" Foreground="White" Margin="300,552,0,0"/>
         <Label x:Name="TyreWearLabel" Content="Tyre Wear" VerticalAlignment="Top" Height="48" FontSize="22" Foreground="White" Margin="556,552,296,0"/>
+        <Label x:Name="TyreTempFrontDisplay" Content="0          0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="110" FontSize="22" Foreground="White" Margin="307,605,0,0"/>
+        <Label x:Name="TyreTempRearDisplay" Content="0          0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="110" FontSize="22" Foreground="White" Margin="307,647,0,0"/>
 
 
 
