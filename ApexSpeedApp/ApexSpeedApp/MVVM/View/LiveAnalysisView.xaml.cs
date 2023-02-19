@@ -18,6 +18,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ApexSpeedApp.MVVM;
 using ApexSpeedApp.MVVM.ViewModel;
+using System.ComponentModel;
 
 namespace ApexSpeedApp.MVVM.View
 {
@@ -25,14 +26,51 @@ namespace ApexSpeedApp.MVVM.View
     /// Interaction logic for LiveAnalysisView.xaml
     /// </summary>
     /// 
-    public partial class LiveAnalysisView : UserControl
+    public partial class LiveAnalysisView : UserControl, INotifyPropertyChanged
     {
 
-        private bool? isStreaming = false;
+        private float _Throttlevalue;
+        private float _Brakevalue;
+        private float _Speedvalue;
 
         public LiveAnalysisView()
         {
             InitializeComponent();
+
+            ThrottleValue = 0;
+            BrakeValue = 0;
+
+            DataContext = this;
+        }
+
+        public float ThrottleValue
+        {
+            get { return _Throttlevalue; }
+            set
+            {
+                _Throttlevalue = value;
+                OnPropertyChanged("ThrottleValue");
+            }
+        }
+
+        public float BrakeValue
+        {
+            get { return _Brakevalue; }
+            set
+            {
+                _Brakevalue = value;
+                OnPropertyChanged("BrakeValue");
+            }
+        }
+
+        public float SpeedValue
+        {
+            get { return _Speedvalue; }
+            set
+            {
+                _Speedvalue = value;
+                OnPropertyChanged("SpeedValue");
+            }
         }
 
         private void UDPListenerButton_Click(object sender, RoutedEventArgs e)
@@ -46,7 +84,7 @@ namespace ApexSpeedApp.MVVM.View
 
                 // Begin asynchronous listening
                 receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
-                ListeningLabel.Content = "Listening for UDP Data...";
+                ListeningLabel.Content = "Listening...";
 
             }
             catch (Exception ex)
@@ -91,8 +129,20 @@ namespace ApexSpeedApp.MVVM.View
                             TelemetryPacket telPack = new TelemetryPacket();
                             telPack.LoadBytes(receiveBytes);
 
-                       
-                        }
+
+                            ThrottleValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle;
+                            BrakeValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake;
+                            SpeedValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
+
+                        // Exit the application if there is a version mismatch!
+                        Dispatcher.BeginInvoke(new Action(delegate
+                        {
+
+                            SpeedDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph + " MPH";
+
+                        }));
+                    }   
+                    
 
                         // IF Car CarStatus Packet
                         if (pt == PacketType.CarStatus)
@@ -123,10 +173,18 @@ namespace ApexSpeedApp.MVVM.View
             }
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName = null)
+        {
+            if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+
+
         private void UDPStopListenerButton_Click(object sender, RoutedEventArgs e)
         {
-            //receivingUdpClient.Close();
-            ListeningLabel.Content = "No Longer Listening...";
+            //Value = new Random().Next(0, 20);
         }
 
     }

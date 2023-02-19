@@ -1,4 +1,6 @@
-﻿using LiveChartsCore.Measure;
+﻿
+/*
+using LiveChartsCore.Measure;
 using LiveChartsCore.SkiaSharpView.Painting;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore;
@@ -13,6 +15,7 @@ namespace ApexSpeedApp.MVVM.ViewModel
 {
     internal class ThrottleGaugeViewModel
     {
+
         public IEnumerable<ISeries> Series { get; set; }
             = new GaugeBuilder()
     .WithLabelsSize(0)
@@ -25,3 +28,4 @@ namespace ApexSpeedApp.MVVM.ViewModel
     .BuildSeries();
     }
 }
+*/
