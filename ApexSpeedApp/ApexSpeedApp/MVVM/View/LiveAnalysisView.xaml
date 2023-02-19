@@ -60,7 +60,6 @@
         <Label x:Name="BrakeLabel" Content="Brake" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="89" FontSize="32" Foreground="White" Margin="774,540,0,0"/>
         <Label x:Name="SpeedDisplay" Content="120 MPH" HorizontalAlignment="Center" VerticalAlignment="Top" Height="65" Width="139" FontSize="32" Foreground="White" Margin="0,540,0,0"/>
         <Image x:Name="TyreCompoundImage" Margin="807,10,23,551" Source="/Images/Soft Tyre.png" Stretch="Fill"/>
-        <Label x:Name="TyreTest" Content="120 MPH" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="139" FontSize="32" Foreground="White" Margin="410,114,0,0"/>
 
 
     </Grid>
