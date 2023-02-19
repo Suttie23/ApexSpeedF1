@@ -71,7 +71,7 @@
                 </Grid>
 
             </Border>
-            
+
 
             <Border Width="450"
                     Height="200"
@@ -104,11 +104,12 @@
 
                     </StackPanel>
 
+
                 </Grid>
 
 
             </Border>
-                   
+
 
         </StackPanel>
 
@@ -154,12 +155,26 @@
 
                     </StackPanel>
 
+                    <Image
+                           Source="/MVVM/View/WrenchSmall001-plain.png" RenderTransformOrigin="0.5,0.5" Margin="708,-41,10,253">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="37.708"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+
                 </Grid>
 
 
             </Border>
 
         </StackPanel>
+
+
 
     </StackPanel>
 </UserControl>
