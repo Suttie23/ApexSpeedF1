@@ -19,6 +19,7 @@ using System.Windows.Shapes;
 using ApexSpeedApp.MVVM;
 using ApexSpeedApp.MVVM.ViewModel;
 using System.ComponentModel;
+using System.Linq.Expressions;
 
 namespace ApexSpeedApp.MVVM.View
 {
@@ -141,6 +142,8 @@ namespace ApexSpeedApp.MVVM.View
                             SpeedDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph + " MPH";
 
                         }));
+
+
                     }   
                     
 
@@ -149,6 +152,56 @@ namespace ApexSpeedApp.MVVM.View
                         {
                             CarStatusPacket statusPack = new CarStatusPacket();
                             statusPack.LoadBytes(receiveBytes);
+
+                            //Determine Tyre Compound and update UI
+                            switch (statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].EquippedVisualTyreCompoundId)
+                            {
+                                case 18:
+                                    // Har
+                                    Dispatcher.BeginInvoke(new Action(delegate
+                                    {
+
+                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Hard Tyre.png", UriKind.Relative));
+
+                                    }));
+                                    break;
+                                case 16:
+                                    // Sof
+                                    Dispatcher.BeginInvoke(new Action(delegate
+                                    {
+
+                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Soft Tyre.png", UriKind.Relative));
+
+                                    }));
+                                    break;
+                                case 17:
+                                    // Med
+                                    Dispatcher.BeginInvoke(new Action(delegate
+                                    {
+
+                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Medium Tyre.png", UriKind.Relative));
+
+                                    }));
+                                    break;
+                                case 7:
+                                    // Int
+                                    Dispatcher.BeginInvoke(new Action(delegate
+                                    {
+
+                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Intermediate Tyre.png", UriKind.Relative));
+
+                                    }));
+                                    break;
+                                case 8:
+                                    // Wet
+                                    Dispatcher.BeginInvoke(new Action(delegate
+                                    {
+
+                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Wet Tyre.png", UriKind.Relative));
+
+                                    }));
+                                    break;
+                            }
 
                         }
 
@@ -185,6 +238,7 @@ namespace ApexSpeedApp.MVVM.View
         private void UDPStopListenerButton_Click(object sender, RoutedEventArgs e)
         {
             //Value = new Random().Next(0, 20);
+            TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/wet Tyre.png", UriKind.Relative));
         }
 
     }
