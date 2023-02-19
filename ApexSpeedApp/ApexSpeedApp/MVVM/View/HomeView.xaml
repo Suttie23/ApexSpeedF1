@@ -9,11 +9,11 @@
 
     <StackPanel>
 
-        <TextBlock Text="Welcome to ApexSpeed!"
+        <TextBlock Text="Welcome to the ApexSpeed Telemetry App!"
                    Foreground="White"
                    FontSize="28"
-                   HorizontalAlignment="Left"
-                   Margin="10,0,0,20"/>
+                   HorizontalAlignment="Center"
+                   Margin="10,0,0,20" Width="543"/>
 
         <StackPanel Orientation="Horizontal">
             <Border Width="450"

@@ -33,6 +33,7 @@ namespace ApexSpeedApp.MVVM.View
         private float _Throttlevalue;
         private float _Brakevalue;
         private float _Speedvalue;
+        private float _RPMvalue;
 
         public LiveAnalysisView()
         {
@@ -40,6 +41,7 @@ namespace ApexSpeedApp.MVVM.View
 
             ThrottleValue = 0;
             BrakeValue = 0;
+            RPMValue = 0;
 
             DataContext = this;
         }
@@ -71,6 +73,16 @@ namespace ApexSpeedApp.MVVM.View
             {
                 _Speedvalue = value;
                 OnPropertyChanged("SpeedValue");
+            }
+        }
+
+        public float RPMValue
+        {
+            get { return _RPMvalue; }
+            set
+            {
+                _RPMvalue = value;
+                OnPropertyChanged("RPMValue");
             }
         }
 
@@ -130,31 +142,63 @@ namespace ApexSpeedApp.MVVM.View
                             TelemetryPacket telPack = new TelemetryPacket();
                             telPack.LoadBytes(receiveBytes);
 
-
                             ThrottleValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle;
                             BrakeValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake;
                             SpeedValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
+                            RPMValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
 
-                        // Exit the application if there is a version mismatch!
                         Dispatcher.BeginInvoke(new Action(delegate
+                            {
+
+                                SpeedDisplay.Content = "MPH: " + telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
+                                ThrottleDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2); 
+                                BrakeDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
+                                GearDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear;
+                                RPMDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
+
+                            }));
+
+
+                        if (telPack.FieldTelemetryData[telPack.PlayerCarIndex].DrsActive == true)
                         {
 
-                            SpeedDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph + " MPH";
+                            Dispatcher.BeginInvoke(new Action(delegate
+                            {
+                                DRSToggleDisplay.Foreground = System.Windows.Media.Brushes.YellowGreen;
+                            }));
+               
+                        }
+                        else
+                        {
 
-                        }));
+                            Dispatcher.BeginInvoke(new Action(delegate
+                            {
+                                DRSToggleDisplay.Foreground = System.Windows.Media.Brushes.White;
+                            }));
+                            
+                        }
+
 
 
                     }   
-                    
-
+                   
                         // IF Car CarStatus Packet
                         if (pt == PacketType.CarStatus)
                         {
                             CarStatusPacket statusPack = new CarStatusPacket();
                             statusPack.LoadBytes(receiveBytes);
 
-                            //Determine Tyre Compound and update UI
-                            switch (statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].EquippedVisualTyreCompoundId)
+                        Dispatcher.BeginInvoke(new Action(delegate
+                        {
+
+                            FuelDisplay.Content = "FUEL: " + statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelLevel;
+                            FuelDLapsRemainingDisplay.Content = "Laps Of Fuel: " + statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelRemainingLaps;
+
+
+                        }));
+
+                        //Determine Tyre Compound and update UI
+                        switch (statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].EquippedVisualTyreCompoundId)
                             {
                                 case 18:
                                     // Har
@@ -201,11 +245,33 @@ namespace ApexSpeedApp.MVVM.View
 
                                     }));
                                     break;
+
                             }
 
+                        string Overtake = statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString();
+
+                        if (Overtake == "Medium")
+                        {
+                            Dispatcher.BeginInvoke(new Action(delegate
+                            {
+
+                                ERSToggleDisplay.Foreground = System.Windows.Media.Brushes.White;
+
+
+                            }));
+                        }  else
+                        {
+                            Dispatcher.BeginInvoke(new Action(delegate
+                            {
+                                ERSToggleDisplay.Foreground = System.Windows.Media.Brushes.YellowGreen;
+                            }));
                         }
+                        
+
 
                     }
+
+                }
                     catch (Exception e)
                     {
 
