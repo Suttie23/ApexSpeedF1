@@ -7,9 +7,9 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:viewModel="clr-namespace:ApexSpeedApp.MVVM.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="820" Width="1190"
+        Title="Apex Speed F1" Height="820" Width="1190"
         ResizeMode="NoResize"
-        Background="Transparent">
+        Background="Transparent" Icon="/Logo.png">
 
     <Window.DataContext>
 

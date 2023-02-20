@@ -15,6 +15,7 @@
     <None Remove="Images\Medium Tyre.png" />
     <None Remove="Images\Soft Tyre.png" />
     <None Remove="Images\Wet Tyre.png" />
+    <None Remove="Logo.png" />
     <None Remove="MVVM\View\WrenchSmall001-plain.png" />
   </ItemGroup>
 
@@ -39,6 +40,7 @@
     <Resource Include="Images\Medium Tyre.png" />
     <Resource Include="Images\Soft Tyre.png" />
     <Resource Include="Images\Wet Tyre.png" />
+    <Resource Include="Logo.png" />
     <Resource Include="MVVM\View\WrenchSmall001-plain.png" />
   </ItemGroup>
 
