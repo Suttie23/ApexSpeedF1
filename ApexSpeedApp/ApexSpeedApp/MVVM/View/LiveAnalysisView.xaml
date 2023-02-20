@@ -27,7 +27,7 @@
         </lvc:Gauge>
         <Label x:Name="ThrottleLabel" Content="Throttle" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="120" FontSize="32" Foreground="White" Margin="80,346,0,0"/>
         <Label x:Name="ThrottleDisplay" Content="0.00" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="68" FontSize="32" Foreground="White" Margin="106,272,0,0"/>
-        
+
         <lvc:Gauge
             Value="{Binding RPMValue}"
             From="4000" To="13000"
@@ -59,8 +59,8 @@
         </lvc:Gauge>
         <Label x:Name="BrakeLabel" Content="Brake" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="89" FontSize="32" Foreground="White" Margin="774,346,0,0"/>
         <Label x:Name="BrakeDisplay" Content="0.00" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="69" FontSize="32" Foreground="White" Margin="784,265,0,0"/>
-        
-        
+
+
         <Button x:Name="UDPListenerButton" Content="Listen For Telemetry" HorizontalAlignment="Left" Margin="69,658,0,0" VerticalAlignment="Top" Height="31" Width="131" Click="UDPListenerButton_Click"/>
         <Label x:Name="ListenerTestLabel" Content="UDP Version: N/A Detected" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Height="65" Width="509" FontSize="32" Foreground="White"/>
         <Label x:Name="ListeningLabel" Content="Not Listening..." HorizontalAlignment="Left" Margin="23,80,0,0" VerticalAlignment="Top" Height="65" Width="233" FontSize="32" Foreground="White"/>
@@ -76,6 +76,8 @@
         <Label x:Name="TyreWearLabel" Content="Tyre Wear" VerticalAlignment="Top" Height="48" FontSize="22" Foreground="White" Margin="556,552,296,0"/>
         <Label x:Name="TyreTempFrontDisplay" Content="0          0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="110" FontSize="22" Foreground="White" Margin="307,605,0,0"/>
         <Label x:Name="TyreTempRearDisplay" Content="0          0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="110" FontSize="22" Foreground="White" Margin="307,647,0,0"/>
+        <Label x:Name="TyreWearFrontDisplay" Content="0          0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="110" FontSize="22" Foreground="White" Margin="556,605,0,0"/>
+        <Label x:Name="TyreWearRearDisplay" Content="0          0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="110" FontSize="22" Foreground="White" Margin="556,647,0,0"/>
 
 
 

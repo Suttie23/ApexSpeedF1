@@ -184,7 +184,7 @@ namespace ApexSpeedApp.MVVM.View
 
                     }   
                    
-                        // IF Car CarStatus Packet
+                    // IF Car CarStatus Packet
                     if (pt == PacketType.CarStatus)
                     {
                         CarStatusPacket statusPack = new CarStatusPacket();
@@ -268,6 +268,20 @@ namespace ApexSpeedApp.MVVM.View
                             }));
                         }
                         
+
+
+                    }
+
+                    if (pt == PacketType.CarDamage)
+                    {
+                        CarDamagePacket damPack = new CarDamagePacket();
+                        damPack.LoadBytes(receiveBytes);
+
+                        Dispatcher.BeginInvoke(new Action(delegate
+                        {
+                            TyreWearFrontDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontLeft, 0) + "     " + Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontRight, 0);
+                            TyreWearRearDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearLeft, 0) + "     " + Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearRight, 0);
+                        }));
 
 
                     }
