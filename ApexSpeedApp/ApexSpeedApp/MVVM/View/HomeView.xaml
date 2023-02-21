@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ApexSpeedApp.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="704.604" d:DesignWidth="966.721">
+             d:DesignHeight="704.604" Width="1291">
 
     <StackPanel>
 
@@ -13,11 +13,13 @@
                    Foreground="White"
                    FontSize="28"
                    HorizontalAlignment="Center"
-                   Margin="10,0,0,20" Width="543"/>
+                   Margin="0,0,0,20" Width="543"/>
 
         <StackPanel Orientation="Horizontal">
             <Border Width="450"
-                    Height="200">
+                    Height="200"
+                    Margin="175,0,0,0">
+                    
 
                 <Border.Background>
 

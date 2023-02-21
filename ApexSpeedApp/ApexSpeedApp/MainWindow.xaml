@@ -7,15 +7,17 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:viewModel="clr-namespace:ApexSpeedApp.MVVM.ViewModel"
         mc:Ignorable="d"
-        Title="Apex Speed F1" Height="820" Width="1190"
-        ResizeMode="NoResize"
-        Background="Transparent" Icon="/Logo.png">
+        Title="Apex Speed F1" Height="846" Width="1574"
+        Background="Transparent" Icon="/Logo.png"
+        WindowStartupLocation="CenterScreen"
+        >
 
     <Window.DataContext>
 
         <viewModel:MainViewModel/>
 
     </Window.DataContext>
+    
 
     <Border Background="#272537">
 
