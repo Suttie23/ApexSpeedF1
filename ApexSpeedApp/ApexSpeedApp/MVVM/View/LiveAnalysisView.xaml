@@ -16,7 +16,7 @@
                    Value="{Binding ThrottleValue}"
                    From="0" To="1"
                    LabelsVisibility="Collapsed" Margin="32,76,1017,273"
-                   Foreground="Transparent" RenderTransformOrigin="0.61,0.481">
+                   Foreground="Transparent" RenderTransformOrigin="0.504,0.487">
             <lvc:Gauge.GaugeActiveFill>
                 <LinearGradientBrush>
                     <GradientStop Color="YellowGreen" Offset="0.0" />
@@ -25,7 +25,7 @@
                 </LinearGradientBrush>
             </lvc:Gauge.GaugeActiveFill>
         </lvc:Gauge>
-        <Label x:Name="ThrottleLabel" Content="Throttle" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="120" FontSize="32" Foreground="White" Margin="97,340,0,0"/>
+        <Label x:Name="ThrottleLabel" Content="Throttle" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="120" FontSize="32" Foreground="White" Margin="90,329,0,0"/>
         <Label x:Name="ThrottleDisplay" Content="0.00" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="68" FontSize="32" Foreground="White" Margin="119,262,0,0"/>
 
         <lvc:Gauge
@@ -65,12 +65,12 @@
         <Label x:Name="ListenerTestLabel" Content="UDP Version: N/A Detected" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Height="65" Width="509" FontSize="32" Foreground="White"/>
         <Label x:Name="ListeningLabel" Content="Not Listening..." HorizontalAlignment="Left" Margin="23,80,0,0" VerticalAlignment="Top" Height="65" Width="233" FontSize="32" Foreground="White"/>
         <Button x:Name="UDPStopListenerButton" Content="Stop Listening" HorizontalAlignment="Left" Margin="1072,648,0,0" VerticalAlignment="Top" Height="26" Width="131" Click="UDPStopListenerButton_Click"/>
-        <Label x:Name="SpeedDisplay" Content="MPH: 0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="157" FontSize="32" Foreground="White" Margin="70,423,0,0"/>
-        <Image x:Name="TyreCompoundImage" Margin="1138,10,27,553" Source="/Images/Soft Tyre.png" Stretch="Fill" RenderTransformOrigin="0.238,0.486"/>
+        <Label x:Name="SpeedDisplay" Content="MPH: 0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="157" FontSize="32" Foreground="White" Margin="82,424,0,0"/>
+        <Image x:Name="TyreCompoundImage" Margin="1132,10,33,554" Source="/Images/Soft Tyre.png" Stretch="Fill" RenderTransformOrigin="0.238,0.486"/>
         <Label x:Name="GearDisplay" Content="0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="65" Width="40" FontSize="50" Foreground="White" Margin="0,391,0,0"/>
-        <Label x:Name="DRSToggleDisplay" Content="DRS" HorizontalAlignment="Left" VerticalAlignment="Top" Height="66" Width="78" FontSize="32" Foreground="White" Margin="1098,416,0,0"/>
+        <Label x:Name="DRSToggleDisplay" Content="DRS" VerticalAlignment="Top" Height="66" FontSize="32" Foreground="White" Margin="1098,416,0,0" HorizontalAlignment="Left" Width="78"/>
         <Label x:Name="ERSToggleDisplay" Content="OVERTAKE" HorizontalAlignment="Left" VerticalAlignment="Top" Height="66" Width="160" FontSize="32" Foreground="White" Margin="1057,506,0,0"/>
-        <Label x:Name="FuelDisplay" Content="FUEL: 0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="174" FontSize="32" Foreground="White" Margin="70,513,0,0"/>
+        <Label x:Name="FuelDisplay" Content="FUEL: 0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="174" FontSize="32" Foreground="White" Margin="82,514,0,0"/>
         <Label x:Name="FuelDLapsRemainingDisplay" Content="Laps Of Fuel: 0.0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="48" Width="193" FontSize="22" Foreground="White" Margin="0,477,0,0"/>
         <Label x:Name="TyreTempLabel" Content="Tyre Temps" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="124" FontSize="22" Foreground="White" Margin="280,555,0,0"/>
         <Label x:Name="TyreWearLabel" Content="Tyre Wear" VerticalAlignment="Top" Height="48" FontSize="22" Foreground="White" Margin="894,555,287,0"/>

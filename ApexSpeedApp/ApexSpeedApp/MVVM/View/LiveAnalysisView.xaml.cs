@@ -20,6 +20,12 @@ using ApexSpeedApp.MVVM;
 using ApexSpeedApp.MVVM.ViewModel;
 using System.ComponentModel;
 using System.Linq.Expressions;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
+using System.Net.Http.Json;
+using System.Xml;
+using Newtonsoft.Json;
 
 namespace ApexSpeedApp.MVVM.View
 {
@@ -35,6 +41,9 @@ namespace ApexSpeedApp.MVVM.View
         private float _Speedvalue;
         private float _RPMvalue;
 
+        //JSON TESTING
+        //List<ushort> SpeedList = new List<ushort>();
+
         public LiveAnalysisView()
         {
             InitializeComponent();
@@ -46,6 +55,7 @@ namespace ApexSpeedApp.MVVM.View
             DataContext = this;
         }
 
+        // For changing property values and updating gauge UI elements (Throttle)
         public float ThrottleValue
         {
             get { return _Throttlevalue; }
@@ -56,6 +66,7 @@ namespace ApexSpeedApp.MVVM.View
             }
         }
 
+        // For changing property values and updating gauge UI elements (Brake)
         public float BrakeValue
         {
             get { return _Brakevalue; }
@@ -66,6 +77,7 @@ namespace ApexSpeedApp.MVVM.View
             }
         }
 
+        // For changing property values and updating gauge UI elements (Speed)
         public float SpeedValue
         {
             get { return _Speedvalue; }
@@ -76,6 +88,7 @@ namespace ApexSpeedApp.MVVM.View
             }
         }
 
+        // For changing property values and updating gauge UI elements (RPM)
         public float RPMValue
         {
             get { return _RPMvalue; }
@@ -86,9 +99,11 @@ namespace ApexSpeedApp.MVVM.View
             }
         }
 
+        // UDP Listener button
         private void UDPListenerButton_Click(object sender, RoutedEventArgs e)
         {
 
+            // Port 20777 (Default for F1 2021)
             UdpClient receivingUdpClient = new(20777);
 
             // UDP Listener
@@ -108,6 +123,7 @@ namespace ApexSpeedApp.MVVM.View
 
             }
 
+            // Async Result for listener
             void TelemetryReceiver(IAsyncResult res)
             {
                 // Remote host IP
@@ -119,18 +135,20 @@ namespace ApexSpeedApp.MVVM.View
                     try
                     {
 
+                        // Get UDP Packet Type
                         PacketType pt = CodemastersToolkit.GetPacketType(receiveBytes);
 
+                        // Create new packet and load in the data
                         Packet pa = new Packet();
                         pa.LoadBytes(receiveBytes);
 
                         // Ensure the game is running the 2021 UDP format
                         if (pa.PacketFormat == 2021)
                         {
-
+                            // Delegate to avoid cross threading
                             Dispatcher.BeginInvoke(new Action(delegate
                             {
-
+                                // Update UI to show UDP format
                                 ListenerTestLabel.Content = "UDP Format: " + pa.PacketFormat.ToString() + " Detected";
 
                             }));
@@ -139,17 +157,31 @@ namespace ApexSpeedApp.MVVM.View
                         // IF Car Telemetry Packet
                         if (pt == PacketType.CarTelemetry)
                         {
+                            //Create new telemetry packet and load in the data
                             TelemetryPacket telPack = new TelemetryPacket();
                             telPack.LoadBytes(receiveBytes);
 
+                            // Use the public values defined earlier and assign them a value based on the index of the player vehicle
+                            // This will update the gauges using the propertyChanged Event
                             ThrottleValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle;
                             BrakeValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake;
                             SpeedValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
                             RPMValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
 
+
+                        /* JSON TESTING
+                        SpeedList.Add(telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph);
+                        string fileName = @"C:\Users\Suttie\Desktop\TEST.json";
+                        string json = JsonConvert.SerializeObject(SpeedList, Newtonsoft.Json.Formatting.Indented);
+                        using StreamWriter sw = new StreamWriter(fileName);
+                        sw.WriteLine(json);
+                        sw.Close();
+                        */
+
+                        // Delegate to avoid cross threading
                         Dispatcher.BeginInvoke(new Action(delegate
                             {
-
+                                // Update UI elements
                                 SpeedDisplay.Content = "MPH: " + telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
                                 ThrottleDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2); 
                                 BrakeDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
@@ -160,39 +192,41 @@ namespace ApexSpeedApp.MVVM.View
 
                             }));
 
-
+                        // IF DRS is active
                         if (telPack.FieldTelemetryData[telPack.PlayerCarIndex].DrsActive == true)
                         {
-
+                            // Delegate to avoid cross threading
                             Dispatcher.BeginInvoke(new Action(delegate
                             {
+                                // Change UI accordingly
                                 DRSToggleDisplay.Foreground = System.Windows.Media.Brushes.YellowGreen;
                             }));
                
                         }
                         else
                         {
-
+                            // Delegate to avoid cross threading
                             Dispatcher.BeginInvoke(new Action(delegate
                             {
+                                // Change UI accordingly
                                 DRSToggleDisplay.Foreground = System.Windows.Media.Brushes.White;
                             }));
                             
                         }
-
-
 
                     }   
                    
                     // IF Car CarStatus Packet
                     if (pt == PacketType.CarStatus)
                     {
+                        //Create new status packet and load in the data
                         CarStatusPacket statusPack = new CarStatusPacket();
                         statusPack.LoadBytes(receiveBytes);
 
+                        // Delegate to avoid cross threading
                         Dispatcher.BeginInvoke(new Action(delegate
                         {
-
+                            // Update UI
                             FuelDisplay.Content = "FUEL: " + Math.Round(statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelLevel, 2);
                             FuelDLapsRemainingDisplay.Content = "Laps Of Fuel: " + statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelRemainingLaps;                            
 
@@ -202,7 +236,7 @@ namespace ApexSpeedApp.MVVM.View
                         switch (statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].EquippedVisualTyreCompoundId)
                             {
                                 case 18:
-                                    // Har
+                                    // Hard
                                     Dispatcher.BeginInvoke(new Action(delegate
                                     {
 
@@ -211,7 +245,7 @@ namespace ApexSpeedApp.MVVM.View
                                     }));
                                     break;
                                 case 16:
-                                    // Sof
+                                    // Soft
                                     Dispatcher.BeginInvoke(new Action(delegate
                                     {
 
@@ -220,7 +254,7 @@ namespace ApexSpeedApp.MVVM.View
                                     }));
                                     break;
                                 case 17:
-                                    // Med
+                                    // Medium
                                     Dispatcher.BeginInvoke(new Action(delegate
                                     {
 
@@ -229,7 +263,7 @@ namespace ApexSpeedApp.MVVM.View
                                     }));
                                     break;
                                 case 7:
-                                    // Int
+                                    // Intermediate
                                     Dispatcher.BeginInvoke(new Action(delegate
                                     {
 
@@ -246,24 +280,26 @@ namespace ApexSpeedApp.MVVM.View
 
                                     }));
                                     break;
-
                             }
 
+                        // Determine ERS Status
                         string Overtake = statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString();
-
                         if (Overtake == "Medium" || Overtake == "None")
                         {
+                            // Delegate to avoid cross threading
                             Dispatcher.BeginInvoke(new Action(delegate
                             {
-
+                                // Update UI Accordingly
                                 ERSToggleDisplay.Foreground = System.Windows.Media.Brushes.White;
 
 
                             }));
                         }else
                         {
+                            // Delegate to avoid cross threading
                             Dispatcher.BeginInvoke(new Action(delegate
                             {
+                                // Update UI Accordingly
                                 ERSToggleDisplay.Foreground = System.Windows.Media.Brushes.YellowGreen;
                             }));
                         }
@@ -272,24 +308,28 @@ namespace ApexSpeedApp.MVVM.View
 
                     }
 
-                    if (pt == PacketType.CarDamage)
-                    {
-                        CarDamagePacket damPack = new CarDamagePacket();
-                        damPack.LoadBytes(receiveBytes);
-
-                        Dispatcher.BeginInvoke(new Action(delegate
+                        // IF Car CarDamage Packet
+                        if (pt == PacketType.CarDamage)
                         {
-                            TyreWearFrontDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontLeft, 0) + "     " + Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontRight, 0);
-                            TyreWearRearDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearLeft, 0) + "     " + Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearRight, 0);
-                        }));
+                            //Create new damage packet and load in the data
+                            CarDamagePacket damPack = new CarDamagePacket();
+                            damPack.LoadBytes(receiveBytes);
 
+                            // Delegate to avoid cross threading
+                            Dispatcher.BeginInvoke(new Action(delegate
+                            {
+                                // Update UI
+                                TyreWearFrontDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontLeft, 0) + "     " + Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontRight, 0);
+                                TyreWearRearDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearLeft, 0) + "     " + Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearRight, 0);
+                            }));
+
+                        }
 
                     }
-
-                }
+                    // Catch error if UDP cannot be read
                     catch (Exception e)
                     {
-
+                        // Display error message
                         MessageBox.Show("Error Message: " + e.Message + "\n\nIt is likely that your  UDP Format is not set to to 2021, change this by going to (Settings > Telemetry Settings > UDP Format > 2021) in your F1 game!", "UDP Format Error!");
 
                         // Exit the application if there is a version mismatch!
@@ -307,19 +347,18 @@ namespace ApexSpeedApp.MVVM.View
             }
         }
 
+        // Event handler for Livechart gauge updating
         public event PropertyChangedEventHandler PropertyChanged;
-
         protected virtual void OnPropertyChanged(string propertyName = null)
         {
             if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
 
 
-
+        // Stop listening for UDP Button
         private void UDPStopListenerButton_Click(object sender, RoutedEventArgs e)
         {
-            //Value = new Random().Next(0, 20);
-            TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/wet Tyre.png", UriKind.Relative));
+
         }
 
     }
