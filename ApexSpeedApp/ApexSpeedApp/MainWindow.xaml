@@ -10,6 +10,7 @@
         Title="Apex Speed F1" Height="846" Width="1574"
         Background="Transparent" Icon="/Logo.png"
         WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
         >
 
     <Window.DataContext>
@@ -62,7 +63,8 @@
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding HistoricalAnalysisViewCommand}"/>
 
             </StackPanel>
             </Border>

@@ -23,6 +23,12 @@
 
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:HistoricalAnalysisViewModel}">
+
+                <view:HistoricalAnalysisView/>
+
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

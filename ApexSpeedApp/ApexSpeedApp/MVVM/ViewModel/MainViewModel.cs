@@ -12,9 +12,11 @@ namespace ApexSpeedApp.MVVM.ViewModel
 
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand LiveAnalysisViewCommand { get; set; }
+        public RelayCommand HistoricalAnalysisViewCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public LiveAnalysisViewModel LiveAnalysisVM { get; set; }
+        public HistoricalAnalysisViewModel HistoricalAnalysisVM { get; set; }
 
         private object _currentView;
 
@@ -34,6 +36,7 @@ namespace ApexSpeedApp.MVVM.ViewModel
         {
             HomeVM = new HomeViewModel();
             LiveAnalysisVM = new LiveAnalysisViewModel();
+            HistoricalAnalysisVM = new HistoricalAnalysisViewModel();
 
             CurrentView = HomeVM;
 
@@ -45,6 +48,11 @@ namespace ApexSpeedApp.MVVM.ViewModel
             LiveAnalysisViewCommand = new RelayCommand(o =>
             {
                 CurrentView = LiveAnalysisVM;
+            });
+
+            HistoricalAnalysisViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = HistoricalAnalysisVM;
             });
 
 
