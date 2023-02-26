@@ -36,6 +36,7 @@ namespace ApexSpeedApp.MVVM.View
     public partial class LiveAnalysisView : UserControl, INotifyPropertyChanged
     {
 
+        // Property Values for UI Gauges
         private float _Throttlevalue;
         private float _Brakevalue;
         private float _Speedvalue;
@@ -325,7 +326,28 @@ namespace ApexSpeedApp.MVVM.View
 
                         }
 
+                    // IF Lap Packet
+                    if (pt == PacketType.Lap)
+                    {
+                        //Create new damage packet and load in the data
+                        LapPacket lapPack = new LapPacket();
+                        lapPack.LoadBytes(receiveBytes);
+
+                        // Delegate to avoid cross threading
+                        Dispatcher.BeginInvoke(new Action(delegate
+                        {
+                            CurrentLapDisplay.Content = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapTimeMilliseconds / 1000);
+                            PreviousLapDisplay.Content = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].LastLapTimeMilliseconds / 1000);
+                            Sector1Display.Content = "Sector 1: " + lapPack.FieldLapData[lapPack.PlayerCarIndex].Sector1TimeMilliseconds / 1000;
+                            Sector2Display.Content = "Sector 2: " + lapPack.FieldLapData[lapPack.PlayerCarIndex].Sector2TimeMilliseconds / 1000;
+                            LapNoDisplay.Content = "Lap: " + lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapNumber;
+                        }));
+
+                        
+
                     }
+
+                }
                     // Catch error if UDP cannot be read
                     catch (Exception e)
                     {
