@@ -188,8 +188,12 @@ namespace ApexSpeedApp.MVVM.View
                                 BrakeDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
                                 GearDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear;
                                 RPMDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
-                                TyreTempFrontDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontLeft + "     " + telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontRight;
-                                TyreTempRearDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearLeft + "     " + telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearRight;
+
+                                // Tyre Temperatures
+                                TyreTempFrontLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontLeft;
+                                TyreTempFrontRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontRight;
+                                TyreTempRearLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearLeft;
+                                TyreTempRearRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearRight;
 
                             }));
 
@@ -320,8 +324,12 @@ namespace ApexSpeedApp.MVVM.View
                             Dispatcher.BeginInvoke(new Action(delegate
                             {
                                 // Update UI
-                                TyreWearFrontDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontLeft, 0) + "     " + Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontRight, 0);
-                                TyreWearRearDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearLeft, 0) + "     " + Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearRight, 0);
+
+                                // Tyre Wear
+                                TyreWearFrontLeftDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontLeft, 0);
+                                TyreWearFrontRightDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontRight, 0);
+                                TyreWearRearLeftDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearLeft, 0);
+                                TyreWearRearRightDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearRight, 0);
                             }));
 
                         }

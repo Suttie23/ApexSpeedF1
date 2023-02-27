@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\obj\Debug\net6.0-windows\
+C:\Users\Sutti\Desktop\Projects\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\obj\Debug\net6.0-windows\
 ApexSpeedApp
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\App.xaml
+C:\Users\Sutti\Desktop\Projects\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\App.xaml
 5-638375979
 
 12-481535839
-203904044381
+203-530444429
 MainWindow.xaml;MVVM\View\HistoricalAnalysisView.xaml;MVVM\View\HomeView.xaml;MVVM\View\LiveAnalysisView.xaml;Theme\MenuButtonTheme.xaml;
 
 False
