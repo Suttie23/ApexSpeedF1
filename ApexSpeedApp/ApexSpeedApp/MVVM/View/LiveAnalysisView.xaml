@@ -66,12 +66,12 @@
         <!-- End Brake Gauge -->
 
 
-        <!-- Static Lables -->
+        <!-- Static Content -->
         <Label x:Name="ListenerTestLabel" Content="UDP Version: N/A Detected" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Height="65" Width="509" FontSize="32" Foreground="White"/>
         <Label x:Name="ListeningLabel" Content="Not Listening..." HorizontalAlignment="Left" Margin="23,80,0,0" VerticalAlignment="Top" Height="65" Width="233" FontSize="32" Foreground="White"/>
         <Label x:Name="TyreTempLabel" Content="Tyre Temps" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="124" FontSize="22" Foreground="White" Margin="280,519,0,0"/>
         <Label x:Name="TyreWearLabel" Content="Tyre Wear" VerticalAlignment="Top" Height="48" FontSize="22" Foreground="White" Margin="894,519,287,0"/>
-        <!-- End Static Lables -->
+        <!-- End Static Content -->
 
         <!-- Buttons -->
         <Button x:Name="UDPListenerButton" Content="Listen For Telemetry" HorizontalAlignment="Left" Margin="70,607,0,0" VerticalAlignment="Top" Height="31" Width="131" Click="UDPListenerButton_Click"/>
@@ -79,7 +79,7 @@
         <!-- End Buttons -->
 
 
-        <!-- Dynamic Labels -->
+        <!-- Dynamic Content -->
         <Label x:Name="SpeedDisplay" Content="MPH: 0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="157" FontSize="32" Foreground="White" Margin="82,388,0,0"/>
         <Image x:Name="TyreCompoundImage" Margin="1076,22,91,572" Source="/Images/Soft Tyre.png" Stretch="Fill" RenderTransformOrigin="0.476,0.434"/>
         <Label x:Name="GearDisplay" Content="0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="65" Width="40" FontSize="50" Foreground="White" Margin="0,355,0,0"/>
@@ -87,7 +87,7 @@
         <Label x:Name="ERSToggleDisplay" Content="OVERTAKE" HorizontalAlignment="Left" VerticalAlignment="Top" Height="66" Width="160" FontSize="32" Foreground="White" Margin="1057,470,0,0"/>
         <Label x:Name="FuelDisplay" Content="FUEL: 0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="174" FontSize="32" Foreground="White" Margin="82,478,0,0"/>
         <Label x:Name="FuelDLapsRemainingDisplay" Content="Laps Of Fuel: 0.0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="48" Width="193" FontSize="22" Foreground="White" Margin="0,441,0,0"/>
-        <!-- End Dynamic Labels -->
+        <!-- End Dynamic Content -->
         
             <!-- Tyre Temps -->
             <Label x:Name="TyreTempFrontLeftDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="277,572,0,0" HorizontalContentAlignment="Center"/>
