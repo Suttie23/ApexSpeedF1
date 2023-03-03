@@ -5,15 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ApexSpeedApp.MVVM.View"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
-             xmlns:viewModel="clr-namespace:ApexSpeedApp.MVVM.ViewModel" d:DataContext="{d:DesignInstance Type=local:LiveAnalysisView}"
+             xmlns:viewModel="clr-namespace:ApexSpeedApp.MVVM.ViewModel" xmlns:model="clr-namespace:ApexSpeedApp.MVVM.Model" d:DataContext="{d:DesignInstance Type=local:LiveAnalysisView}"
              mc:Ignorable="d" 
              d:DesignHeight="704.604" Width="1291">
+
+    <UserControl.DataContext>
+        <model:GaugeModels/>
+    </UserControl.DataContext>
 
 
     <Grid>
         <!-- Throttle Gauge -->
         <lvc:Gauge
-                   Value="{Binding ThrottleValue}"
+            d:DataContext="{d:DesignInstance Type=model:GaugeModels}"
+            Value="{Binding ThrottleValue}"
                    From="0" To="1"
                    LabelsVisibility="Collapsed" Margin="32,40,1017,309"
                    Foreground="Transparent" RenderTransformOrigin="0.504,0.487">
@@ -26,11 +31,13 @@
             </lvc:Gauge.GaugeActiveFill>
         </lvc:Gauge>
         <Label x:Name="ThrottleLabel" Content="Throttle" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="120" FontSize="32" Foreground="White" Margin="90,294,0,0" />
-        <Label x:Name="ThrottleDisplay" Content="0.00" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="68" FontSize="32" Foreground="White" Margin="119,226,0,0" HorizontalContentAlignment="Center"/>
+        <Label d:DataContext="{d:DesignInstance Type=model:GaugeModels}" x:Name="ThrottleDisplay" Content="{Binding ThrottleValue}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="68" FontSize="32" Foreground="White" Margin="119,226,0,0" HorizontalContentAlignment="Center"/>
+        <TextBox d:DataContext="{d:DesignInstance Type=model:GaugeModels}" x:Name="ThrotBindBox" Visibility="Hidden" HorizontalAlignment="Left" Margin="93,341,0,0" TextWrapping="Wrap" Text="{Binding ThrottleValue, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
         <!-- End Throttle Gauge -->
 
         <!-- RPM Gauge -->
         <lvc:Gauge
+            d:DataContext="{d:DesignInstance Type=model:GaugeModels}"
             Value="{Binding RPMValue}"
             From="4000" To="13000"
             LabelsVisibility="Collapsed" Margin="528,35,529,315"
@@ -44,11 +51,13 @@
             </lvc:Gauge.GaugeActiveFill>
         </lvc:Gauge>
         <Label x:Name="RPMLabel" Content="RPM" HorizontalAlignment="Center" VerticalAlignment="Top" Height="65" Width="72" FontSize="32" Foreground="White" Margin="0,294,0,0"/>
-        <Label x:Name="RPMDisplay" Content="00000" HorizontalAlignment="Center" VerticalAlignment="Top" Height="65" Width="98" FontSize="32" Foreground="White" Margin="0,226,0,0" HorizontalContentAlignment="Center"/>
+        <Label d:DataContext="{d:DesignInstance Type=model:GaugeModels}" x:Name="RPMDisplay" Content="{Binding RPMValue}" HorizontalAlignment="Center" VerticalAlignment="Top" Height="65" Width="98" FontSize="32" Foreground="White" Margin="0,226,0,0" HorizontalContentAlignment="Center"/>
+        <TextBox d:DataContext="{d:DesignInstance Type=model:GaugeModels}" x:Name="RPMBindBox" Visibility="Hidden" HorizontalAlignment="Left" Margin="93,341,0,0" TextWrapping="Wrap" Text="{Binding RPMValue, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
         <!-- End RPM Gauge -->
 
         <!-- Brake Gauge -->
         <lvc:Gauge
+            d:DataContext="{d:DesignInstance Type=model:GaugeModels}"
             Value="{Binding BrakeValue}"
             From="0" To="1"
             LabelsVisibility="Collapsed" Margin="1016,40,33,309"
@@ -62,7 +71,8 @@
             </lvc:Gauge.GaugeActiveFill>
         </lvc:Gauge>
         <Label x:Name="BrakeLabel" Content="Brake" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="89" FontSize="32" Foreground="White" Margin="1093,304,0,0"/>
-        <Label x:Name="BrakeDisplay" Content="0.00" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="69" FontSize="32" Foreground="White" Margin="1103,223,0,0" HorizontalContentAlignment="Center"/>
+        <Label x:Name="BrakeDisplay" Content="{Binding BrakeValue}" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="69" FontSize="32" Foreground="White" Margin="1103,223,0,0" HorizontalContentAlignment="Center"/>
+        <TextBox d:DataContext="{d:DesignInstance Type=model:GaugeModels}" x:Name="BrakeBindBox" Visibility="Hidden" HorizontalAlignment="Left" Margin="93,341,0,0" TextWrapping="Wrap" Text="{Binding BrakeValue, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
         <!-- End Brake Gauge -->
 
 
@@ -88,20 +98,20 @@
         <Label x:Name="FuelDisplay" Content="FUEL: 0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="174" FontSize="32" Foreground="White" Margin="82,478,0,0"/>
         <Label x:Name="FuelDLapsRemainingDisplay" Content="Laps Of Fuel: 0.0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="48" Width="193" FontSize="22" Foreground="White" Margin="0,441,0,0"/>
         <!-- End Dynamic Content -->
-        
-            <!-- Tyre Temps -->
-            <Label x:Name="TyreTempFrontLeftDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="277,572,0,0" HorizontalContentAlignment="Center"/>
-            <Label x:Name="TyreTempRearLeftDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="277,614,0,0" HorizontalContentAlignment="Center"/>
-            <Label x:Name="TyreTempFrontRightDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="337,572,0,0" HorizontalContentAlignment="Center"/>
-            <Label x:Name="TyreTempRearRightDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="337,614,0,0" HorizontalContentAlignment="Center"/>
-            <!-- End Tyre Temps-->
 
-            <!-- Tyre Wear -->
-            <Label x:Name="TyreWearFrontLeftDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="889,572,0,0" HorizontalContentAlignment="Center"/>
-            <Label x:Name="TyreWearRearLeftDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="889,614,0,0" HorizontalContentAlignment="Center"/>
-            <Label x:Name="TyreWearFrontRightDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="949,572,0,0" HorizontalContentAlignment="Center"/>
-            <Label x:Name="TyreWearRearRightDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="949,614,0,0" HorizontalContentAlignment="Center"/>
-            <!-- End Tyre Wear -->
+        <!-- Tyre Temps -->
+        <Label x:Name="TyreTempFrontLeftDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="277,572,0,0" HorizontalContentAlignment="Center"/>
+        <Label x:Name="TyreTempRearLeftDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="277,614,0,0" HorizontalContentAlignment="Center"/>
+        <Label x:Name="TyreTempFrontRightDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="337,572,0,0" HorizontalContentAlignment="Center"/>
+        <Label x:Name="TyreTempRearRightDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="337,614,0,0" HorizontalContentAlignment="Center"/>
+        <!-- End Tyre Temps-->
+
+        <!-- Tyre Wear -->
+        <Label x:Name="TyreWearFrontLeftDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="889,572,0,0" HorizontalContentAlignment="Center"/>
+        <Label x:Name="TyreWearRearLeftDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="889,614,0,0" HorizontalContentAlignment="Center"/>
+        <Label x:Name="TyreWearFrontRightDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="949,572,0,0" HorizontalContentAlignment="Center"/>
+        <Label x:Name="TyreWearRearRightDisplay" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="55" FontSize="22" Foreground="White" Margin="949,614,0,0" HorizontalContentAlignment="Center"/>
+        <!-- End Tyre Wear -->
         <!-- End Dynamic Labels -->
 
         <!-- Lap Information Section -->
@@ -117,6 +127,6 @@
         <Label x:Name="PreviousLapLabel" Content="Previous Lap Time" HorizontalAlignment="Center" VerticalAlignment="Top" Height="31" Width="138" FontSize="16" Foreground="White" Margin="0,625,0,0"/>
         <Label x:Name="PreviousLapDisplay" Content="00" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="92" FontSize="16" Foreground="White" Margin="0,645,0,0" HorizontalContentAlignment="Center"/>
         <!-- End Lap Information Section -->
-        
+
     </Grid>
 </UserControl>

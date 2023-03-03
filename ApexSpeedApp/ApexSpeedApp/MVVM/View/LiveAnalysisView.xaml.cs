@@ -26,6 +26,7 @@ using System.IO;
 using System.Net.Http.Json;
 using System.Xml;
 using Newtonsoft.Json;
+using ApexSpeedApp.MVVM.Model;
 
 namespace ApexSpeedApp.MVVM.View
 {
@@ -33,71 +34,21 @@ namespace ApexSpeedApp.MVVM.View
     /// Interaction logic for LiveAnalysisView.xaml
     /// </summary>
     /// 
-    public partial class LiveAnalysisView : UserControl, INotifyPropertyChanged
+    public partial class LiveAnalysisView : UserControl
     {
 
-        // Property Values for UI Gauges
-        private float _Throttlevalue;
-        private float _Brakevalue;
-        private float _Speedvalue;
-        private float _RPMvalue;
 
         //JSON TESTING
         //List<ushort> SpeedList = new List<ushort>();
+        public LapSaveData LapSave = new LapSaveData();
+
+
 
         public LiveAnalysisView()
         {
             InitializeComponent();
 
-            ThrottleValue = 0;
-            BrakeValue = 0;
-            RPMValue = 0;
 
-            DataContext = this;
-        }
-
-        // For changing property values and updating gauge UI elements (Throttle)
-        public float ThrottleValue
-        {
-            get { return _Throttlevalue; }
-            set
-            {
-                _Throttlevalue = value;
-                OnPropertyChanged("ThrottleValue");
-            }
-        }
-
-        // For changing property values and updating gauge UI elements (Brake)
-        public float BrakeValue
-        {
-            get { return _Brakevalue; }
-            set
-            {
-                _Brakevalue = value;
-                OnPropertyChanged("BrakeValue");
-            }
-        }
-
-        // For changing property values and updating gauge UI elements (Speed)
-        public float SpeedValue
-        {
-            get { return _Speedvalue; }
-            set
-            {
-                _Speedvalue = value;
-                OnPropertyChanged("SpeedValue");
-            }
-        }
-
-        // For changing property values and updating gauge UI elements (RPM)
-        public float RPMValue
-        {
-            get { return _RPMvalue; }
-            set
-            {
-                _RPMvalue = value;
-                OnPropertyChanged("RPMValue");
-            }
         }
 
         // UDP Listener button
@@ -162,13 +113,6 @@ namespace ApexSpeedApp.MVVM.View
                             TelemetryPacket telPack = new TelemetryPacket();
                             telPack.LoadBytes(receiveBytes);
 
-                            // Use the public values defined earlier and assign them a value based on the index of the player vehicle
-                            // This will update the gauges using the propertyChanged Event
-                            ThrottleValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle;
-                            BrakeValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake;
-                            SpeedValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
-                            RPMValue = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
-
 
                         /* JSON TESTING
                         SpeedList.Add(telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph);
@@ -188,6 +132,11 @@ namespace ApexSpeedApp.MVVM.View
                                 BrakeDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
                                 GearDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear;
                                 RPMDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
+
+                                // Gauge Databinding
+                                ThrotBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle.ToString();
+                                BrakeBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake.ToString();
+                                RPMBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm.ToString();
 
                                 // Tyre Temperatures
                                 TyreTempFrontLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontLeft;
@@ -376,14 +325,6 @@ namespace ApexSpeedApp.MVVM.View
                 
             }
         }
-
-        // Event handler for Livechart gauge updating
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName = null)
-        {
-            if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-
 
         // Stop listening for UDP Button
         private void UDPStopListenerButton_Click(object sender, RoutedEventArgs e)
