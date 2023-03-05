@@ -100,9 +100,6 @@ C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\bin\Debug\ne
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\bin\Debug\net6.0-windows\LiveCharts.dll
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
-C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\bin\Debug\net6.0-windows\MaterialDesignColors.dll
-C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
-C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\bin\Debug\net6.0-windows\TimHanewich.Toolkit.dll
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\obj\Debug\net6.0-windows\ApexSpeedApp.csproj.AssemblyReference.cache
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\ApexSpeedApp\ApexSpeedApp\obj\Debug\net6.0-windows\Theme\MenuButtonTheme.baml

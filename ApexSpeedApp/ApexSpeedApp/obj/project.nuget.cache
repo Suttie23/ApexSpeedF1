@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nsCAbneoowFg1q19p0gMujIDELZyCVFACfGwaFA/H0PsomGRivBe+vneso42CFj3StQjMZBqG779Nz7390TLFg==",
+  "dgSpecHash": "x0GBGjPA9QgagifMRIHb/0qiRU3C0gedXQlmV45ek+I/bAOMeDEVFtWUKUPbJ8stBd34MKf/JqZSlOGYiC+2XA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\ApexSpeedApp\\ApexSpeedApp\\ApexSpeedApp.csproj",
   "expectedPackageFiles": [
@@ -8,11 +8,8 @@
     "C:\\Users\\Suttie\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
-    "C:\\Users\\Suttie\\.nuget\\packages\\materialdesigncolors\\2.1.1\\materialdesigncolors.2.1.1.nupkg.sha512",
-    "C:\\Users\\Suttie\\.nuget\\packages\\materialdesignthemes\\4.7.1\\materialdesignthemes.4.7.1.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\Suttie\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Suttie\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
