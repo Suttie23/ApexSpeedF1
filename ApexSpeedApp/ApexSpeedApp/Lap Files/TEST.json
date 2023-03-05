@@ -1,9 +1,0 @@
-{
-  "Throttle": 100.0,
-  "Brake": 0.0,
-  "Gear": 0,
-  "SpeedMph": 0,
-  "LastLapTimeMilliseconds": 0,
-  "LapDistance": 0.0,
-  "CurrentLapNumber": 0
-}

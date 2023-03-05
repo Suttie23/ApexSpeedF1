@@ -22,21 +22,17 @@ namespace ApexSpeedApp.MVVM.Model
         public float LapDistance { get; set; }
         public byte CurrentLapNumber { get; set; }
 
-        public LapSaveData()
+        public LapSaveData(float Throttle, float Brake, sbyte Gear, ushort SpeedMph, float LapDistance/*, uint LastLapTimeMilliseconds, byte CurrentLapNumber */)
         {
-            Throttle = 100; 
+            this.Throttle = Throttle;
+            this.Brake = Brake;
+            this.Gear = Gear;
+            this.SpeedMph = SpeedMph;
+            this.LapDistance = LapDistance;
+            //this.LastLapTimeMilliseconds = LastLapTimeMilliseconds;
+            //this.CurrentLapNumber = CurrentLapNumber;
+
         }
-
-        public void LapToJSON()
-        {
-
-            string fileName = @"..\..\..\Lap Files\TEST.json";
-            string json = JsonConvert.SerializeObject(this, Newtonsoft.Json.Formatting.Indented);
-            using StreamWriter sw = new StreamWriter(fileName);
-            sw.WriteLine(json);
-            sw.Close();
-        }
-
     }
 
 }

@@ -9,6 +9,7 @@ using ApexSpeedApp.MVVM.Model;
 using Newtonsoft.Json;
 using System.IO;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace ApexSpeedApp.MVVM.View
 {
@@ -21,10 +22,14 @@ namespace ApexSpeedApp.MVVM.View
 
 
         //JSON TESTING
-        List<ushort> SpeedList = new List<ushort>();
-        public LapSaveData LapSave = new LapSaveData();
+        List<LapSaveData> LapList = new List<LapSaveData>();
 
-
+        //Locals
+        public float _throttle;
+        public float _brake;
+        public float _gear;
+        public float _speed;
+        public float _lapDistance;
 
         public LiveAnalysisView()
         {
@@ -67,7 +72,7 @@ namespace ApexSpeedApp.MVVM.View
 
                     try
                     {
-
+                    
                         // Get UDP Packet Type
                         PacketType pt = CodemastersToolkit.GetPacketType(receiveBytes);
 
@@ -93,7 +98,11 @@ namespace ApexSpeedApp.MVVM.View
                             //Create new telemetry packet and load in the data
                             TelemetryPacket telPack = new TelemetryPacket();
                             telPack.LoadBytes(receiveBytes);
-                       
+
+                        _throttle = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2);
+                        _brake = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
+                        _gear = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear; ;
+                        _speed = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
 
                         // Delegate to avoid cross threading
                         Dispatcher.BeginInvoke(new Action(delegate
@@ -262,6 +271,8 @@ namespace ApexSpeedApp.MVVM.View
                         LapPacket lapPack = new LapPacket();
                         lapPack.LoadBytes(receiveBytes);
 
+                        _lapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
+
                         // Delegate to avoid cross threading
                         Dispatcher.BeginInvoke(new Action(delegate
                         {
@@ -292,16 +303,28 @@ namespace ApexSpeedApp.MVVM.View
                         }));
                     }
 
-                    // Begin Call Async Method
-                    receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
+                    LapList.Add(new LapSaveData(_throttle, _brake, (sbyte)_gear, (ushort)_speed, _lapDistance));
+
+                    string fileName = @"..\..\..\Lap Files\Test Lap2.json";
+                    string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
+                    using StreamWriter sw = new StreamWriter(fileName);
+                    sw.WriteLine(json);
+                    sw.Close();
+
+                    // Display error message
+                    MessageBox.Show("Error Message: " + "\n\n A proper lap!");
+
+                // Begin Call Async Method
+                receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
                 
             }
+            
         }
 
         // Stop listening for UDP Button
         private void UDPStopListenerButton_Click(object sender, RoutedEventArgs e)
         {
-            LapSave.LapToJSON();
+            //LapSave.LapToJSON();
         }
 
     }
