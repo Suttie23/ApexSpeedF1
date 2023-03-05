@@ -10,7 +10,7 @@
              d:DesignHeight="704.604" Width="1291">
 
     <UserControl.DataContext>
-        <model:GaugeModels/>
+        <model:LapSaveData/>
     </UserControl.DataContext>
 
 

@@ -28,6 +28,7 @@
 
   <ItemGroup>
     <Folder Include="Fonts\" />
+    <Folder Include="Lap Files\" />
   </ItemGroup>
 
   <ItemGroup>

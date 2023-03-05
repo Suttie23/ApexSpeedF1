@@ -6,6 +6,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using ApexSpeedApp.MVVM.Model;
+using Newtonsoft.Json;
+using System.IO;
+using System.Collections.Generic;
 
 namespace ApexSpeedApp.MVVM.View
 {
@@ -18,7 +21,7 @@ namespace ApexSpeedApp.MVVM.View
 
 
         //JSON TESTING
-        //List<ushort> SpeedList = new List<ushort>();
+        List<ushort> SpeedList = new List<ushort>();
         public LapSaveData LapSave = new LapSaveData();
 
 
@@ -26,8 +29,7 @@ namespace ApexSpeedApp.MVVM.View
         public LiveAnalysisView()
         {
             InitializeComponent();
-
-
+            
         }
 
         // UDP Listener button
@@ -91,16 +93,7 @@ namespace ApexSpeedApp.MVVM.View
                             //Create new telemetry packet and load in the data
                             TelemetryPacket telPack = new TelemetryPacket();
                             telPack.LoadBytes(receiveBytes);
-
-
-                        /* JSON TESTING
-                        SpeedList.Add(telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph);
-                        string fileName = @"C:\Users\Suttie\Desktop\TEST.json";
-                        string json = JsonConvert.SerializeObject(SpeedList, Newtonsoft.Json.Formatting.Indented);
-                        using StreamWriter sw = new StreamWriter(fileName);
-                        sw.WriteLine(json);
-                        sw.Close();
-                        */
+                       
 
                         // Delegate to avoid cross threading
                         Dispatcher.BeginInvoke(new Action(delegate
@@ -308,7 +301,7 @@ namespace ApexSpeedApp.MVVM.View
         // Stop listening for UDP Button
         private void UDPStopListenerButton_Click(object sender, RoutedEventArgs e)
         {
-
+            LapSave.LapToJSON();
         }
 
     }
