@@ -22,23 +22,24 @@ namespace ApexSpeedApp.MVVM.View
     public partial class LiveAnalysisView : UserControl
     {
 
+        private UdpClient receivingUdpClient;
 
         //JSON TESTING
         List<LapSaveData> LapList = new List<LapSaveData>();
 
-        // Globals
-        public float _throttle;
-        public float _brake;
-        public float _gear;
-        public float _speed;
-        public float _lapDistance;
-        public bool _validLap = false;
-        public bool _newLap = false;
+        // Vars
+        private float _throttle;
+        private float _brake;
+        private float _gear;
+        private float _speed;
+        private float _lapDistance;
+        private bool _validLap = false;
+        private bool _newLap = false;
 
         // For Lap DATA Folder creation
-        public string _folderTrack;
-        public string _folderDT;
-        public int _lapNo;
+        private string _folderTrack;
+        private string _folderDT;
+        private int _lapNo;
 
         public LiveAnalysisView()
         {
@@ -51,7 +52,7 @@ namespace ApexSpeedApp.MVVM.View
         {
 
             // Port 20777 (Default for F1 2021)
-            UdpClient receivingUdpClient = new(20777);
+            receivingUdpClient = new UdpClient(20777);
 
             // For Lap Data Folder Creation
             var formatInfo = new CultureInfo("en-US").DateTimeFormat;
@@ -60,22 +61,23 @@ namespace ApexSpeedApp.MVVM.View
             _folderDT = DateTime.Now.ToString("g", formatInfo);
             
 
-            // UDP Listener
-            try
-            {
+                // UDP Listener
+                try
+                {
 
-                // Begin asynchronous listening
-                receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
-                ListeningLabel.Content = "Listening...";
+                    // Begin asynchronous listening
+                    receivingUdpClient.BeginReceive(TelemetryReceiver, null);
+                    ListeningLabel.Content = "Listening...";
 
-            }
-            catch (Exception ex)
-            {
-                // Display error
-                //DebugBox.Text += ex.Message.ToString();
-                MessageBox.Show("Error Message: " + ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    // Display error
+                    //DebugBox.Text += ex.Message.ToString();
+                    MessageBox.Show("Error Message: " + ex.Message);
 
-            }
+                }
+
 
             // Async Result for listener
             void TelemetryReceiver(IAsyncResult res)
@@ -115,33 +117,33 @@ namespace ApexSpeedApp.MVVM.View
                             TelemetryPacket telPack = new TelemetryPacket();
                             telPack.LoadBytes(receiveBytes);
 
-                        _throttle = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2);
-                        _brake = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
-                        _gear = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear; ;
-                        _speed = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
+                            _throttle = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2);
+                            _brake = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
+                            _gear = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear; ;
+                            _speed = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
 
-                        // Delegate to avoid cross threading
-                        Dispatcher.BeginInvoke(new Action(delegate
-                            {
-                                // Update UI elements
-                                SpeedDisplay.Content = "MPH: " + telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
-                                ThrottleDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2); 
-                                BrakeDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
-                                GearDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear;
-                                RPMDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
+                            // Delegate to avoid cross threading
+                            Dispatcher.BeginInvoke(new Action(delegate
+                                {
+                                    // Update UI elements
+                                    SpeedDisplay.Content = "MPH: " + telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
+                                    ThrottleDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2); 
+                                    BrakeDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
+                                    GearDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear;
+                                    RPMDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
 
-                                // Gauge Databinding
-                                ThrotBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle.ToString();
-                                BrakeBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake.ToString();
-                                RPMBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm.ToString();
+                                    // Gauge Databinding
+                                    ThrotBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle.ToString();
+                                    BrakeBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake.ToString();
+                                    RPMBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm.ToString();
 
-                                // Tyre Temperatures
-                                TyreTempFrontLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontLeft;
-                                TyreTempFrontRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontRight;
-                                TyreTempRearLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearLeft;
-                                TyreTempRearRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearRight;
+                                    // Tyre Temperatures
+                                    TyreTempFrontLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontLeft;
+                                    TyreTempFrontRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontRight;
+                                    TyreTempRearLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearLeft;
+                                    TyreTempRearRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearRight;
 
-                            }));
+                                }));
 
                         // IF DRS is active
                         if (telPack.FieldTelemetryData[telPack.PlayerCarIndex].DrsActive == true)
@@ -314,7 +316,7 @@ namespace ApexSpeedApp.MVVM.View
                         SessionPacket lobPack = new SessionPacket();
                         lobPack.LoadBytes(receiveBytes);
 
-                        _folderTrack = lobPack.SessionTrack.ToString();
+                        _folderTrack = lobPack.SessionTrack.ToString(); 
 
                         
                     }
@@ -360,8 +362,9 @@ namespace ApexSpeedApp.MVVM.View
 
                 _validLap = false;
 
-                // Begin Call Async Method
-                receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
+                    // Begin Call Async Method
+                    receivingUdpClient.BeginReceive(TelemetryReceiver, null);
+
                 
             }
             
@@ -370,7 +373,9 @@ namespace ApexSpeedApp.MVVM.View
         // Stop listening for UDP Button
         private void UDPStopListenerButton_Click(object sender, RoutedEventArgs e)
         {
-            //LapSave.LapToJSON();
+            receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
+            receivingUdpClient.Close();
+            
         }
 
     }
