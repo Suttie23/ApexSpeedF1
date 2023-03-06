@@ -11,6 +11,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Security.Cryptography.Pkcs;
+using System.Globalization;
 
 namespace ApexSpeedApp.MVVM.View
 {
@@ -25,13 +26,17 @@ namespace ApexSpeedApp.MVVM.View
         //JSON TESTING
         List<LapSaveData> LapList = new List<LapSaveData>();
 
-        //Locals
+        // Globals
         public float _throttle;
         public float _brake;
         public float _gear;
         public float _speed;
         public float _lapDistance;
         public bool _newLap = false;
+
+        // For Lap DATA Folder creation
+        public string _folderTrack;
+        public string _folderDT;
         public int _lapNo;
 
         public LiveAnalysisView()
@@ -46,6 +51,13 @@ namespace ApexSpeedApp.MVVM.View
 
             // Port 20777 (Default for F1 2021)
             UdpClient receivingUdpClient = new(20777);
+
+            // For Lap Data Folder Creation
+            var formatInfo = new CultureInfo("en-US").DateTimeFormat;
+            formatInfo.DateSeparator = "-";
+            formatInfo.TimeSeparator = ".";
+            _folderDT = DateTime.Now.ToString("g", formatInfo);
+            
 
             // UDP Listener
             try
@@ -296,6 +308,16 @@ namespace ApexSpeedApp.MVVM.View
 
                     }
 
+                    if (pt == PacketType.Session)
+                    {
+                        SessionPacket lobPack = new SessionPacket();
+                        lobPack.LoadBytes(receiveBytes);
+
+                        _folderTrack = lobPack.SessionTrack.ToString();
+
+                        
+                    }
+
                 }
                     // Catch error if UDP cannot be read
                     catch (Exception e)
@@ -317,7 +339,14 @@ namespace ApexSpeedApp.MVVM.View
 
                     LapList.Add(new LapSaveData(_throttle, _brake, (sbyte)_gear, (ushort)_speed, _lapDistance));
 
-                    string fileName = @"..\..\..\Lap Files\Lap " +_lapNo+ ".json";
+                    string fileName = @"..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + _lapNo + ".json";
+
+                    FileInfo fi = new FileInfo(fileName);
+                    if (!fi.Directory.Exists)
+                    {
+                        System.IO.Directory.CreateDirectory(fi.DirectoryName);
+                    }
+
                     string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
                     using StreamWriter sw = new StreamWriter(fileName);
                     sw.WriteLine(json);
