@@ -32,6 +32,7 @@ namespace ApexSpeedApp.MVVM.View
         public float _gear;
         public float _speed;
         public float _lapDistance;
+        public bool _validLap = false;
         public bool _newLap = false;
 
         // For Lap DATA Folder creation
@@ -286,9 +287,9 @@ namespace ApexSpeedApp.MVVM.View
                         LapPacket lapPack = new LapPacket();
                         lapPack.LoadBytes(receiveBytes);
 
-                        if (lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapTimeMilliseconds >= 0.1)
+                        if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance > 0)
                         {
-                            _newLap = true;
+                            _validLap = true;
                         }
 
                         _lapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
@@ -334,19 +335,22 @@ namespace ApexSpeedApp.MVVM.View
                         }));
                     }
 
-                if(_newLap == true)
+                // If starting a new lap
+                if(_validLap == true)
                 {
-
+                    // Add telemetry to list
                     LapList.Add(new LapSaveData(_throttle, _brake, (sbyte)_gear, (ushort)_speed, _lapDistance));
 
                     string fileName = @"..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + _lapNo + ".json";
 
+                    // Create directory
                     FileInfo fi = new FileInfo(fileName);
                     if (!fi.Directory.Exists)
                     {
                         System.IO.Directory.CreateDirectory(fi.DirectoryName);
                     }
 
+                    // Write LapList to JSON
                     string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
                     using StreamWriter sw = new StreamWriter(fileName);
                     sw.WriteLine(json);
@@ -354,7 +358,7 @@ namespace ApexSpeedApp.MVVM.View
                     
                 }
 
-                _newLap = false;
+                _validLap = false;
 
                 // Begin Call Async Method
                 receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
