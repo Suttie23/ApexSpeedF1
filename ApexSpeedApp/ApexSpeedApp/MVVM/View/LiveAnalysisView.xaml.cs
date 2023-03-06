@@ -44,7 +44,7 @@ namespace ApexSpeedApp.MVVM.View
         public LiveAnalysisView()
         {
             InitializeComponent();
-            
+
         }
 
         // UDP Listener button
@@ -59,24 +59,23 @@ namespace ApexSpeedApp.MVVM.View
             formatInfo.DateSeparator = "-";
             formatInfo.TimeSeparator = ".";
             _folderDT = DateTime.Now.ToString("g", formatInfo);
-            
 
-                // UDP Listener
-                try
-                {
 
-                    // Begin asynchronous listening
-                    receivingUdpClient.BeginReceive(TelemetryReceiver, null);
-                    ListeningLabel.Content = "Listening...";
+            // UDP Listener
+            try
+            {
 
-                }
-                catch (Exception ex)
-                {
-                    // Display error
-                    //DebugBox.Text += ex.Message.ToString();
-                    MessageBox.Show("Error Message: " + ex.Message);
+                // Begin asynchronous listening
+                receivingUdpClient.BeginReceive(TelemetryReceiver, null);
+                ListeningLabel.Content = "Listening...";
 
-                }
+            }
+            catch (Exception ex)
+            {
+                // Display error
+                MessageBox.Show("Error Message: " + ex.Message);
+
+            }
 
 
             // Async Result for listener
@@ -85,65 +84,68 @@ namespace ApexSpeedApp.MVVM.View
                 // Remote host IP
                 IPEndPoint RemoteIpEndPoint = new(IPAddress.Any, 0);
 
-                    // Return UDP datagram
-                    byte[] receiveBytes = receivingUdpClient.Receive(ref RemoteIpEndPoint);
+                if (receivingUdpClient.Client == null)
+                    return;
 
-                    try
+                // Return UDP datagram
+                byte[] receiveBytes = receivingUdpClient.EndReceive(res, ref RemoteIpEndPoint);
+
+                try
+                {
+
+                    // Get UDP Packet Type
+                    PacketType pt = CodemastersToolkit.GetPacketType(receiveBytes);
+
+                    // Create new packet and load in the data
+                    Packet pa = new Packet();
+                    pa.LoadBytes(receiveBytes);
+
+                    // Ensure the game is running the 2021 UDP format
+                    if (pa.PacketFormat == 2021)
                     {
-                    
-                        // Get UDP Packet Type
-                        PacketType pt = CodemastersToolkit.GetPacketType(receiveBytes);
-
-                        // Create new packet and load in the data
-                        Packet pa = new Packet();
-                        pa.LoadBytes(receiveBytes);
-
-                        // Ensure the game is running the 2021 UDP format
-                        if (pa.PacketFormat == 2021)
+                        // Delegate to avoid cross threading
+                        Dispatcher.BeginInvoke(new Action(delegate
                         {
-                            // Delegate to avoid cross threading
-                            Dispatcher.BeginInvoke(new Action(delegate
+                            // Update UI to show UDP format
+                            ListenerTestLabel.Content = "UDP Format: " + pa.PacketFormat.ToString() + " Detected";
+
+                        }));
+                    }
+
+                    // IF Car Telemetry Packet
+                    if (pt == PacketType.CarTelemetry)
+                    {
+                        //Create new telemetry packet and load in the data
+                        TelemetryPacket telPack = new TelemetryPacket();
+                        telPack.LoadBytes(receiveBytes);
+
+                        _throttle = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2);
+                        _brake = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
+                        _gear = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear; ;
+                        _speed = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
+
+                        // Delegate to avoid cross threading
+                        Dispatcher.BeginInvoke(new Action(delegate
                             {
-                                // Update UI to show UDP format
-                                ListenerTestLabel.Content = "UDP Format: " + pa.PacketFormat.ToString() + " Detected";
+                                // Update UI elements
+                                SpeedDisplay.Content = "MPH: " + telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
+                                ThrottleDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2);
+                                BrakeDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
+                                GearDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear;
+                                RPMDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
+
+                                // Gauge Databinding
+                                ThrotBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle.ToString();
+                                BrakeBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake.ToString();
+                                RPMBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm.ToString();
+
+                                // Tyre Temperatures
+                                TyreTempFrontLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontLeft;
+                                TyreTempFrontRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontRight;
+                                TyreTempRearLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearLeft;
+                                TyreTempRearRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearRight;
 
                             }));
-                        }
-
-                        // IF Car Telemetry Packet
-                        if (pt == PacketType.CarTelemetry)
-                        {
-                            //Create new telemetry packet and load in the data
-                            TelemetryPacket telPack = new TelemetryPacket();
-                            telPack.LoadBytes(receiveBytes);
-
-                            _throttle = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2);
-                            _brake = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
-                            _gear = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear; ;
-                            _speed = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
-
-                            // Delegate to avoid cross threading
-                            Dispatcher.BeginInvoke(new Action(delegate
-                                {
-                                    // Update UI elements
-                                    SpeedDisplay.Content = "MPH: " + telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
-                                    ThrottleDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2); 
-                                    BrakeDisplay.Content = Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
-                                    GearDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear;
-                                    RPMDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
-
-                                    // Gauge Databinding
-                                    ThrotBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle.ToString();
-                                    BrakeBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake.ToString();
-                                    RPMBindBox.Text = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm.ToString();
-
-                                    // Tyre Temperatures
-                                    TyreTempFrontLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontLeft;
-                                    TyreTempFrontRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontRight;
-                                    TyreTempRearLeftDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearLeft;
-                                    TyreTempRearRightDisplay.Content = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearRight;
-
-                                }));
 
                         // IF DRS is active
                         if (telPack.FieldTelemetryData[telPack.PlayerCarIndex].DrsActive == true)
@@ -154,7 +156,7 @@ namespace ApexSpeedApp.MVVM.View
                                 // Change UI accordingly
                                 DRSToggleDisplay.Foreground = System.Windows.Media.Brushes.YellowGreen;
                             }));
-               
+
                         }
                         else
                         {
@@ -164,11 +166,11 @@ namespace ApexSpeedApp.MVVM.View
                                 // Change UI accordingly
                                 DRSToggleDisplay.Foreground = System.Windows.Media.Brushes.White;
                             }));
-                            
+
                         }
 
-                    }   
-                   
+                    }
+
                     // IF Car CarStatus Packet
                     if (pt == PacketType.CarStatus)
                     {
@@ -181,59 +183,59 @@ namespace ApexSpeedApp.MVVM.View
                         {
                             // Update UI
                             FuelDisplay.Content = "FUEL: " + Math.Round(statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelLevel, 2);
-                            FuelDLapsRemainingDisplay.Content = "Laps Of Fuel: " + statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelRemainingLaps;                            
+                            FuelDLapsRemainingDisplay.Content = "Laps Of Fuel: " + statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelRemainingLaps;
 
                         }));
 
                         //Determine Tyre Compound and update UI
                         switch (statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].EquippedVisualTyreCompoundId)
-                            {
-                                case 18:
-                                    // Hard
-                                    Dispatcher.BeginInvoke(new Action(delegate
-                                    {
+                        {
+                            case 18:
+                                // Hard
+                                Dispatcher.BeginInvoke(new Action(delegate
+                                {
 
-                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Hard Tyre.png", UriKind.Relative));
+                                    TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Hard Tyre.png", UriKind.Relative));
 
-                                    }));
-                                    break;
-                                case 16:
-                                    // Soft
-                                    Dispatcher.BeginInvoke(new Action(delegate
-                                    {
+                                }));
+                                break;
+                            case 16:
+                                // Soft
+                                Dispatcher.BeginInvoke(new Action(delegate
+                                {
 
-                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Soft Tyre.png", UriKind.Relative));
+                                    TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Soft Tyre.png", UriKind.Relative));
 
-                                    }));
-                                    break;
-                                case 17:
-                                    // Medium
-                                    Dispatcher.BeginInvoke(new Action(delegate
-                                    {
+                                }));
+                                break;
+                            case 17:
+                                // Medium
+                                Dispatcher.BeginInvoke(new Action(delegate
+                                {
 
-                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Medium Tyre.png", UriKind.Relative));
+                                    TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Medium Tyre.png", UriKind.Relative));
 
-                                    }));
-                                    break;
-                                case 7:
-                                    // Intermediate
-                                    Dispatcher.BeginInvoke(new Action(delegate
-                                    {
+                                }));
+                                break;
+                            case 7:
+                                // Intermediate
+                                Dispatcher.BeginInvoke(new Action(delegate
+                                {
 
-                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Intermediate Tyre.png", UriKind.Relative));
+                                    TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Intermediate Tyre.png", UriKind.Relative));
 
-                                    }));
-                                    break;
-                                case 8:
-                                    // Wet
-                                    Dispatcher.BeginInvoke(new Action(delegate
-                                    {
+                                }));
+                                break;
+                            case 8:
+                                // Wet
+                                Dispatcher.BeginInvoke(new Action(delegate
+                                {
 
-                                        TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Wet Tyre.png", UriKind.Relative));
+                                    TyreCompoundImage.Source = new BitmapImage(new Uri("/Images/Wet Tyre.png", UriKind.Relative));
 
-                                    }));
-                                    break;
-                            }
+                                }));
+                                break;
+                        }
 
                         // Determine ERS Status
                         string Overtake = statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString();
@@ -247,7 +249,8 @@ namespace ApexSpeedApp.MVVM.View
 
 
                             }));
-                        }else
+                        }
+                        else
                         {
                             // Delegate to avoid cross threading
                             Dispatcher.BeginInvoke(new Action(delegate
@@ -256,31 +259,31 @@ namespace ApexSpeedApp.MVVM.View
                                 ERSToggleDisplay.Foreground = System.Windows.Media.Brushes.YellowGreen;
                             }));
                         }
-                        
+
 
 
                     }
 
-                        // IF Car CarDamage Packet
-                        if (pt == PacketType.CarDamage)
+                    // IF Car CarDamage Packet
+                    if (pt == PacketType.CarDamage)
+                    {
+                        //Create new damage packet and load in the data
+                        CarDamagePacket damPack = new CarDamagePacket();
+                        damPack.LoadBytes(receiveBytes);
+
+                        // Delegate to avoid cross threading
+                        Dispatcher.BeginInvoke(new Action(delegate
                         {
-                            //Create new damage packet and load in the data
-                            CarDamagePacket damPack = new CarDamagePacket();
-                            damPack.LoadBytes(receiveBytes);
+                            // Update UI
 
-                            // Delegate to avoid cross threading
-                            Dispatcher.BeginInvoke(new Action(delegate
-                            {
-                                // Update UI
+                            // Tyre Wear
+                            TyreWearFrontLeftDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontLeft, 0);
+                            TyreWearFrontRightDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontRight, 0);
+                            TyreWearRearLeftDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearLeft, 0);
+                            TyreWearRearRightDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearRight, 0);
+                        }));
 
-                                // Tyre Wear
-                                TyreWearFrontLeftDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontLeft, 0);
-                                TyreWearFrontRightDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.FrontRight, 0);
-                                TyreWearRearLeftDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearLeft, 0);
-                                TyreWearRearRightDisplay.Content = Math.Round(damPack.FieldCarDamageData[damPack.PlayerCarIndex].TyreWear.RearRight, 0);
-                            }));
-
-                        }
+                    }
 
                     // IF Lap Packet
                     if (pt == PacketType.Lap)
@@ -307,7 +310,7 @@ namespace ApexSpeedApp.MVVM.View
                             LapNoDisplay.Content = "Lap: " + lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapNumber;
                         }));
 
-                        
+
 
                     }
 
@@ -316,66 +319,115 @@ namespace ApexSpeedApp.MVVM.View
                         SessionPacket lobPack = new SessionPacket();
                         lobPack.LoadBytes(receiveBytes);
 
-                        _folderTrack = lobPack.SessionTrack.ToString(); 
+                        _folderTrack = lobPack.SessionTrack.ToString();
 
-                        
+
                     }
 
-                }
-                    // Catch error if UDP cannot be read
-                    catch (Exception e)
+                    // If starting a new lap
+                    if (_validLap == true)
                     {
-                        // Display error message
-                        MessageBox.Show("Error Message: " + e.Message + "\n\nIt is likely that your  UDP Format is not set to to 2021, change this by going to (Settings > Telemetry Settings > UDP Format > 2021) in your F1 game!", "UDP Format Error!");
+                        // Add telemetry to list
+                        LapList.Add(new LapSaveData(_throttle, _brake, (sbyte)_gear, (ushort)_speed, _lapDistance));
 
-                        // Exit the application if there is a version mismatch!
-                        Dispatcher.BeginInvoke(new Action(delegate
+                        string fileName = @"..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + _lapNo + ".json";
+
+                        // Create directory
+                        FileInfo fi = new FileInfo(fileName);
+                        if (!fi.Directory.Exists)
                         {
+                            System.IO.Directory.CreateDirectory(fi.DirectoryName);
+                        }
 
-                            System.Windows.Application.Current.Shutdown();
+                        // Write LapList to JSON
+                        string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
+                        using StreamWriter sw = new StreamWriter(fileName);
+                        sw.WriteLine(json);
+                        sw.Close();
 
-                        }));
                     }
 
-                // If starting a new lap
-                if(_validLap == true)
-                {
-                    // Add telemetry to list
-                    LapList.Add(new LapSaveData(_throttle, _brake, (sbyte)_gear, (ushort)_speed, _lapDistance));
 
-                    string fileName = @"..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + _lapNo + ".json";
-
-                    // Create directory
-                    FileInfo fi = new FileInfo(fileName);
-                    if (!fi.Directory.Exists)
-                    {
-                        System.IO.Directory.CreateDirectory(fi.DirectoryName);
-                    }
-
-                    // Write LapList to JSON
-                    string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
-                    using StreamWriter sw = new StreamWriter(fileName);
-                    sw.WriteLine(json);
-                    sw.Close();
-                    
-                }
-
-                _validLap = false;
+                    _validLap = false;
 
                     // Begin Call Async Method
                     receivingUdpClient.BeginReceive(TelemetryReceiver, null);
 
-                
+                }
+                // Catch error if UDP cannot be read
+                catch (Exception e)
+                {
+
+
+                    if (e is ObjectDisposedException || e is SocketException)
+                    {
+                        return;
+                    }
+                    throw;
+
+                    /*
+                    // Display error message
+                    MessageBox.Show("Error Message: " + e.Message + "\n\nIt is likely that your  UDP Format is not set to to 2021, change this by going to (Settings > Telemetry Settings > UDP Format > 2021) in your F1 game!", "UDP Format Error!");
+
+                    // Exit the application if there is a version mismatch!
+                    Dispatcher.BeginInvoke(new Action(delegate
+                    {
+
+                        System.Windows.Application.Current.Shutdown();
+
+                    }));
+                    */
+                }
+
+
             }
-            
+
         }
 
         // Stop listening for UDP Button
         private void UDPStopListenerButton_Click(object sender, RoutedEventArgs e)
         {
-            receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
-            receivingUdpClient.Close();
-            
+
+            Dispatcher.BeginInvoke(new Action(delegate
+            {
+                // Close Connection
+                receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
+                receivingUdpClient.Close();
+       
+                // Reset UI
+                ListeningLabel.Content = "Not Listening...";
+                ListenerTestLabel.Content = "UDP Format: N/A Detected";
+                SpeedDisplay.Content = "MPH: 0";
+                GearDisplay.Content = 0;
+                ThrottleDisplay.Content = 0;
+                BrakeDisplay.Content = 0;
+                RPMDisplay.Content = 0;
+                ThrotBindBox.Text = "0";
+                BrakeBindBox.Text = "0";
+                RPMBindBox.Text = "0";
+                TyreTempFrontLeftDisplay.Content = "0";
+                TyreTempFrontRightDisplay.Content = "0";
+                TyreTempRearLeftDisplay.Content = "0";
+                TyreTempRearRightDisplay.Content = "0";
+                CurrentLapDisplay.Content = 00;
+                PreviousLapDisplay.Content = 00;
+                Sector1Display.Content = "Sector 1: ";
+                Sector2Display.Content = "Sector 2: ";
+                LapNoDisplay.Content = "Lap: ";
+                FuelDisplay.Content = "FUEL: 0";
+                FuelDLapsRemainingDisplay.Content = "Laps Of Fuel: 0";
+                ThrotBindBox.Text = "0";
+                BrakeBindBox.Text = "0";
+                RPMBindBox.Text = "0";
+                TyreWearFrontLeftDisplay.Content = 0;
+                TyreWearFrontRightDisplay.Content = 0;
+                TyreWearRearLeftDisplay.Content = 0;
+                TyreWearRearRightDisplay.Content = 0;
+                ERSToggleDisplay.Foreground = System.Windows.Media.Brushes.White;
+                DRSToggleDisplay.Foreground = System.Windows.Media.Brushes.White;
+
+            }));
+
         }
 
     }
