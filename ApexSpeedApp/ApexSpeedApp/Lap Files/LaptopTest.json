@@ -1,0 +1,7454 @@
+[
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 165,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2.2312694,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 166,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 9.750754,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 167,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 17.367289,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 167,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 25.679996,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 168,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 37.17114,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 169,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 45.442913,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 169,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 52.679703,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 170,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 60.909084,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 170,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 69.09777,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 171,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 73.00335,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 171,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 80.84469,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 172,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 88.939285,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 172,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 97.09694,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 172,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 104.841576,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 117.62941,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 125.68281,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 129.47464,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 137.80034,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 141.78183,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 153.88596,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 174,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 162.00977,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 174,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 170.07507,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 175,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 178.16675,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 175,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 186.23148,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 175,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 190.28148,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 175,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 203.078,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 175,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 211.34866,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 176,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 219.39482,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 176,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 227.46323,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 176,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 231.55634,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 176,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 239.72806,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 247.77505,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 255.81409,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 264.20645,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 267.55225,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 276.37292,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 284.4688,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 292.97437,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 301.2523,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 314.10522,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 322.3523,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 330.32486,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 337.9763,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 346.83594,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 350.0506,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 358.92358,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 179,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 367.30038,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 179,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 375.5034,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 179,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 383.7545,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 179,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 396.35486,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 179,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 404.54788,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 412.8294,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 421.07,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 433.86273,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 442.40692,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 450.94705,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 459.1779,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 467.80246,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 471.57135,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 480.4234,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 488.5309,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 181,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 496.72754,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 181,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 505.02704,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 181,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 517.4519,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 181,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 525.7948,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 181,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 534.41327,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 181,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 542.8294,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 550.9318,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 555.46967,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 563.87225,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 572.30225,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 581.0314,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 589.2625,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 593.0787,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 601.5331,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 610.2916,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 614.2543,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 627.04095,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 639.70856,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 648.06934,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 656.51385,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 664.9282,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 673.1218,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 677.6345,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 685.79626,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 694.3176,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 702.8125,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 711.45245,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 715.39526,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 724.67523,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 733.0239,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.96,
+    "Brake": 0.0,
+    "Gear": 8,
+    "SpeedMph": 183,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 737.02234,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.19,
+    "Brake": 1.0,
+    "Gear": 8,
+    "SpeedMph": 181,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 760.4681,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 5,
+    "SpeedMph": 150,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 763.936,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 5,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 770.5442,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 773.6758,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 131,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 779.55914,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 123,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 782.36755,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 118,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 794.78094,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.86,
+    "Gear": 3,
+    "SpeedMph": 99,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 797.1465,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 98,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 801.5048,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 805.9589,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 808.03613,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 814.5133,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 93,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 816.48083,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.19,
+    "Gear": 3,
+    "SpeedMph": 93,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 818.5393,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.91,
+    "Gear": 3,
+    "SpeedMph": 90,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 824.83374,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 831.2085,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 84,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 835.51636,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 839.8602,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.18,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 843.99225,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.35,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 848.3819,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.39,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 84,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 850.5208,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.38,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 854.96423,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.45,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 857.37115,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.62,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 861.7543,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.58,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 88,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 866.3162,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.59,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 90,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 872.9241,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.69,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 91,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 877.4374,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.72,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 93,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 884.05927,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.74,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 886.3787,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.76,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 890.76746,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.94,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 98,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 893.18054,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 99,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 895.376,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 101,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 900.4252,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 103,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 902.9674,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 105,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 905.44836,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 907.80444,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 913.0651,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 923.5569,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.38,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 928.7839,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.36,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 933.9903,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.36,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 939.3715,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.36,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 941.996,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.38,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 946.7543,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.41,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 951.99,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.43,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 954.55566,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.51,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 959.52203,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.77,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 964.6344,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.77,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 969.30707,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.77,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 971.86755,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.78,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 976.8208,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.82,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 981.5045,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.92,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 986.3895,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.99,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 996.411,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1001.6336,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1006.1986,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1011.36884,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1016.2295,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1024.1367,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1026.7426,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 113,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1031.9303,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 116,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1037.2302,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 118,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1040.0001,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 119,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1048.2358,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 122,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1050.9924,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 123,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1057.0314,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 125,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1059.9143,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 125,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1065.8738,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 127,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1071.974,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 128,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1077.9432,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 130,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1084.1694,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 131,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1093.6147,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.89,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1096.8698,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1099.8815,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.74,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1106.3962,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.8,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 135,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1112.695,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.8,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1119.2302,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.79,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1125.4197,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.78,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1135.2014,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.83,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 138,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1142.2485,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.82,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1149.0063,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.55,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1152.3848,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.44,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1158.85,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.41,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 138,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1162.3512,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.4,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 138,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1165.2598,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.38,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1172.0856,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.31,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1178.6984,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.31,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1184.8054,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.33,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 135,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1191.1924,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.35,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1194.4178,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.35,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1200.7874,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.36,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 133,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1207.0035,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.37,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 132,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1213.2003,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.38,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 132,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1219.3564,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.4,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 132,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1228.3516,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.46,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 131,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1237.5504,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.58,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 131,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1243.4691,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.8,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 131,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1249.3865,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 132,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1258.5022,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 135,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1264.6566,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1270.8058,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1277.0176,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1280.3394,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1286.5586,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 141,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1293.0074,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1296.2947,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1306.2411,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1309.4854,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1315.8312,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1319.1562,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1326.0154,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 147,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1336.0535,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 149,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1342.92,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 150,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1349.6229,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 151,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1359.866,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 153,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1367.3195,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 154,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1370.5785,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 154,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1374.488,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 155,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1388.6414,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 156,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1392.142,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 157,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1399.9266,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 158,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1403.174,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 158,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1414.3848,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 159,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1421.8369,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 160,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1425.3048,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 160,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1432.9165,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 162,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1440.158,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 162,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1443.577,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 162,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1447.205,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 162,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1458.8574,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 163,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1465.8241,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 164,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1477.4587,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 165,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1484.8269,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 165,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1504.235,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 167,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1507.9935,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 167,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1515.6406,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 168,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1523.1849,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 169,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1535.0798,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 169,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1543.0302,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 170,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1550.7855,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 170,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1558.9009,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 170,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1570.9786,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 171,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1578.8329,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 172,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1586.8369,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 172,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1594.88,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 172,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1602.6732,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1606.7372,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1610.6608,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.43,
+    "Brake": 0.54,
+    "Gear": 7,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1618.3636,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 7,
+    "SpeedMph": 163,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1622.1378,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 6,
+    "SpeedMph": 157,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1625.5476,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 6,
+    "SpeedMph": 153,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1629.085,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 6,
+    "SpeedMph": 148,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1639.2169,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1650.8408,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 116,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1653.6632,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.38,
+    "Gear": 4,
+    "SpeedMph": 113,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1656.1703,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1658.7921,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1663.6294,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 110,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1665.9078,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 109,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1668.6276,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 109,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1673.5206,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1675.8496,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1682.8938,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.76,
+    "Gear": 4,
+    "SpeedMph": 99,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1685.0621,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.1,
+    "Gear": 4,
+    "SpeedMph": 97,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1691.7147,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1696.4065,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1700.8212,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 94,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1705.3463,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 93,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1709.7299,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 91,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1711.7733,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 91,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1716.2722,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 90,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1720.636,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 89,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1724.8788,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 88,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1728.9703,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 87,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1735.0046,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1738.9664,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1743.0233,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.38,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 84,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1747.0066,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.45,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1751.0663,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.53,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1755.098,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.68,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 87,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1759.1102,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.71,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 89,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1763.4972,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.73,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 91,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1767.7152,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.73,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 92,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1776.2142,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.78,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1780.5803,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.83,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1785.0438,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.85,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 98,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1789.4808,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.89,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 100,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1796.4648,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.95,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 103,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1801.2195,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.96,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 104,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1803.5402,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.98,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 105,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1810.863,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1815.859,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1818.4769,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 113,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1823.6919,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 114,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1828.9547,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 116,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1834.2349,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 118,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1839.8364,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 120,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1842.3547,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 121,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1856.4554,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 125,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1865.1414,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 128,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1873.548,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 131,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1879.4379,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 132,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1885.3634,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1891.6719,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 135,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1897.6029,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1900.7961,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1907.017,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1913.6083,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 140,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1916.5016,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 141,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1923.0912,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1926.213,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1929.4407,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 143,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1936.1454,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1942.8002,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1949.859,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 147,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1953.0515,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 147,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1959.7714,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 149,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1963.0061,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 149,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1970.2875,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 150,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1976.5669,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 152,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1980.6537,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 152,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1987.64,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 154,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1990.9493,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 154,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1994.5643,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 155,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 1997.9274,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 155,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2005.1378,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 156,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2012.2933,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 157,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2015.6987,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 157,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2019.4009,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.61,
+    "Brake": 1.0,
+    "Gear": 6,
+    "SpeedMph": 155,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2022.7739,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 6,
+    "SpeedMph": 151,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2026.369,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 6,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2029.6211,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 5,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2047.413,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.02,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 115,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2050.2258,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2052.6226,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.02,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2055.141,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 103,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2059.5361,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2067.5908,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 2,
+    "SpeedMph": 81,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2069.4648,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 2,
+    "SpeedMph": 78,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2071.2324,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.2,
+    "Gear": 2,
+    "SpeedMph": 75,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2074.551,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 74,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2076.1855,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 74,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2079.7043,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2081.402,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2084.6306,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 72,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2089.7065,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 72,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2092.9426,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 2,
+    "SpeedMph": 69,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2097.5012,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 65,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2100.594,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 64,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2103.7747,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 63,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2107.015,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 62,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2108.5986,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 62,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2111.801,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 62,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2114.9602,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 61,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2118.0088,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 60,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2121.1921,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 60,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2126.0134,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 59,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2129.1472,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 59,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2132.2986,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.07,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 58,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2135.3835,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.12,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 58,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2139.9585,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.31,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 59,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2143.1963,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.42,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 60,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2146.6006,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.43,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 62,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2150.213,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.46,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 64,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2153.7092,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.49,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 66,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2155.479,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.5,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 67,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2157.0999,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.51,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 68,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2160.549,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.54,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 70,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2164.3066,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.59,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 72,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2167.9937,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.61,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 74,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2171.4348,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.62,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 76,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2173.3533,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.62,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 77,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2176.6528,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.63,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 79,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2180.4402,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.66,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 81,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2184.0964,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.7,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 82,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2189.8677,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 84,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2191.885,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2197.7388,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2201.5007,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2207.6587,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2209.653,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2211.819,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2215.8906,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 89,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2220.0542,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 92,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2226.777,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 98,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2231.303,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 101,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2235.9702,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 104,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2240.9539,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2245.8425,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2248.466,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2256.059,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2261.0774,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 110,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2263.3984,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 112,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2274.0715,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 118,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2277.0654,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 120,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2279.6296,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 121,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2282.3735,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 123,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2288.0374,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 125,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2291.093,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 126,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2293.877,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 127,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2312.135,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2318.2524,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2321.4617,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2328.1965,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2330.895,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 140,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2337.4211,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2340.6768,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 143,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2347.3145,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2350.805,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2353.886,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2357.4785,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2370.5596,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 149,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2377.8394,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 151,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2380.9622,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 152,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2388.3516,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 153,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2399.0784,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 155,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2406.0986,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 155,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2413.55,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 157,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2424.456,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 158,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2428.3594,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 159,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2435.5938,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 159,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2446.755,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 160,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2457.7583,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 162,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2461.5903,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.95,
+    "Gear": 6,
+    "SpeedMph": 161,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2465.0596,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.33,
+    "Brake": 1.0,
+    "Gear": 6,
+    "SpeedMph": 157,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2472.2786,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 6,
+    "SpeedMph": 147,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2487.7375,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 124,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2490.6616,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 120,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2493.024,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 116,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2498.247,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2503.1008,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 102,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2508.2104,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 101,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2512.8918,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 100,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2517.3218,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 98,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2523.7966,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2526.0898,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.18,
+    "Gear": 4,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2528.1265,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 93,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2534.29,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 87,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2538.5796,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2542.9585,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2549.3486,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.13,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2553.436,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.03,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 84,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2557.8748,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.25,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2562.6487,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.29,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2569.2932,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 84,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2571.4731,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.9,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2575.8665,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 88,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2580.6716,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 89,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2587.2322,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 91,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2589.322,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 92,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2593.607,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 94,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2600.4844,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 98,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2602.805,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 99,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2609.7827,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 104,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2614.6953,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 107,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2619.7473,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2622.5544,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 112,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2627.9238,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 115,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2633.4534,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 118,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2639.4844,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 121,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2651.4976,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 124,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2654.6238,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 126,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2657.6455,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 127,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2669.5576,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 131,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2672.6733,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 132,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2681.1257,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 135,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2694.6716,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2697.5598,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 140,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2703.9888,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2710.3003,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 143,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2713.9697,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 143,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2717.0266,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2720.5337,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2727.039,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 143,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2730.197,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 143,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2736.5918,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2740.448,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 145,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2743.3005,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2750.2017,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 147,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2774.2532,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 152,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2781.0894,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 152,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2788.497,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 154,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2795.5925,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 155,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2802.8123,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 155,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2806.366,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 156,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2813.8196,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 157,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2824.577,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 149,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2834.9302,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2841.5464,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2848.2493,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2854.5586,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 140,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2860.7478,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 138,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2864.1816,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2870.662,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 135,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2877.2358,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.31,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 133,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2880.0732,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.56,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 133,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2886.6514,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 133,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2893.025,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2896.134,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.66,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2902.801,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.72,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2909.662,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.8,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2915.7288,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.88,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 135,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2922.461,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.94,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2925.7922,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.97,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2932.5645,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 138,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2939.15,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2945.2915,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 140,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2952.3657,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 141,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2955.9944,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2959.16,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2962.8025,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 143,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2969.4822,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2976.129,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 146,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2982.761,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 147,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2989.407,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 147,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2992.9585,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 148,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 2999.5527,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 149,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3009.973,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 150,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3017.021,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 152,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3024.243,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 153,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3027.699,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 154,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3035.0183,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 154,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3041.8857,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 155,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3049.1328,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 157,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3055.9314,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 157,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3059.9675,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 158,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3063.8374,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 159,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3067.42,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 159,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3074.6116,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 160,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3082.0344,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 161,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3085.5356,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 161,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3093.4958,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 162,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3101.087,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 163,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3108.012,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 164,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3123.6838,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 166,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3139.2007,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 168,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3147.052,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 169,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3154.9565,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 170,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3162.4863,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 170,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3170.7148,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 171,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3178.629,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 172,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3186.5176,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3194.7498,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 173,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3202.7012,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 174,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3214.4968,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 175,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3222.853,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 175,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3230.557,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 176,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3238.7046,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3247.2153,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3251.4194,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3259.6843,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3267.8047,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 178,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3276.2173,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 179,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3284.5857,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3296.9746,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 180,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3305.3982,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 181,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3313.7766,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 181,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3322.089,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3330.2737,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3334.5457,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3343.1711,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 182,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3352.0767,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 183,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3360.2861,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 183,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3368.5933,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 7,
+    "SpeedMph": 183,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3377.0278,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 7,
+    "SpeedMph": 177,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3381.2717,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 6,
+    "SpeedMph": 171,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3396.7793,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 5,
+    "SpeedMph": 150,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3406.8264,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3418.368,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 118,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3447.2173,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 72,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3453.4624,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 60,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3456.1326,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 55,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3459.6885,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 49,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3463.9026,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 46,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3466.9404,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 45,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3470.8496,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 2,
+    "SpeedMph": 38,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3473.3142,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 34,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3474.1697,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.97,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 34,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3475.8662,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 36,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3476.928,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 37,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3477.8235,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 37,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3478.969,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.63,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 37,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3481.2668,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 39,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3485.446,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.12,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 42,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3488.8271,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.18,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 42,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3490.714,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.62,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 42,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3495.9377,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.06,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 44,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3497.4978,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 44,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3500.388,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.13,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 43,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3501.9731,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.72,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 44,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3506.2764,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 45,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3509.0037,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.26,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 45,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3511.4778,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 47,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3512.365,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.39,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 47,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3514.622,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 47,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3516.8582,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.06,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 46,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3518.8865,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.06,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 46,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3521.8904,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.17,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 46,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3523.8425,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.39,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 47,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3526.1191,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.47,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 49,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3529.3643,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.55,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 50,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3530.5173,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.81,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 51,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3531.7095,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 52,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3534.0408,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3539.1677,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 59,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3543.4236,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 62,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3544.9116,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 64,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3546.5376,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 66,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3549.6067,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 69,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3551.2039,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 70,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3554.5022,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3556.3545,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 75,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3558.2173,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 76,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3560.0361,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 77,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3561.859,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 78,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3565.6572,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 82,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3569.573,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3573.3909,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 89,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3582.0393,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3593.2205,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 102,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3595.3982,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 104,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3597.686,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 105,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3605.0715,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 109,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3612.9277,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.07,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3617.4475,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.04,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 110,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3622.966,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.04,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 109,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3626.01,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.04,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3628.8298,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.04,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 108,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3637.5728,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.11,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3643.1343,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.41,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3646.0193,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.62,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3655.8228,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.98,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 109,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3660.563,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3665.6333,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.16,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3668.5115,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.97,
+    "Gear": 4,
+    "SpeedMph": 109,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3673.5564,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 104,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3678.4346,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 103,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3683.2126,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 102,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3685.6438,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 102,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3693.2695,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 100,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3704.766,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 92,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3709.092,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 91,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3711.333,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.73,
+    "Gear": 3,
+    "SpeedMph": 90,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3717.0496,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3722.8813,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 80,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3726.5112,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 80,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3730.252,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 78,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3733.8613,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 78,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3737.3171,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 77,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3739.0056,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 77,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3742.4377,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 75,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3745.659,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 75,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3749.1077,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.21,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 74,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3752.4058,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.35,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 75,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3755.881,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.5,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 75,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3759.5042,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.63,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 77,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3762.8691,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.71,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 79,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3766.3293,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.71,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 80,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3770.043,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.71,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 82,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3775.3674,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.81,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3779.0122,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.83,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3782.7307,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.8,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3786.8315,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.71,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 88,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3792.9385,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.63,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 91,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3797.0063,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 92,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3801.0254,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 94,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3805.0789,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3807.125,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.64,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3811.4792,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.32,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 97,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3815.7344,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3819.861,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3823.8367,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3827.8967,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 93,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3833.6216,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.21,
+    "Gear": 3,
+    "SpeedMph": 91,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3838.9956,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.67,
+    "Gear": 3,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3840.63,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.31,
+    "Gear": 3,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3844.29,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 82,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3847.677,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 81,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3849.554,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 80,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3853.0415,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 79,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3856.4736,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 78,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3859.692,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 77,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3862.8777,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 75,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3864.5278,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 74,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3867.665,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.26,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3870.7136,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.37,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3873.9707,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.28,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3875.6038,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.24,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3879.1633,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.27,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3880.8618,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.3,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3884.2578,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.42,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3886.0635,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.55,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3889.46,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3894.6658,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 74,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3903.018,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 76,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3906.491,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 77,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3908.377,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 78,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3909.752,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 79,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3913.5422,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.99,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 82,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3922.9517,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3927.0212,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 88,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3929.2292,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 90,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3933.3618,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 92,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3935.4543,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 93,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3940.0164,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 96,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3942.3184,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 98,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3946.801,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 100,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3951.3298,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 103,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3954.002,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 105,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3956.2798,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3966.1538,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 4,
+    "SpeedMph": 100,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3972.5935,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 90,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3976.5847,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3978.5347,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 80,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3983.6633,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 72,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3987.0051,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 70,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3990.2913,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 70,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3991.7886,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 69,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 3994.836,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 68,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4001.0032,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 68,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4006.1287,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 68,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4011.4653,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 65,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4014.9802,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 64,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4018.5625,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.25,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 64,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4020.5283,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.54,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 64,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4026.0051,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.26,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 67,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4027.6704,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.34,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 67,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4029.4412,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.57,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 68,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4032.8433,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.69,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 70,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4036.0957,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.7,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 71,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4039.334,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.72,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 73,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4042.7634,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.76,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 74,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4044.3335,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.76,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 75,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4047.7285,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.78,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 76,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4051.257,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.86,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 78,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4054.782,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.91,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 79,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4058.4797,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.95,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 81,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4064.416,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 83,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4066.2312,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 84,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4070.2397,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 85,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4074.051,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4076.1294,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4080.0737,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 86,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4082.1045,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 87,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4084.278,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 89,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4088.445,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 92,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4092.7554,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.67,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4094.6594,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.45,
+    "Gear": 3,
+    "SpeedMph": 95,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4096.807,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 91,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4098.792,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 3,
+    "SpeedMph": 88,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4102.6333,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 2,
+    "SpeedMph": 82,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4109.696,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 2,
+    "SpeedMph": 69,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4112.7847,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 1.0,
+    "Gear": 1,
+    "SpeedMph": 64,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4114.1367,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.13,
+    "Gear": 1,
+    "SpeedMph": 61,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4118.2188,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 58,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4120.941,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 58,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4123.684,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 57,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4125.0645,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 57,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4128.9106,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 56,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4130.165,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 56,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4132.6934,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 56,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4135.237,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 55,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4137.7407,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 55,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4140.2695,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4141.3955,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4143.8677,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.05,
+    "Gear": 1,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4146.4917,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 53,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4149.137,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 52,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4156.833,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.06,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 50,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4159.4937,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.2,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 51,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4162.092,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.17,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 52,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4164.608,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.2,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 52,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4167.1406,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.21,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 53,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4168.436,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.19,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4173.4185,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 53,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4175.7544,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 53,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4178.127,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.16,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 52,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4180.675,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.59,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4181.966,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.22,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 55,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4184.8745,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 55,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4188.0923,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 55,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4191.6562,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 1,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4198.9014,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4200.4014,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4203.21,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.17,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 54,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4207.115,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.78,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 56,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4210.7007,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.8,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 58,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4213.2603,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.95,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 60,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4214.672,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 60,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4217.3657,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 62,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4220.362,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 64,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4226.459,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 67,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4229.674,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 70,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4231.267,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 72,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4234.516,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 75,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4239.8315,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 2,
+    "SpeedMph": 80,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4245.7295,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 84,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4251.542,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 88,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4253.526,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 90,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4264.7163,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 99,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4269.5513,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 102,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4273.9917,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 3,
+    "SpeedMph": 105,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4278.841,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 106,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4286.1567,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 110,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4288.5776,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 111,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4299.064,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 115,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4304.4487,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 118,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4307.3496,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 119,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4313.3306,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 121,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4319.316,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 123,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4325.016,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 125,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4328.161,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 126,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4334.179,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 4,
+    "SpeedMph": 127,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4340.543,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 128,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4343.725,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 129,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4349.9814,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 131,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4356.3745,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 132,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4362.806,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4366.085,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 135,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4372.8574,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4379.165,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.85,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4382.4497,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4388.79,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.02,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4394.6274,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.39,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 134,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4400.6187,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.73,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 135,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4406.8164,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.72,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4412.9824,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.72,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4419.23,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.71,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 136,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4425.438,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 0.97,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 137,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4428.4873,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 138,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4431.7437,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 139,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4438.19,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 140,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4444.7812,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 141,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4450.8696,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 142,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4457.905,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 5,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4461.168,
+    "CurrentLapNumber": 0
+  },
+  {
+    "Throttle": 1.0,
+    "Brake": 0.0,
+    "Gear": 6,
+    "SpeedMph": 144,
+    "LastLapTimeMilliseconds": 0,
+    "LapDistance": 4474.298,
+    "CurrentLapNumber": 0
+  }
+]

@@ -1287,23 +1287,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Suttie\\.nuget\\packages\\": {},
+    "C:\\Users\\Sutti\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\ApexSpeedApp\\ApexSpeedApp\\ApexSpeedApp.csproj",
+      "projectUniqueName": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\ApexSpeedApp\\ApexSpeedApp\\ApexSpeedApp.csproj",
       "projectName": "ApexSpeedApp",
-      "projectPath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\ApexSpeedApp\\ApexSpeedApp\\ApexSpeedApp.csproj",
-      "packagesPath": "C:\\Users\\Suttie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\ApexSpeedApp\\ApexSpeedApp\\obj\\",
+      "projectPath": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\ApexSpeedApp\\ApexSpeedApp\\ApexSpeedApp.csproj",
+      "packagesPath": "C:\\Users\\Sutti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\ApexSpeedApp\\ApexSpeedApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Suttie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sutti\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1370,7 +1370,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.200-preview.22628.1\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

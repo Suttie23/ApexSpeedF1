@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Security.Cryptography.Pkcs;
 
 namespace ApexSpeedApp.MVVM.View
 {
@@ -30,6 +31,7 @@ namespace ApexSpeedApp.MVVM.View
         public float _gear;
         public float _speed;
         public float _lapDistance;
+        public bool _newLap = false;
 
         public LiveAnalysisView()
         {
@@ -271,6 +273,11 @@ namespace ApexSpeedApp.MVVM.View
                         LapPacket lapPack = new LapPacket();
                         lapPack.LoadBytes(receiveBytes);
 
+                        if (lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapTimeMilliseconds >= 0.1)
+                        {
+                            _newLap = true;
+                        }
+
                         _lapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
 
                         // Delegate to avoid cross threading
@@ -303,16 +310,20 @@ namespace ApexSpeedApp.MVVM.View
                         }));
                     }
 
+                if(_newLap == true)
+                {
+
                     LapList.Add(new LapSaveData(_throttle, _brake, (sbyte)_gear, (ushort)_speed, _lapDistance));
 
-                    string fileName = @"..\..\..\Lap Files\Test Lap2.json";
+                    string fileName = @"..\..\..\Lap Files\LaptopTest.json";
                     string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
                     using StreamWriter sw = new StreamWriter(fileName);
                     sw.WriteLine(json);
                     sw.Close();
 
-                    // Display error message
-                    MessageBox.Show("Error Message: " + "\n\n A proper lap!");
+                }
+
+                _newLap = false;
 
                 // Begin Call Async Method
                 receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
