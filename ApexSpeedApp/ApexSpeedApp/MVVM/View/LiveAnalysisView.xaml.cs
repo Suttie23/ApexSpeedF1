@@ -32,6 +32,7 @@ namespace ApexSpeedApp.MVVM.View
         public float _speed;
         public float _lapDistance;
         public bool _newLap = false;
+        public int _lapNo;
 
         public LiveAnalysisView()
         {
@@ -279,6 +280,7 @@ namespace ApexSpeedApp.MVVM.View
                         }
 
                         _lapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
+                        _lapNo = lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapNumber;
 
                         // Delegate to avoid cross threading
                         Dispatcher.BeginInvoke(new Action(delegate
@@ -315,12 +317,12 @@ namespace ApexSpeedApp.MVVM.View
 
                     LapList.Add(new LapSaveData(_throttle, _brake, (sbyte)_gear, (ushort)_speed, _lapDistance));
 
-                    string fileName = @"..\..\..\Lap Files\LaptopTest.json";
+                    string fileName = @"..\..\..\Lap Files\Lap " +_lapNo+ ".json";
                     string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
                     using StreamWriter sw = new StreamWriter(fileName);
                     sw.WriteLine(json);
                     sw.Close();
-
+                    
                 }
 
                 _newLap = false;
