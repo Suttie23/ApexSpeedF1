@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,10 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ApexSpeedApp.MVVM.Model
 {
-    public class LapSaveData
+    public class LapSaveData : ObservableObject
     {
+
+        private byte _CurrentLap;
 
         // Telemetry Values
         public float Throttle { get; set; }
@@ -20,7 +24,15 @@ namespace ApexSpeedApp.MVVM.Model
         // Lap Values
         public uint LastLapTimeMilliseconds { get; set; }
         public float LapDistance { get; set; }
-        public byte CurrentLapNumber { get; set; }
+        public byte CurrentLapNumber
+        {
+            get { return _CurrentLap; }
+            set
+            {
+                _CurrentLap = value;
+                OnPropertyChanged();
+            }
+        }
 
         public LapSaveData(float Throttle, float Brake, sbyte Gear, ushort SpeedMph, float LapDistance/*, uint LastLapTimeMilliseconds, byte CurrentLapNumber */)
         {

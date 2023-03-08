@@ -292,9 +292,12 @@ namespace ApexSpeedApp.MVVM.View
                         LapPacket lapPack = new LapPacket();
                         lapPack.LoadBytes(receiveBytes);
 
-                        if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance > 0)
+                        if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance !> 0)
                         {
                             _validLap = true;
+                        } else
+                        {
+                            _validLap = false;
                         }
 
                         _lapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
@@ -330,6 +333,7 @@ namespace ApexSpeedApp.MVVM.View
                         // Add telemetry to list
                         LapList.Add(new LapSaveData(_throttle, _brake, (sbyte)_gear, (ushort)_speed, _lapDistance));
 
+
                         string fileName = @"..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + _lapNo + ".json";
 
                         // Create directory
@@ -344,6 +348,12 @@ namespace ApexSpeedApp.MVVM.View
                         using StreamWriter sw = new StreamWriter(fileName);
                         sw.WriteLine(json);
                         sw.Close();
+
+                        if (_lapDistance >= 0 && _lapDistance <= 3)
+                        {
+
+                            LapList.Clear();
+                        }
 
                     }
 
