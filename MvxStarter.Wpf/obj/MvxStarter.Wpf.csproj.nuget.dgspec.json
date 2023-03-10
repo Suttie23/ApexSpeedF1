@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Wpf\\MvxStarter.Wpf.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Core\\ApexSpeed.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Core\\ApexSpeed.Core.csproj",
+        "projectName": "ApexSpeed.Core",
+        "projectPath": "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Core\\ApexSpeed.Core.csproj",
+        "packagesPath": "C:\\Users\\Suttie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Suttie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Codemasters.F1_2021": {
+              "target": "Package",
+              "version": "[0.1.3, )"
+            },
+            "MvvmCross": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.200-preview.22628.1\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Wpf\\MvxStarter.Wpf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Wpf\\MvxStarter.Wpf.csproj",
+        "projectName": "MvxStarter.Wpf",
+        "projectPath": "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Wpf\\MvxStarter.Wpf.csproj",
+        "packagesPath": "C:\\Users\\Suttie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Wpf\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Suttie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Core\\ApexSpeed.Core.csproj": {
+                "projectPath": "C:\\Users\\Suttie\\Desktop\\Temp-Hons\\MvxStarter.Core\\ApexSpeed.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "LiveCharts.Wpf": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            },
+            "MvvmCross.Platforms.Wpf": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.200-preview.22628.1\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
