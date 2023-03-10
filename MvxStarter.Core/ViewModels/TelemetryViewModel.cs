@@ -22,6 +22,7 @@ namespace MvxStarter.Core.ViewModels
     {
 
         private readonly IMvxNavigationService _navigationService;
+        UdpClient receivingUdpClient = new UdpClient(20777);
 
         // Telemetry variables
         private float _throttle;
@@ -63,6 +64,31 @@ namespace MvxStarter.Core.ViewModels
         private string _folderTrack;
         private string _folderDT;
         private bool _validLap = false;
+
+        // Navigation Locking variables
+        private bool _lockNav = true;
+        private bool _stopListeningActive = false;
+
+        // Navigation Locking Properties
+        public bool LockNavigation
+        {
+            get { return _lockNav; }
+            set
+            {
+                _lockNav = value;
+                RaisePropertyChanged(() => LockNavigation);
+            }
+        }
+
+        public bool StopListeningActive
+        {
+            get { return _stopListeningActive; }
+            set
+            {
+                _stopListeningActive = value;
+                RaisePropertyChanged(() => StopListeningActive);
+            }
+        }
 
         // Telemtry Properties
 
@@ -131,7 +157,7 @@ namespace MvxStarter.Core.ViewModels
             get { return _version; }
             set
             {
-                SetProperty(ref _version, value);
+                SetProperty(ref _version, value);                
             }
         }
 
@@ -283,23 +309,33 @@ namespace MvxStarter.Core.ViewModels
             }
         }
 
-
         public TelemetryViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
             GetTelemetryCommand = new MvxCommand(GetTelemetry);
+            StopListeningCommand = new MvxCommand(StopListening);
+
         }
 
         public IMvxCommand NavToHomeCommand => new MvxCommand(async () => await NavToHome());
 
         public async Task NavToHome()
         {
+            receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
+            receivingUdpClient.Close();
             await _navigationService.Navigate<HomeViewModel>();
         }
 
-        public IMvxCommand GetTelemetryCommand { get; set; }
+        public IMvxCommand StopListeningCommand { get; set; }
 
-        UdpClient receivingUdpClient = new UdpClient(20777);
+        public void StopListening()
+        {
+            receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
+            receivingUdpClient.Close();
+            this.LockNavigation = true;
+        }
+
+        public IMvxCommand GetTelemetryCommand { get; set; }
 
         // EVERYTHING BELOW SHOULD BE MADE INTO A SERVICE
         public void GetTelemetry()
@@ -314,7 +350,7 @@ namespace MvxStarter.Core.ViewModels
             try
             {
                 // Begin asynchronous listening
-                receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
+                receivingUdpClient.BeginReceive(TelemetryReceiver, null);
                 Debug.WriteLine("Listening");
 
             } catch ( Exception e)
@@ -329,8 +365,11 @@ namespace MvxStarter.Core.ViewModels
             // Remote host IP
             IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0);
 
+            this.LockNavigation = false;
+            this.StopListeningActive = true;
+
             // Return UDP datagram
-            byte[] receiveBytes = receivingUdpClient.Receive(ref RemoteIpEndPoint);
+            byte[] receiveBytes = receivingUdpClient.EndReceive(res, ref RemoteIpEndPoint);
 
             try
             {
@@ -479,7 +518,10 @@ namespace MvxStarter.Core.ViewModels
             }
             catch (Exception e)
             {
-
+                if (e is ObjectDisposedException || e is SocketException)
+                {
+                    return;
+                }
             }
 
             // Begin Call Async Method
