@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[0.1.3, )"
             },
+            "LiveChartsCore.SkiaSharpView.WPF": {
+              "target": "Package",
+              "version": "[2.0.0-beta.701, )"
+            },
             "MvvmCross": {
               "target": "Package",
               "version": "[7.0.0, )"

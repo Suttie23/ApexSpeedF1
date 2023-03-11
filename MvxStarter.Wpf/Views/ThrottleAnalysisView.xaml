@@ -6,13 +6,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
              xmlns:local="clr-namespace:ApexSpeed.Wpf.Views"
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="1574">
     <Border Background="#272537">
 
         <Grid>
-
+            <lvc:CartesianChart ZoomMode="Both" Series="{Binding Series}" Margin="0,0,0,91"/>
+            <Button mvx:Bi.nd="Command ReturnToHistoricalCommand" Margin="410,714,986,24">Return To Historical Page</Button>
+            <Button Margin="990,714,406,24" Content="Upload Lap Data"/>
         </Grid>
     </Border>
 </views:MvxWpfView>
