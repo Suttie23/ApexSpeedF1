@@ -132,8 +132,9 @@
             <Label Foreground="White" Width="200" FontSize="38" Content="{Binding Gear}" Margin="587,351,587,248" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="White"  FontSize="22" Content="Lap Number:" Margin="582,58,582,640" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.RowSpan="2"/>
             <Label Foreground="White"  FontSize="22" Content="{Binding CurrentLapNumber}" Margin="582,22,582,601" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
-            <Button IsEnabled="{Binding LockNavigation}" mvx:Bi.nd="Command GetTelemetryCommand" Margin="575,590,575,67" Grid.Column="1" Grid.Row="1">Listen For UDP</Button>
-            <Button IsEnabled="{Binding StopListeningActive}" mvx:Bi.nd="Command StopListeningCommand" Margin="575,638,575,19" Grid.Column="1" Grid.Row="1" Content="Stop Listening"/>
+            <Image x:Name="___Images_Soft_Tyre_png" Grid.Column="1" Margin="639,452,611,128" Grid.Row="1" Source="{Binding TyreCompound}" Stretch="Fill"/>
+            <Button IsEnabled="{Binding LockNavigation}" mvx:Bi.nd="Command GetTelemetryCommand" Margin="589,590,561,67" Grid.Column="1" Grid.Row="1">Listen For UDP</Button>
+            <Button IsEnabled="{Binding StopListeningActive}" mvx:Bi.nd="Command StopListeningCommand" Margin="589,638,561,19" Grid.Column="1" Grid.Row="1" Content="Stop Listening"/>
 
             <lvc:Gauge
                     Value="{Binding Brake}"
@@ -159,8 +160,6 @@
             <Label Foreground="White" FontSize="30" Content="{Binding TyreWearRR}" Margin="1182,629,65,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="White"  FontSize="22" Content="Previous Lap Time: " Margin="1089,58,75,640" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.RowSpan="2"/>
             <Label Foreground="White"  FontSize="22" Content="{Binding PreviousLapTime}" Margin="1089,22,75,601" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
-          
-
         </Grid>
     </Border>
 </views:MvxWpfView>

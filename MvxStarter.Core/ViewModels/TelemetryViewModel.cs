@@ -50,7 +50,7 @@ namespace MvxStarter.Core.ViewModels
         //Status variables
         private float _fuelLevel;
         private float _fuelRemainingLaps;
-        private byte _tyreCompound;
+        private string _tyreCompound;
         private bool _ersDeploy;
 
         //Lap Variables
@@ -254,7 +254,7 @@ namespace MvxStarter.Core.ViewModels
             }
         }
 
-        public byte TyreCompound
+        public string TyreCompound
         {
             get { return _tyreCompound; }
             set
@@ -433,7 +433,30 @@ namespace MvxStarter.Core.ViewModels
                         this.ERSDeploy = true;
                     }
 
-                    //ADD TYRE COMPOUND
+                    //Determine Tyre Compound and update UI
+                    switch (statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].EquippedVisualTyreCompoundId)
+                    {
+                        case 18:
+                            // Hard
+                            this.TyreCompound = "/Images/Hard Tyre.png";
+                            break;
+                        case 16:
+                            // Soft
+                            this.TyreCompound = "/Images/Soft Tyre.png";
+                            break;
+                        case 17:
+                            // Medium
+                            this.TyreCompound = "/Images/Medium Tyre.png";
+                            break;
+                        case 7:
+                            // Intermediate
+                            this.TyreCompound = "/Images/Intermediate Tyre.png";
+                            break;
+                        case 8:
+                            // Wet
+                            this.TyreCompound = "/Images/Wet Tyre.png";
+                            break;
+                    }
                 }
 
                 if (pt == PacketType.CarDamage)
@@ -501,14 +524,24 @@ namespace MvxStarter.Core.ViewModels
                         System.IO.Directory.CreateDirectory(fi.DirectoryName);
                     }
 
-                    // Write LapList to JSON
-                    string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
-                    StreamWriter sw = new StreamWriter(fileName);
-                    sw.WriteLine(json);
-                    sw.Close();
-
-                    if (_lapDistance >= 0 && _lapDistance <= 3)
+                    if (this.LapDistance >= 0 && this.LapDistance <= 3)
                     {
+                        // Write LapList to JSON
+                        string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
+                        StreamWriter sw = new StreamWriter(fileName);
+                        sw.WriteLine(json);
+                        sw.Close();
+
+                        LapList.Clear();
+                    }
+
+                    if (this.LapDistance >= 0 && this.LapDistance <= 3)
+                    {
+                        // Write LapList to JSON
+                        string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
+                        StreamWriter sw = new StreamWriter(fileName);
+                        sw.WriteLine(json);
+                        sw.Close();
 
                         LapList.Clear();
                     }
