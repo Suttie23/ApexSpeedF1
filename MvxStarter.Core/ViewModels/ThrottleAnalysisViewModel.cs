@@ -23,6 +23,8 @@ namespace ApexSpeed.Core.ViewModels
 
         private readonly IMvxNavigationService _navigationService;
 
+        private readonly ObservableCollection<ObservablePoint> _obeservablePoints;
+
         public IMvxCommand ReturnToHistoricalCommand => new MvxCommand(async () => await ReturnToHistorical());
         public async Task ReturnToHistorical()
         {
@@ -33,35 +35,31 @@ namespace ApexSpeed.Core.ViewModels
         {
             _navigationService = navigationService;
             LoadGraphDataCommand = new MvxCommand(LoadGraphData);
+
+            _obeservablePoints = new ObservableCollection<ObservablePoint>
+            {
+
+            };
+
+            Series = new ObservableCollection<ISeries>
+            {
+            new LineSeries<ObservablePoint>
+                {
+                    Values = _obeservablePoints,
+                    Fill = null,
+                    LineSmoothness = 0
+                }
+            };
         }
+
+        public ObservableCollection<ISeries> Series { get; set; }
 
 
         public IMvxCommand LoadGraphDataCommand { get; set; }
         public void LoadGraphData()
         {
-
+            _obeservablePoints.Add(new ObservablePoint(0, 4));
         }
-
-        public ISeries[] Series { get; set; } =
-        {
-                new LineSeries<double>
-                {
-                    Values = new double[] { 5, 0, 5, 0, 5, 0, 0, 5, 0 , 0, 5, 0 , 0, 5, 0  },
-                    Fill = null,
-                    GeometrySize = 0,
-                    // use the line smoothness property to control the curve
-                    // it goes from 0 to 1
-                    // where 0 is a straight line and 1 the most curved
-                    LineSmoothness = 0
-                },
-                new LineSeries<double>
-                {
-                    Values = new double[] { 7, 2, 7, 2, 7, 2 },
-                    Fill = null,
-                    GeometrySize = 0,
-                    LineSmoothness = 1
-                }
-        };
 
     }
 }

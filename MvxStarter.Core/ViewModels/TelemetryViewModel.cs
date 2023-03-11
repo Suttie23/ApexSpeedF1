@@ -24,6 +24,7 @@ namespace MvxStarter.Core.ViewModels
 
         private readonly IMvxNavigationService _navigationService;
         UdpClient receivingUdpClient = new UdpClient(20777);
+        bool _newlap = false;
 
         // Telemetry variables
         private float _throttle;
@@ -393,7 +394,6 @@ namespace MvxStarter.Core.ViewModels
                 if (pa.PacketFormat == 2021)
                 {
                     this.Version = pa.PacketFormat.ToString();
-                    Debug.WriteLine("Running version " +pa.PacketFormat);
                 }
 
                 // IF Car Telemetry Packet
@@ -516,6 +516,7 @@ namespace MvxStarter.Core.ViewModels
 
 
                 }
+
 
                 //Writing to JSON
                 // If starting a new lap
