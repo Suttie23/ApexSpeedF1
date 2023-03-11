@@ -524,24 +524,14 @@ namespace MvxStarter.Core.ViewModels
                         System.IO.Directory.CreateDirectory(fi.DirectoryName);
                     }
 
-                    if (this.LapDistance >= 0 && this.LapDistance <= 3)
-                    {
-                        // Write LapList to JSON
-                        string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
-                        StreamWriter sw = new StreamWriter(fileName);
-                        sw.WriteLine(json);
-                        sw.Close();
-
-                        LapList.Clear();
-                    }
+                    // Write LapList to JSON
+                    string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
+                    StreamWriter sw = new StreamWriter(fileName);
+                    sw.WriteLine(json);
+                    sw.Close();
 
                     if (this.LapDistance >= 0 && this.LapDistance <= 3)
                     {
-                        // Write LapList to JSON
-                        string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
-                        StreamWriter sw = new StreamWriter(fileName);
-                        sw.WriteLine(json);
-                        sw.Close();
 
                         LapList.Clear();
                     }
