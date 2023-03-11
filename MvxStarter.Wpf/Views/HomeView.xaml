@@ -39,8 +39,7 @@
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
-                             IsChecked="True"
-                             Command="{Binding HomeViewCommand}"/>
+                             IsChecked="True"/>
 
                     <RadioButton mvx:Bi.nd="Command NavToLiveTelemetryCommand" Content="Live Telemetry"
                              Height="50"
@@ -48,12 +47,11 @@
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"/>
 
-                    <RadioButton Content="Historical Analysis"
+                    <RadioButton mvx:Bi.nd="Command NavToHistoricalCommand" Content="Historical Analysis"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding HistoricalAnalysisViewCommand}"/>
+                             Style="{StaticResource MenuButtonTheme}"/>
 
                 </StackPanel>
             </Border>

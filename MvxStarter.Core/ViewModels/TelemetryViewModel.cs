@@ -1,4 +1,5 @@
-﻿using ApexSpeedApp.MVVM.Model;
+﻿using ApexSpeed.Core.ViewModels;
+using ApexSpeedApp.MVVM.Model;
 using Codemasters.F1_2021;
 using MvvmCross.Commands;
 using MvvmCross.Navigation;
@@ -324,6 +325,15 @@ namespace MvxStarter.Core.ViewModels
             receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
             receivingUdpClient.Close();
             await _navigationService.Navigate<HomeViewModel>();
+        }
+
+        public IMvxCommand NavToHistoricalCommand => new MvxCommand(async () => await NavToHistorical());
+
+        public async Task NavToHistorical()
+        {
+            receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
+            receivingUdpClient.Close();
+            await _navigationService.Navigate<HistoricalViewModel>();
         }
 
         public IMvxCommand StopListeningCommand { get; set; }

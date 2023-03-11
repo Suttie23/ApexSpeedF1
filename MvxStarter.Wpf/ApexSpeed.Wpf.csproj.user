@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\HistoricalView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\TelemetryView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +22,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\UIStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HistoricalView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\TelemetryView.xaml">

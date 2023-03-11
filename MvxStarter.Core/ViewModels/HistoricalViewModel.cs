@@ -1,24 +1,24 @@
-﻿using ApexSpeed.Core.ViewModels;
-using MvvmCross.Commands;
+﻿using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
+using MvxStarter.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MvxStarter.Core.ViewModels
+namespace ApexSpeed.Core.ViewModels
 {
-    public class HomeViewModel : MvxViewModel
+    public class HistoricalViewModel : MvxViewModel
     {
-
         private readonly IMvxNavigationService _navigationService;
 
+        public IMvxCommand NavToHomeCommand => new MvxCommand(async () => await NavToHome());
 
-        public HomeViewModel(IMvxNavigationService navigationService)
+        public async Task NavToHome()
         {
-            _navigationService = navigationService;
+            await _navigationService.Navigate<HomeViewModel>();
         }
 
         public IMvxCommand NavToLiveTelemetryCommand => new MvxCommand(async () => await NavToLiveTelemetry());
@@ -28,11 +28,9 @@ namespace MvxStarter.Core.ViewModels
             await _navigationService.Navigate<TelemetryViewModel>();
         }
 
-        public IMvxCommand NavToHistoricalCommand => new MvxCommand(async () => await NavToHistorical());
-
-        public async Task NavToHistorical()
+        public HistoricalViewModel(IMvxNavigationService navigationService)
         {
-            await _navigationService.Navigate<HistoricalViewModel>();
+            _navigationService = navigationService;
         }
     }
 }
