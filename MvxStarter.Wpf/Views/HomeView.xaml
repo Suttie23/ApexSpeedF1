@@ -227,8 +227,8 @@
                                    &#xA;    2.4) Set the port to 20777 (This should be the default value)
                                    &#xA;    2.5) Set UDP send rate to '20Hz' (This should be the default value)
                                    &#xA;    2.6) Ensure UDP format is set to '2021' (This should be the default value)&#xA;
-                                   &#xA; 3) Navigate to the 'Live telemetry' window in this app and Launch a session in F1 2021. Begin listening for UDP data
-                                   &#xA;     if setup instructions have been followed properly, live telemetry data should be visible to you on screen." 
+                                   &#xA; 3) Navigate to the 'Live telemetry' window in this app and Launch a session in F1 2021. Begin listening for UDP data.
+                                   &#xA;    If setup instructions have been followed properly, live telemetry data should be visible to you on screen." 
                                    Foreground="White"
                                    FontSize="16"
                                    Margin="20,20,10,0"/>

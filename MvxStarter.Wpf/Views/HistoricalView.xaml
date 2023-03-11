@@ -81,8 +81,16 @@
                 </Grid>
 
             </Border>
-            
-            
+            <StackPanel Grid.Column="1" Grid.Row="1" Margin="534,0,534,0">
+                <Button mvx:Bi.nd="Command NavToThrottleCommand" Margin="0 60 0 0" Width="200" Height="100">Throttle Analysis</Button>
+                <Button IsEnabled="false" Margin="0 20 0 0" Width="200" Height="100">Brake Analysis</Button>
+                <Button IsEnabled="false" Margin="0 20 0 0" Width="200" Height="100">Gear Analysis</Button>
+                <Button IsEnabled="false" Margin="0 20 0 0" Width="200" Height="100">Speed Analysis</Button>
+                <Button IsEnabled="false" Margin="0 20 0 0" Width="200" Height="100">Time Analysis</Button>
+
+            </StackPanel>
+
+
 
         </Grid>
     </Border>

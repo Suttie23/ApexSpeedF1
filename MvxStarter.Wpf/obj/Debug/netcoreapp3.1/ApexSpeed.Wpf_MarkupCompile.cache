@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\App.xaml
-5762084562
+6-2026764620
 
-6-1651507399
+71378327307
 200-1903257797
-MainWindow.xaml;Styles\UIStyles.xaml;Views\HistoricalView.xaml;Views\HomeView.xaml;Views\TelemetryView.xaml;
+MainWindow.xaml;Styles\UIStyles.xaml;Views\HistoricalView.xaml;Views\HomeView.xaml;Views\TelemetryView.xaml;Views\ThrottleAnalysisView.xaml;
 
 False
 
