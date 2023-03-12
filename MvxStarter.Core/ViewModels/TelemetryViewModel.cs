@@ -526,26 +526,32 @@ namespace MvxStarter.Core.ViewModels
                     // Add telemetry to list
                     LapList.Add(new LapSaveDataModel(this.Throttle, this.Brake, this.Gear, this.Speed, this.LapDistance));
 
-
-                    string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (this.CurrentLapNumber - 1) + ".json";
-
-                    // Create directory
-                    FileInfo fi = new FileInfo(fileName);
-                    if (!fi.Directory.Exists)
-                    {
-                        System.IO.Directory.CreateDirectory(fi.DirectoryName);
-                    }
-
                     if (this.CurrentLapNumber > _previousLapNumber)
                     {
-                        // Write LapList to JSON
-                        string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
-                        StreamWriter sw = new StreamWriter(fileName);
-                        sw.WriteLine(json);
-                        sw.Close();
-                        Debug.WriteLine("New lap started: " + this.CurrentLapNumber);
-                        _previousLapNumber = this.CurrentLapNumber;
-                        LapList.Clear();
+                        if ((this.CurrentLapNumber - 1) == 0)
+                        {
+                            // Do nothing
+                        } 
+                        else
+                        {
+                            // Write LapList to JSON
+                            string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (CurrentLapNumber - 1) + ".json";
+
+                            // Create directory
+                            FileInfo fi = new FileInfo(fileName);
+                            if (!fi.Directory.Exists)
+                            {
+                                System.IO.Directory.CreateDirectory(fi.DirectoryName);
+                            }
+
+                            string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
+                            StreamWriter sw = new StreamWriter(fileName);
+                            sw.WriteLine(json);
+                            sw.Close();
+                            LapList.Clear();
+                            _previousLapNumber = this.CurrentLapNumber;
+                        }
+
                     }
                     
                 }
