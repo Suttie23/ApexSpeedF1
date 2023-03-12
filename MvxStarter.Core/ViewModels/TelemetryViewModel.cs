@@ -312,6 +312,7 @@ namespace MvxStarter.Core.ViewModels
             }
         }
 
+        //Ctor
         public TelemetryViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
@@ -320,8 +321,8 @@ namespace MvxStarter.Core.ViewModels
 
         }
 
+        // Home Navigation Command
         public IMvxCommand NavToHomeCommand => new MvxCommand(async () => await NavToHome());
-
         public async Task NavToHome()
         {
             receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
@@ -329,8 +330,8 @@ namespace MvxStarter.Core.ViewModels
             await _navigationService.Navigate<HomeViewModel>();
         }
 
+        // Historical Navigation Command
         public IMvxCommand NavToHistoricalCommand => new MvxCommand(async () => await NavToHistorical());
-
         public async Task NavToHistorical()
         {
             receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
@@ -338,20 +339,24 @@ namespace MvxStarter.Core.ViewModels
             await _navigationService.Navigate<HistoricalViewModel>();
         }
 
+        // Stop Listening Command
         public IMvxCommand StopListeningCommand { get; set; }
-
         public void StopListening()
         {
             receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
             receivingUdpClient.Close();
-            this.LockNavigation = true;
+            LockNavigation = true;
         }
 
+        // Get Telemetry Command
         public IMvxCommand GetTelemetryCommand { get; set; }
 
-        // EVERYTHING BELOW SHOULD BE MADE INTO A SERVICE
+        // EVERYTHING BELOW SHOULD IDEALLY BE MADE INTO A SERVICE
         public void GetTelemetry()
         {
+            //Navigation Locking
+            LockNavigation = false;
+            StopListeningActive = true;
 
             // For Lap Data Folder Creation
             var formatInfo = new CultureInfo("en-US").DateTimeFormat;
@@ -372,13 +377,11 @@ namespace MvxStarter.Core.ViewModels
             
         }
 
+        // Listener
         void TelemetryReceiver(IAsyncResult res)
         {
             // Remote host IP
             IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0);
-
-            this.LockNavigation = false;
-            this.StopListeningActive = true;
 
             // Return UDP datagram
             byte[] receiveBytes = receivingUdpClient.EndReceive(res, ref RemoteIpEndPoint);
@@ -394,7 +397,7 @@ namespace MvxStarter.Core.ViewModels
                 // Ensure the game is running the 2021 UDP format
                 if (pa.PacketFormat == 2021)
                 {
-                    this.Version = pa.PacketFormat.ToString();
+                    Version = pa.PacketFormat.ToString();
                 }
 
                 // IF Car Telemetry Packet
@@ -404,25 +407,27 @@ namespace MvxStarter.Core.ViewModels
                     telPack.LoadBytes(receiveBytes);
 
                     //General Telemetry
-                    this.Throttle = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2);
-                    this.RPM = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
-                    this.Brake = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
-                    this.Speed = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
-                    this.Gear = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear;
-                    this.DRSDeploy = telPack.FieldTelemetryData[telPack.PlayerCarIndex].DrsActive;
+                    Throttle = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Throttle, 2);
+                    RPM = telPack.FieldTelemetryData[telPack.PlayerCarIndex].EngineRpm;
+                    Brake = (float)Math.Round(telPack.FieldTelemetryData[telPack.PlayerCarIndex].Brake, 2);
+                    Speed = telPack.FieldTelemetryData[telPack.PlayerCarIndex].SpeedMph;
+                    Gear = telPack.FieldTelemetryData[telPack.PlayerCarIndex].Gear;
+                    DRSDeploy = telPack.FieldTelemetryData[telPack.PlayerCarIndex].DrsActive;
 
                     //Tyre Temps
-                    this.TyreTempFL = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontLeft;
-                    this.TyreTempFR = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontRight;
-                    this.TyreTempRL = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearLeft;
-                    this.TyreTempRR = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearRight;
+                    TyreTempFL = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontLeft;
+                    TyreTempFR = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontRight;
+                    TyreTempRL = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearLeft;
+                    TyreTempRR = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearRight;
 
+                    // Determine DRS Deploy mode
+                    // This value will be used in the "Styles" in ApexSpeed.Wpf to change the colour or the DRS Label
                     if (telPack.FieldTelemetryData[telPack.PlayerCarIndex].DrsActive == true)
                     {
-                        this.DRSDeploy = true;
+                        DRSDeploy = true;
                     } else
                     {
-                        this.DRSDeploy = false;
+                        DRSDeploy = false;
                     }
                 }
 
@@ -433,39 +438,41 @@ namespace MvxStarter.Core.ViewModels
                     CarStatusPacket statusPack = new CarStatusPacket();
                     statusPack.LoadBytes(receiveBytes);
 
-                    this.FuelLevel = (float)Math.Round(statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelLevel, 2);
-                    this.FuelLevelRemainingLaps = statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelRemainingLaps;
+                    FuelLevel = (float)Math.Round(statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelLevel, 2);
+                    FuelLevelRemainingLaps = statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].FuelRemainingLaps;
 
+                    // Determine ERS Deploy mode
+                    // This value will be used in the "Styles" in ApexSpeed.Wpf to change the colour or the ERS Label
                     if(statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString() == "Medium" || statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString() == "None")
                     {
-                        this.ERSDeploy = false;
+                        ERSDeploy = false;
                     } else
                     {
-                        this.ERSDeploy = true;
+                        ERSDeploy = true;
                     }
 
-                    //Determine Tyre Compound and update UI
+                    //Determine Tyre Compound and set image source
                     switch (statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].EquippedVisualTyreCompoundId)
                     {
                         case 18:
                             // Hard
-                            this.TyreCompound = "/Images/Hard Tyre.png";
+                            TyreCompound = "/Images/Hard Tyre.png";
                             break;
                         case 16:
                             // Soft
-                            this.TyreCompound = "/Images/Soft Tyre.png";
+                            TyreCompound = "/Images/Soft Tyre.png";
                             break;
                         case 17:
                             // Medium
-                            this.TyreCompound = "/Images/Medium Tyre.png";
+                            TyreCompound = "/Images/Medium Tyre.png";
                             break;
                         case 7:
                             // Intermediate
-                            this.TyreCompound = "/Images/Intermediate Tyre.png";
+                            TyreCompound = "/Images/Intermediate Tyre.png";
                             break;
                         case 8:
                             // Wet
-                            this.TyreCompound = "/Images/Wet Tyre.png";
+                            TyreCompound = "/Images/Wet Tyre.png";
                             break;
                     }
                 }
@@ -477,10 +484,10 @@ namespace MvxStarter.Core.ViewModels
                     damagePack.LoadBytes(receiveBytes);
 
                     //Tyre Wear
-                    this.TyreWearFL = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.FrontLeft, 0);
-                    this.TyreWearFR = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.FrontRight, 0);
-                    this.TyreWearRL = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.RearLeft, 0);
-                    this.TyreWearRR = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.RearRight, 0);
+                    TyreWearFL = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.FrontLeft, 0);
+                    TyreWearFR = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.FrontRight, 0);
+                    TyreWearRL = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.RearLeft, 0);
+                    TyreWearRR = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.RearRight, 0);
 
                 }
 
@@ -491,17 +498,20 @@ namespace MvxStarter.Core.ViewModels
                     LapPacket lapPack = new LapPacket();
                     lapPack.LoadBytes(receiveBytes);
 
-                    this.CurrentLapNumber = lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapNumber;
-                    this.CurrentLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapTimeMilliseconds / 1000);
-                    this.PreviousLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].LastLapTimeMilliseconds / 1000);
-                    this.LapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
+                    CurrentLapNumber = lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapNumber;
+                    CurrentLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapTimeMilliseconds / 1000);
+                    PreviousLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].LastLapTimeMilliseconds / 1000);
+                    LapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
 
+                    // Determine whether the car is on an out lap or not 
                     if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance > 0)
                     {
+                        // If the value is positive, the car is not on an outlap
                         _validLap = true;
                     }
                     else
                     {
+                        // If the value is negative, the car is on an outlap
                         _validLap = false;
                     }
 
@@ -513,28 +523,31 @@ namespace MvxStarter.Core.ViewModels
                     SessionPacket lobPack = new SessionPacket();
                     lobPack.LoadBytes(receiveBytes);
 
+                    // Setting _folderTrack variable for writing to JSON
                     _folderTrack = lobPack.SessionTrack.ToString();
 
-
                 }
-
-                
+          
                 //Writing to JSON
                 // If starting a new lap
                 if (_validLap == true)
                 {
                     // Add telemetry to list
-                    LapList.Add(new LapSaveDataModel(this.Throttle, this.Brake, this.Gear, this.Speed, this.LapDistance));
+                    LapList.Add(new LapSaveDataModel(Throttle, Brake, Gear, Speed, LapDistance));
 
-                    if (this.CurrentLapNumber > _previousLapNumber)
+                    // Determine whether a new lap has been started
+                    if (CurrentLapNumber > _previousLapNumber)
                     {
-                        if ((this.CurrentLapNumber - 1) == 0)
+                        // If the previous lap is 0
+                        if ((CurrentLapNumber - 1) == 0)
                         {
                             // Do nothing
                         } 
                         else
                         {
                             // Write LapList to JSON
+
+                            // Construct fileName string using variables assigned earlier
                             string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (CurrentLapNumber - 1) + ".json";
 
                             // Create directory
@@ -544,12 +557,16 @@ namespace MvxStarter.Core.ViewModels
                                 System.IO.Directory.CreateDirectory(fi.DirectoryName);
                             }
 
+                            // JSON Serialise
                             string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
                             StreamWriter sw = new StreamWriter(fileName);
                             sw.WriteLine(json);
                             sw.Close();
+
+                            // Clear LapList for next lap
                             LapList.Clear();
-                            _previousLapNumber = this.CurrentLapNumber;
+
+                            _previousLapNumber = CurrentLapNumber;
                         }
 
                     }
@@ -557,6 +574,7 @@ namespace MvxStarter.Core.ViewModels
                 }
                 
             }
+            // Exception Handling
             catch (Exception e)
             {
                 if (e is ObjectDisposedException || e is SocketException)
