@@ -24,7 +24,7 @@ namespace MvxStarter.Core.ViewModels
 
         private readonly IMvxNavigationService _navigationService;
         UdpClient receivingUdpClient = new UdpClient(20777);
-        bool _newlap = false;
+
 
         // Telemetry variables
         private float _throttle;
@@ -57,6 +57,7 @@ namespace MvxStarter.Core.ViewModels
 
         //Lap Variables
         private byte _currentLapNumber;
+        private byte _previousLapNumber = 0;
         private TimeSpan _currentLapTime;
         private TimeSpan _previousLapTime;
         private float _lapDistance;
@@ -490,6 +491,11 @@ namespace MvxStarter.Core.ViewModels
                     LapPacket lapPack = new LapPacket();
                     lapPack.LoadBytes(receiveBytes);
 
+                    this.CurrentLapNumber = lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapNumber;
+                    this.CurrentLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapTimeMilliseconds / 1000);
+                    this.PreviousLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].LastLapTimeMilliseconds / 1000);
+                    this.LapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
+
                     if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance > 0)
                     {
                         _validLap = true;
@@ -498,11 +504,6 @@ namespace MvxStarter.Core.ViewModels
                     {
                         _validLap = false;
                     }
-
-                    this.CurrentLapNumber = lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapNumber;
-                    this.CurrentLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapTimeMilliseconds / 1000);
-                    this.PreviousLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].LastLapTimeMilliseconds / 1000);
-                    this.LapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
 
                 }
 
@@ -517,7 +518,7 @@ namespace MvxStarter.Core.ViewModels
 
                 }
 
-
+                
                 //Writing to JSON
                 // If starting a new lap
                 if (_validLap == true)
@@ -526,7 +527,7 @@ namespace MvxStarter.Core.ViewModels
                     LapList.Add(new LapSaveDataModel(this.Throttle, this.Brake, this.Gear, this.Speed, this.LapDistance));
 
 
-                    string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + this.CurrentLapNumber + ".json";
+                    string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (this.CurrentLapNumber - 1) + ".json";
 
                     // Create directory
                     FileInfo fi = new FileInfo(fileName);
@@ -535,20 +536,20 @@ namespace MvxStarter.Core.ViewModels
                         System.IO.Directory.CreateDirectory(fi.DirectoryName);
                     }
 
-                    // Write LapList to JSON
-                    string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
-                    StreamWriter sw = new StreamWriter(fileName);
-                    sw.WriteLine(json);
-                    sw.Close();
-
-                    if (this.LapDistance >= 0 && this.LapDistance <= 3)
+                    if (this.CurrentLapNumber > _previousLapNumber)
                     {
-
+                        // Write LapList to JSON
+                        string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
+                        StreamWriter sw = new StreamWriter(fileName);
+                        sw.WriteLine(json);
+                        sw.Close();
+                        Debug.WriteLine("New lap started: " + this.CurrentLapNumber);
+                        _previousLapNumber = this.CurrentLapNumber;
                         LapList.Clear();
                     }
-
+                    
                 }
-
+                
             }
             catch (Exception e)
             {
