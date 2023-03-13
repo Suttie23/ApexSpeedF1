@@ -57,8 +57,9 @@ namespace ApexSpeed.Core.ViewModels
 
         public IMvxCommand LoadGraphDataCommand { get; set; }
         public void LoadGraphData()
-        {
-            _obeservablePoints.Add(new ObservablePoint(0, 4));
+        { 
+            Random random = new Random();
+            _obeservablePoints.Add(new ObservablePoint(random.Next(1,10), random.Next(1, 10)));
         }
 
     }

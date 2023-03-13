@@ -527,13 +527,14 @@ namespace MvxStarter.Core.ViewModels
                     _folderTrack = lobPack.SessionTrack.ToString();
 
                 }
-          
+
                 //Writing to JSON
                 // If starting a new lap
                 if (_validLap == true)
                 {
                     // Add telemetry to list
                     LapList.Add(new LapSaveDataModel(Throttle, Brake, Gear, Speed, LapDistance));
+                }
 
                     // Determine whether a new lap has been started
                     if (CurrentLapNumber > _previousLapNumber)
@@ -557,6 +558,8 @@ namespace MvxStarter.Core.ViewModels
                                 System.IO.Directory.CreateDirectory(fi.DirectoryName);
                             }
 
+                            LapList.RemoveAt(LapList.Count - 1);
+
                             // JSON Serialise
                             string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
                             StreamWriter sw = new StreamWriter(fileName);
@@ -570,8 +573,6 @@ namespace MvxStarter.Core.ViewModels
                         }
 
                     }
-                    
-                }
                 
             }
             // Exception Handling
