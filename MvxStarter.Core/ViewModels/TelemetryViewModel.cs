@@ -65,6 +65,7 @@ namespace MvxStarter.Core.ViewModels
         //JSON helpers
         List<LapSaveDataModel> LapList = new List<LapSaveDataModel>();
         private string _folderTrack;
+        private float _sessionTime;
         private string _folderDT;
         private bool _validLap = false;
 
@@ -491,9 +492,22 @@ namespace MvxStarter.Core.ViewModels
 
                 }
 
+                // If Session Packet
+                if (pt == PacketType.Session)
+                {
+                    SessionPacket lobPack = new SessionPacket();
+                    lobPack.LoadBytes(receiveBytes);
+
+                    // Setting _folderTrack variable for writing to JSON
+                    _folderTrack = lobPack.SessionTrack.ToString();
+                    _sessionTime = lobPack.SessionTime;
+
+                }
+
                 // IF Lap Packet
                 if (pt == PacketType.Lap)
                 {
+
                     //Create new Lap packet and load in the data
                     LapPacket lapPack = new LapPacket();
                     lapPack.LoadBytes(receiveBytes);
@@ -504,7 +518,7 @@ namespace MvxStarter.Core.ViewModels
                     LapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
 
                     // Determine whether the car is on an out lap or not 
-                    if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance > 0)
+                    if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance > 0 && _sessionTime > 3)
                     {
                         // If the value is positive, the car is not on an outlap
                         _validLap = true;
@@ -514,17 +528,6 @@ namespace MvxStarter.Core.ViewModels
                         // If the value is negative, the car is on an outlap
                         _validLap = false;
                     }
-
-                }
-
-                // If Session Packet
-                if (pt == PacketType.Session)
-                {
-                    SessionPacket lobPack = new SessionPacket();
-                    lobPack.LoadBytes(receiveBytes);
-
-                    // Setting _folderTrack variable for writing to JSON
-                    _folderTrack = lobPack.SessionTrack.ToString();
 
                 }
 
