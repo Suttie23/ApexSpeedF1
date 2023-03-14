@@ -14,8 +14,11 @@
 
         <Grid>
             <lvc:CartesianChart ZoomMode="Both" Series="{Binding Series}" Margin="0,0,0,91"/>
-            <Button mvx:Bi.nd="Command ReturnToHistoricalCommand" Margin="410,714,986,24">Return To Historical Page</Button>
-            <Button mvx:Bi.nd="Command LoadGraphDataCommand" Margin="990,714,406,24" Content="Upload Lap Data"/>
+            <Button mvx:Bi.nd="Command ReturnToHistoricalCommand" Margin="10,714,1386,24">Return To Historical Page</Button>
+            <Button mvx:Bi.nd="Command LoadGraphDataACommand" Margin="1142,684,254,54" Content="Upload Lap Data A"/>
+            <Button mvx:Bi.nd="Command LoadGraphDataBCommand" Margin="1386,686,10,52" Content="Upload Lap Data B"/>
+            <Button mvx:Bi.nd="Command RemoveGraphDataACommand" Margin="1142,722,254,16" Content="Remove Lap Data A"/>
+            <Button mvx:Bi.nd="Command RemoveGraphDataBCommand" Margin="1386,722,10,16" Content="Remove Lap Data B"/>
         </Grid>
     </Border>
 </views:MvxWpfView>
