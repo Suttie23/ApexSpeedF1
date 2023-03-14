@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Wpf\\ApexSpeed.Wpf.csproj": {}
+    "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Wpf\\ApexSpeed.Wpf.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj": {
+    "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj",
         "projectName": "ApexSpeed.Core",
-        "projectPath": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj",
-        "packagesPath": "C:\\Users\\Sutti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Core\\obj\\",
+        "projectPath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj",
+        "packagesPath": "C:\\Users\\Suttie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sutti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Suttie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,6 +65,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[7.0.2, )"
             }
           },
           "imports": [
@@ -78,24 +82,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.200-preview.22628.1\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Wpf\\ApexSpeed.Wpf.csproj": {
+    "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Wpf\\ApexSpeed.Wpf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Wpf\\ApexSpeed.Wpf.csproj",
+        "projectUniqueName": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Wpf\\ApexSpeed.Wpf.csproj",
         "projectName": "ApexSpeed.Wpf",
-        "projectPath": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Wpf\\ApexSpeed.Wpf.csproj",
-        "packagesPath": "C:\\Users\\Sutti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Wpf\\obj\\",
+        "projectPath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Wpf\\ApexSpeed.Wpf.csproj",
+        "packagesPath": "C:\\Users\\Suttie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Wpf\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sutti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Suttie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -110,8 +114,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj": {
-                "projectPath": "C:\\Users\\Sutti\\Desktop\\Projects\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj"
+              "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj": {
+                "projectPath": "C:\\Users\\Suttie\\Desktop\\F1_2021_Telemetry\\MvxStarter.Core\\ApexSpeed.Core.csproj"
               }
             }
           }
@@ -158,7 +162,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.200-preview.22628.1\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -7,8 +7,7 @@ namespace ApexSpeed.Core.Models
     public class ThrottleDataPointModel
     {
 
-        public double Distance { get; set; }
+        public double LapDistance { get; set; }
         public double Throttle { get; set; }
-
     }
 }

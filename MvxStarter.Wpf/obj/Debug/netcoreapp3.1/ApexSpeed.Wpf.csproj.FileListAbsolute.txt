@@ -146,3 +146,7 @@ C:\Users\Sutti\Desktop\Projects\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netco
 C:\Users\Sutti\Desktop\Projects\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\ApexSpeed.Wpf.dll
 C:\Users\Sutti\Desktop\Projects\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\ApexSpeed.Wpf.pdb
 C:\Users\Sutti\Desktop\Projects\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\ApexSpeed.Wpf.genruntimeconfig.cache
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\bin\Debug\netcoreapp3.1\System.Text.Json.dll
