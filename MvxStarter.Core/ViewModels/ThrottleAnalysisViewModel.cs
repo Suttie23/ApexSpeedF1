@@ -15,11 +15,34 @@ using ApexSpeed.Core.Models;
 using System.Linq;
 using System.Collections.ObjectModel;
 using System.Text.Json;
+using System.Diagnostics;
 
 namespace ApexSpeed.Core.ViewModels
 {
     public class ThrottleAnalysisViewModel : MvxViewModel
     {
+
+        private string _selectedFileA;
+        public string SelectedFileA
+        {
+            get { return _selectedFileA; }
+            set
+            {
+                SetProperty(ref _selectedFileA, value);
+            }
+        }
+
+        private string _selectedFileB;
+        public string SelectedFileB
+        {
+            get { return _selectedFileB; }
+            set
+            {
+                SetProperty(ref _selectedFileB, value);
+            }
+        }
+
+
 
         private readonly IMvxNavigationService _navigationService;
 
@@ -74,7 +97,8 @@ namespace ApexSpeed.Core.ViewModels
         public IMvxCommand LoadGraphDataACommand { get; set; }
         public async void LoadGraphDataA()
         {
-            string jsonPath = @"C:\Users\Suttie\Desktop\F1_2021_Telemetry\Lap Files\Catalunya 3-13-2023 12.01 PM\Lap 1.json";
+            Debug.WriteLine("VM");
+            string jsonPath = SelectedFileA;
             using FileStream stream = File.OpenRead(jsonPath);
             ObservableCollection<ThrottleDataPointModel>? wrappers =
                 await JsonSerializer.DeserializeAsync<ObservableCollection<ThrottleDataPointModel>>(stream);
@@ -94,7 +118,7 @@ namespace ApexSpeed.Core.ViewModels
         public IMvxCommand LoadGraphDataBCommand { get; set; }
         public async void LoadGraphDataB()
         {
-            string jsonPath = @"C:\Users\Suttie\Desktop\F1_2021_Telemetry\Lap Files\Catalunya 3-13-2023 12.01 PM\Lap 2.json";
+            string jsonPath = SelectedFileB;
             using FileStream stream = File.OpenRead(jsonPath);
             ObservableCollection<ThrottleDataPointModel>? wrappers =
                 await JsonSerializer.DeserializeAsync<ObservableCollection<ThrottleDataPointModel>>(stream);
