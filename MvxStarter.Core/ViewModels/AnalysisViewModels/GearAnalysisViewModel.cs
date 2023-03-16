@@ -20,7 +20,7 @@ using ApexSpeed.Core.Models.JSONWrappers;
 
 namespace ApexSpeed.Core.ViewModels.AnalysisViewModels
 {
-    public class BrakeAnalysisViewModel : MvxViewModel
+    public class GearAnalysisViewModel : MvxViewModel
     {
 
         // Navigation Locking variables
@@ -79,7 +79,7 @@ namespace ApexSpeed.Core.ViewModels.AnalysisViewModels
             await _navigationService.Navigate<HistoricalViewModel>();
         }
 
-        public BrakeAnalysisViewModel(IMvxNavigationService navigationService)
+        public GearAnalysisViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
             LoadGraphDataACommand = new MvxCommand(LoadGraphDataA);
@@ -125,17 +125,17 @@ namespace ApexSpeed.Core.ViewModels.AnalysisViewModels
             try
             {
                 using FileStream stream = File.OpenRead(jsonPath);
-                ObservableCollection<BrakeDataPointModel>? wrappers =
-                await JsonSerializer.DeserializeAsync<ObservableCollection<BrakeDataPointModel>>(stream);
+                ObservableCollection<GearDataPointModel>? wrappers =
+                await JsonSerializer.DeserializeAsync<ObservableCollection<GearDataPointModel>>(stream);
 
                 if (wrappers is null)
                 {
                     // Deserialization failed
                 }
 
-                foreach (BrakeDataPointModel wrapper in wrappers)
+                foreach (GearDataPointModel wrapper in wrappers)
                 {
-                    _obeservablePointsA.Add(new(wrapper.LapDistance, wrapper.Brake));
+                    _obeservablePointsA.Add(new(wrapper.LapDistance, wrapper.Gear));
                 }
             }
             catch
@@ -153,17 +153,17 @@ namespace ApexSpeed.Core.ViewModels.AnalysisViewModels
             try
             {
                 using FileStream stream = File.OpenRead(jsonPath);
-                ObservableCollection<BrakeDataPointModel>? wrappers =
-                    await JsonSerializer.DeserializeAsync<ObservableCollection<BrakeDataPointModel>>(stream);
+                ObservableCollection<GearDataPointModel>? wrappers =
+                    await JsonSerializer.DeserializeAsync<ObservableCollection<GearDataPointModel>>(stream);
 
                 if (wrappers is null)
                 {
                     // Deserialization failed
                 }
 
-                foreach (BrakeDataPointModel wrapper in wrappers)
+                foreach (GearDataPointModel wrapper in wrappers)
                 {
-                    _obeservablePointsB.Add(new(wrapper.LapDistance, wrapper.Brake));
+                    _obeservablePointsB.Add(new(wrapper.LapDistance, wrapper.Gear));
                 }
             }
             catch

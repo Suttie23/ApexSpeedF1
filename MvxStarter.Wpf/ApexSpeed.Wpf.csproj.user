@@ -30,6 +30,9 @@
     <Page Update="Styles\UIStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\AnalysisViews\GearAnalysisView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\AnalysisViews\BrakeAnalysisView.xaml">
       <SubType>Designer</SubType>
     </Page>

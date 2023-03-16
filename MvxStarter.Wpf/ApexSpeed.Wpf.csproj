@@ -39,4 +39,10 @@
     <Resource Include="Images\WrenchSmall001-plain.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Views\AnalysisViews\GearAnalysisView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>

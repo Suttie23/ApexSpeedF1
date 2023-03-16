@@ -152,3 +152,5 @@ C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\ThrottleAnalysisView.baml
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\BrakeAnalysisView.g.cs
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\BrakeAnalysisView.baml
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\GearAnalysisView.g.cs
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\GearAnalysisView.baml
