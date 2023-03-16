@@ -53,6 +53,12 @@ namespace ApexSpeed.Core.ViewModels
             await _navigationService.Navigate<SpeedAnalysisViewModel>();
         }
 
+        public IMvxCommand NavToTimeCommand => new MvxCommand(async () => await NavToTime());
+        public async Task NavToTime()
+        {
+            await _navigationService.Navigate<TimeAnalysisViewModel>();
+        }
+
         public HistoricalViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;

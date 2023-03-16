@@ -156,3 +156,5 @@ C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\GearAnalysisView.baml
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\SpeedAnalysisView.g.cs
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\SpeedAnalysisView.baml
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\TimeAnalysisView.g.cs
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\TimeAnalysisView.baml

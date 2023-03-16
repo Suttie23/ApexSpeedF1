@@ -40,6 +40,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\AnalysisViews\TimeAnalysisView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\AnalysisViews\SpeedAnalysisView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
