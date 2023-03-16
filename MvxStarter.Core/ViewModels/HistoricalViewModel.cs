@@ -47,6 +47,12 @@ namespace ApexSpeed.Core.ViewModels
             await _navigationService.Navigate<GearAnalysisViewModel>();
         }
 
+        public IMvxCommand NavToSpeedCommand => new MvxCommand(async () => await NavToSpeed());
+        public async Task NavToSpeed()
+        {
+            await _navigationService.Navigate<SpeedAnalysisViewModel>();
+        }
+
         public HistoricalViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;

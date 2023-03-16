@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\App.xaml
-8-2131183230
+92060644017
 
-915171488
+10-1143359543
 216-1171134518
-MainWindow.xaml;Styles\UIStyles.xaml;Views\AnalysisViews\BrakeAnalysisView.xaml;Views\AnalysisViews\GearAnalysisView.xaml;Views\AnalysisViews\ThrottleAnalysisView.xaml;Views\HistoricalView.xaml;Views\HomeView.xaml;Views\TelemetryView.xaml;
+MainWindow.xaml;Styles\UIStyles.xaml;Views\AnalysisViews\BrakeAnalysisView.xaml;Views\AnalysisViews\GearAnalysisView.xaml;Views\AnalysisViews\SpeedAnalysisView.xaml;Views\AnalysisViews\ThrottleAnalysisView.xaml;Views\HistoricalView.xaml;Views\HomeView.xaml;Views\TelemetryView.xaml;
 
 False
 

@@ -85,7 +85,7 @@
                 <Button mvx:Bi.nd="Command NavToThrottleCommand" Margin="0 60 0 0" Width="200" Height="100">Throttle Analysis</Button>
                 <Button mvx:Bi.nd="Command NavToBrakeCommand" Margin="0 20 0 0" Width="200" Height="100">Brake Analysis</Button>
                 <Button mvx:Bi.nd="Command NavToGearCommand" Margin="0 20 0 0" Width="200" Height="100">Gear Analysis</Button>
-                <Button IsEnabled="false" Margin="0 20 0 0" Width="200" Height="100">Speed Analysis</Button>
+                <Button mvx:Bi.nd="Command NavToSpeedCommand" Margin="0 20 0 0" Width="200" Height="100">Speed Analysis</Button>
                 <Button IsEnabled="false" Margin="0 20 0 0" Width="200" Height="100">Time Analysis</Button>
 
             </StackPanel>
