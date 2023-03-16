@@ -18,17 +18,17 @@ namespace ApexSpeedApp.MVVM.Model
         public ushort SpeedMph { get; set; }
 
         // Lap Values
-        public uint LastLapTimeMilliseconds { get; set; }
         public float LapDistance { get; set; }
+        public double CurrentLapTime { get; set; }
 
-        public LapSaveDataModel(float Throttle, float Brake, sbyte Gear, ushort SpeedMph, float LapDistance)
+        public LapSaveDataModel(float Throttle, float Brake, sbyte Gear, ushort SpeedMph, float LapDistance, double currentLapTime)
         {
             this.Throttle = Throttle;
             this.Brake = Brake;
             this.Gear = Gear;
             this.SpeedMph = SpeedMph;
             this.LapDistance = LapDistance;
-
+            this.CurrentLapTime = currentLapTime;
         }
     }
 

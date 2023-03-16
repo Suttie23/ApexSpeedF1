@@ -536,7 +536,7 @@ namespace MvxStarter.Core.ViewModels
                 if (_validLap == true)
                 {
                     // Add telemetry to list
-                    LapList.Add(new LapSaveDataModel(Throttle, Brake, Gear, Speed, LapDistance));
+                    LapList.Add(new LapSaveDataModel(Throttle, Brake, Gear, Speed, LapDistance, CurrentLapTime.TotalMinutes));
                 }
 
                     // Determine whether a new lap has been started
@@ -549,10 +549,12 @@ namespace MvxStarter.Core.ViewModels
                         } 
                         else
                         {
+
+
                             // Write LapList to JSON
 
                             // Construct fileName string using variables assigned earlier
-                            string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (CurrentLapNumber - 1) + ".json";
+                            string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (CurrentLapNumber - 1) + " (" + PreviousLapTime.TotalMinutes + " Seconds)" + ".json";
 
                             // Create directory
                             FileInfo fi = new FileInfo(fileName);
