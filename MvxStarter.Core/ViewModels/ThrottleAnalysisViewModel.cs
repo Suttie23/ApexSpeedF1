@@ -16,6 +16,7 @@ using System.Linq;
 using System.Collections.ObjectModel;
 using System.Text.Json;
 using System.Diagnostics;
+using System.Drawing;
 
 namespace ApexSpeed.Core.ViewModels
 {
@@ -97,21 +98,28 @@ namespace ApexSpeed.Core.ViewModels
         public IMvxCommand LoadGraphDataACommand { get; set; }
         public async void LoadGraphDataA()
         {
-            Debug.WriteLine("VM");
             string jsonPath = SelectedFileA;
-            using FileStream stream = File.OpenRead(jsonPath);
-            ObservableCollection<ThrottleDataPointModel>? wrappers =
+            try
+            {
+                using FileStream stream = File.OpenRead(jsonPath);
+                ObservableCollection<ThrottleDataPointModel>? wrappers =
                 await JsonSerializer.DeserializeAsync<ObservableCollection<ThrottleDataPointModel>>(stream);
 
-            if (wrappers is null)
+                if (wrappers is null)
+                {
+                    // Deserialization failed
+                }
+
+                foreach (ThrottleDataPointModel wrapper in wrappers)
+                {
+                    _obeservablePointsA.Add(new(wrapper.LapDistance, wrapper.Throttle));
+                }
+            }
+            catch
             {
-                // Deserialization failed
+                
             }
 
-            foreach (ThrottleDataPointModel wrapper in wrappers)
-            {
-                _obeservablePointsA.Add(new(wrapper.LapDistance, wrapper.Throttle));
-            }
 
         }
 
@@ -119,18 +127,25 @@ namespace ApexSpeed.Core.ViewModels
         public async void LoadGraphDataB()
         {
             string jsonPath = SelectedFileB;
-            using FileStream stream = File.OpenRead(jsonPath);
-            ObservableCollection<ThrottleDataPointModel>? wrappers =
-                await JsonSerializer.DeserializeAsync<ObservableCollection<ThrottleDataPointModel>>(stream);
-
-            if (wrappers is null)
+            try
             {
-                // Deserialization failed
+                using FileStream stream = File.OpenRead(jsonPath);
+                ObservableCollection<ThrottleDataPointModel>? wrappers =
+                    await JsonSerializer.DeserializeAsync<ObservableCollection<ThrottleDataPointModel>>(stream);
+
+                if (wrappers is null)
+                {
+                    // Deserialization failed
+                }
+
+                foreach (ThrottleDataPointModel wrapper in wrappers)
+                {
+                    _obeservablePointsB.Add(new(wrapper.LapDistance, wrapper.Throttle));
+                }
             }
-
-            foreach (ThrottleDataPointModel wrapper in wrappers)
+            catch
             {
-                _obeservablePointsB.Add(new(wrapper.LapDistance, wrapper.Throttle));
+
             }
 
         }

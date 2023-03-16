@@ -19,8 +19,8 @@
             <Button x:Name="UpLapB" mvx:Bi.nd="Command LoadGraphDataBCommand" Margin="1386,686,10,52" Content="Upload Lap Data B" Click="UpLapBButton_Click"/>
             <Button mvx:Bi.nd="Command RemoveGraphDataACommand" Margin="1142,722,254,16" Content="Remove Lap Data A"/>
             <Button mvx:Bi.nd="Command RemoveGraphDataBCommand" Margin="1386,722,10,16" Content="Remove Lap Data B"/>
-            <TextBox x:Name="LapATB" HorizontalAlignment="Left" Height="37" Margin="484,722,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileA, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="LapBTB" HorizontalAlignment="Left" Height="38" Margin="881,726,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileB, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="LapATB" Visibility="Hidden" HorizontalAlignment="Left" Height="37" Margin="484,722,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileA, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="LapBTB" Visibility="Hidden" HorizontalAlignment="Left" Height="38" Margin="881,726,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileB, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
         </Grid>
     </Border>
 </views:MvxWpfView>
