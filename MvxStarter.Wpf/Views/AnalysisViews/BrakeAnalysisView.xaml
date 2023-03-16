@@ -13,16 +13,28 @@
     <Border Background="#272537">
 
         <Grid>
-            <lvc:CartesianChart ZoomMode="Both" Series="{Binding Series}" Margin="0,0,0,91"/>
-            <Button mvx:Bi.nd="Command ReturnToHistoricalCommand" Margin="10,714,1386,24">Return To Historical Page</Button>
-            <Button x:Name="UpLapA" mvx:Bi.nd="Command LoadGraphDataACommand" Margin="1142,684,254,54" Content="Upload Lap Data A" Click="UpLapAButton_Click"/>
-            <Button x:Name="UpLapB" mvx:Bi.nd="Command LoadGraphDataBCommand" Margin="1386,686,10,52" Content="Upload Lap Data B" Click="UpLapBButton_Click"/>
-            <Button mvx:Bi.nd="Command RemoveGraphDataACommand" Margin="1142,722,254,16" Content="Remove Lap Data A"/>
-            <Button mvx:Bi.nd="Command RemoveGraphDataBCommand" Margin="1386,722,10,16" Content="Remove Lap Data B"/>
+
+            <lvc:CartesianChart ZoomMode="Both" Series="{Binding Series}" Margin="38,78,0,36"/>
+            <Button mvx:Bi.nd="Command ReturnToHistoricalCommand" Margin="10,13,1386,725">Return To Historical Page</Button>
+            <Button x:Name="UpLapA" mvx:Bi.nd="Command LoadGraphDataACommand" Margin="1134,16,262,722" Content="Upload Lap Data A" Click="UpLapAButton_Click"/>
+            <Button x:Name="UpLapB" mvx:Bi.nd="Command LoadGraphDataBCommand" Margin="1378,18,18,720" Content="Upload Lap Data B" Click="UpLapBButton_Click"/>
+            <Button mvx:Bi.nd="Command RemoveGraphDataACommand" Margin="1134,54,262,684" Content="Remove Lap Data A"/>
+            <Button mvx:Bi.nd="Command RemoveGraphDataBCommand" Margin="1378,54,18,684" Content="Remove Lap Data B"/>
 
 
             <TextBox x:Name="LapATB" Visibility="Hidden" HorizontalAlignment="Left" Height="37" Margin="484,722,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileA, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="LapBTB" Visibility="Hidden" HorizontalAlignment="Left" Height="38" Margin="881,726,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileB, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+            <Label HorizontalContentAlignment="Center" FontSize="20" Foreground="White" x:Name="label" Content="Distance" Margin="748,718,688,0" VerticalAlignment="Top"/>
+            <Label HorizontalContentAlignment="Center" FontSize="20" Foreground="White" x:Name="label_Copy" Content="Brake" Margin="-1,338,1437,337" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
         </Grid>
     </Border>
 </views:MvxWpfView>

@@ -102,6 +102,7 @@ namespace ApexSpeed.Core.ViewModels.AnalysisViewModels
                 {
                     Values = _obeservablePointsA,
                     Fill = null,
+                    Name = "Lap A:",
                     LineSmoothness = 0,
                     GeometrySize = 0,
                 },
@@ -109,6 +110,7 @@ namespace ApexSpeed.Core.ViewModels.AnalysisViewModels
                 {
                     Values = _obeservablePointsB,
                     Fill = null,
+                    Name = "Lap B:",
                     LineSmoothness = 0,
                     GeometrySize = 0
                 }
