@@ -1,4 +1,5 @@
-﻿using MvvmCross.Commands;
+﻿using ApexSpeed.Core.ViewModels.AnalysisViewModels;
+using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
 using MvxStarter.Core.ViewModels;
@@ -32,6 +33,12 @@ namespace ApexSpeed.Core.ViewModels
         public async Task NavToThrottle()
         {
             await _navigationService.Navigate<ThrottleAnalysisViewModel>();
+        }
+
+        public IMvxCommand NavToBrakeCommand => new MvxCommand(async () => await NavToBrake());
+        public async Task NavToBrake()
+        {
+            await _navigationService.Navigate<BrakeAnalysisViewModel>();
         }
 
         public HistoricalViewModel(IMvxNavigationService navigationService)

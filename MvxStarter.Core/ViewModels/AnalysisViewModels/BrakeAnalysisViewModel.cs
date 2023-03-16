@@ -11,17 +11,40 @@ using LiveChartsCore;
 using LiveChartsCore.SkiaSharpView;
 using LiveChartsCore.Defaults;
 using System.IO;
-using ApexSpeed.Core.Models;
 using System.Linq;
 using System.Collections.ObjectModel;
 using System.Text.Json;
 using System.Diagnostics;
 using System.Drawing;
+using ApexSpeed.Core.Models.JSONWrappers;
 
-namespace ApexSpeed.Core.ViewModels
+namespace ApexSpeed.Core.ViewModels.AnalysisViewModels
 {
-    public class ThrottleAnalysisViewModel : MvxViewModel
+    public class BrakeAnalysisViewModel : MvxViewModel
     {
+
+        // Navigation Locking variables
+        private bool _lockAVis = true;
+        public bool LockAVis
+        {
+            get { return _lockAVis; }
+            set
+            {
+                _lockAVis = value;
+                RaisePropertyChanged(() => LockAVis);
+            }
+        }
+
+        private bool _lockBVis = true;
+        public bool LockBVis
+        {
+            get { return _lockBVis; }
+            set
+            {
+                _lockAVis = value;
+                RaisePropertyChanged(() => LockBVis);
+            }
+        }
 
         private string _selectedFileA;
         public string SelectedFileA
@@ -56,7 +79,7 @@ namespace ApexSpeed.Core.ViewModels
             await _navigationService.Navigate<HistoricalViewModel>();
         }
 
-        public ThrottleAnalysisViewModel(IMvxNavigationService navigationService)
+        public BrakeAnalysisViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
             LoadGraphDataACommand = new MvxCommand(LoadGraphDataA);
@@ -80,7 +103,7 @@ namespace ApexSpeed.Core.ViewModels
                     Values = _obeservablePointsA,
                     Fill = null,
                     LineSmoothness = 0,
-                    GeometrySize = 0,                                     
+                    GeometrySize = 0,
                 },
             new LineSeries<ObservablePoint>
                 {
@@ -102,22 +125,22 @@ namespace ApexSpeed.Core.ViewModels
             try
             {
                 using FileStream stream = File.OpenRead(jsonPath);
-                ObservableCollection<ThrottleDataPointModel>? wrappers =
-                await JsonSerializer.DeserializeAsync<ObservableCollection<ThrottleDataPointModel>>(stream);
+                ObservableCollection<BrakeDataPointModel>? wrappers =
+                await JsonSerializer.DeserializeAsync<ObservableCollection<BrakeDataPointModel>>(stream);
 
                 if (wrappers is null)
                 {
                     // Deserialization failed
                 }
 
-                foreach (ThrottleDataPointModel wrapper in wrappers)
+                foreach (BrakeDataPointModel wrapper in wrappers)
                 {
-                    _obeservablePointsA.Add(new(wrapper.LapDistance, wrapper.Throttle));
+                    _obeservablePointsA.Add(new(wrapper.LapDistance, wrapper.Brake));
                 }
             }
             catch
             {
-                
+
             }
 
 
@@ -130,23 +153,24 @@ namespace ApexSpeed.Core.ViewModels
             try
             {
                 using FileStream stream = File.OpenRead(jsonPath);
-                ObservableCollection<ThrottleDataPointModel>? wrappers =
-                    await JsonSerializer.DeserializeAsync<ObservableCollection<ThrottleDataPointModel>>(stream);
+                ObservableCollection<BrakeDataPointModel>? wrappers =
+                    await JsonSerializer.DeserializeAsync<ObservableCollection<BrakeDataPointModel>>(stream);
 
                 if (wrappers is null)
                 {
                     // Deserialization failed
                 }
 
-                foreach (ThrottleDataPointModel wrapper in wrappers)
+                foreach (BrakeDataPointModel wrapper in wrappers)
                 {
-                    _obeservablePointsB.Add(new(wrapper.LapDistance, wrapper.Throttle));
+                    _obeservablePointsB.Add(new(wrapper.LapDistance, wrapper.Brake));
                 }
             }
             catch
             {
-
+                SelectedFileB = "";
             }
+
 
         }
 
@@ -167,4 +191,6 @@ namespace ApexSpeed.Core.ViewModels
         }
 
     }
+
 }
+

@@ -1,33 +1,28 @@
-﻿using ApexSpeed.Core.ViewModels;
-using Microsoft.Win32;
-using MvvmCross.Platforms.Wpf.Views;
+﻿using MvvmCross.Platforms.Wpf.Views;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ApexSpeed.Wpf.Views
+namespace ApexSpeed.Wpf.Views.AnalysisViews
 {
     /// <summary>
-    /// Interaction logic for ThrottleAnalysisView.xaml
+    /// Interaction logic for BrakeAnalysisView.xaml
     /// </summary>
-    public partial class ThrottleAnalysisView : MvxWpfView
+    public partial class BrakeAnalysisView : MvxWpfView
     {
-
         string filePathA;
         string filePathB;
 
-        public ThrottleAnalysisView()
+        public BrakeAnalysisView()
         {
             InitializeComponent();
         }
@@ -49,7 +44,6 @@ namespace ApexSpeed.Wpf.Views
 
             LapATB.Text = filePathA;
 
-            Debug.WriteLine("Behind");
         }
 
         private void UpLapBButton_Click(object sender, RoutedEventArgs e)
@@ -68,7 +62,6 @@ namespace ApexSpeed.Wpf.Views
 
             LapBTB.Text = filePathB;
 
-            Debug.WriteLine("Behind");
         }
     }
 }

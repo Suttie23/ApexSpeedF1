@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ApexSpeed.Core.Models
+namespace ApexSpeed.Core.Models.JSONWrappers
 {
     public class ThrottleDataPointModel
     {
