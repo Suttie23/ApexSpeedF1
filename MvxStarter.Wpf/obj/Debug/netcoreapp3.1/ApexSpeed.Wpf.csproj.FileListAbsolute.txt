@@ -158,3 +158,7 @@ C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\SpeedAnalysisView.baml
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\TimeAnalysisView.g.cs
 C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\obj\Debug\netcoreapp3.1\Views\AnalysisViews\TimeAnalysisView.baml
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+C:\Users\Suttie\Desktop\F1_2021_Telemetry\MvxStarter.Wpf\bin\Debug\netcoreapp3.1\ShowMeTheXAML.dll
