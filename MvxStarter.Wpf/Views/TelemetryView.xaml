@@ -32,108 +32,6 @@
                             Kind="ExitToApp" />
             </Button>
 
-            <materialDesign:DrawerHost
-              x:Name="DrawerHost"
-              Width="196"
-              Height="800"
-              HorizontalAlignment="Left"
-              VerticalAlignment="Center"
-              BorderBrush="{DynamicResource MaterialDesignDivider}"
-              BorderThickness="0"
-              BottomDrawerBackground="{DynamicResource SecondaryHueLightBrush}"
-              BottomDrawerCornerRadius="20 20 0 0" RenderTransformOrigin="0.5,0.5">
-                <materialDesign:DrawerHost.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform AngleY="-0.63"/>
-                        <RotateTransform/>
-                        <TranslateTransform Y="-0.989"/>
-                    </TransformGroup>
-                </materialDesign:DrawerHost.RenderTransform>
-
-
-
-
-                <materialDesign:DrawerHost.Style>
-                    <Style
-                  TargetType="materialDesign:DrawerHost"
-                  BasedOn="{StaticResource {x:Type materialDesign:DrawerHost}}">
-                        <Style.Triggers>
-                            <DataTrigger
-                      Binding="{Binding IsChecked, ElementName=BackgroundToggle}"
-                      Value="True">
-                                <Setter
-                        Property="OverlayBackground"
-                        Value="{DynamicResource PrimaryHueMidBrush}" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </materialDesign:DrawerHost.Style>
-                <materialDesign:DrawerHost.LeftDrawerContent>
-                    <StackPanel
-                  Margin="16">
-                        <TextBlock
-                    Margin="4"
-                    HorizontalAlignment="Center"
-                    Text="APEXSPEED F1" />
-                        <Button
-                    Margin="4"
-                    Foreground="Red"
-                    HorizontalAlignment="Center"
-                    mvx:Bi.nd="Command NavToHomeCommand"
-                    CommandParameter="{x:Static Dock.Left}"
-                    Content="Home"
-                    Style="{StaticResource MaterialDesignFlatButton}" />
-                        <Button
-                    Margin="4"
-                    Foreground="Red"
-                    HorizontalAlignment="Center"
-                    mvx:Bi.nd="Command NavToLiveTelemetryCommand"
-                    CommandParameter="{x:Static Dock.Left}"
-                    Content="Live Telemetry"
-                    Style="{StaticResource MaterialDesignFlatButton}" />
-                        <Button
-                    Margin="4"
-                    Foreground="Red"
-                    HorizontalAlignment="Center"
-                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
-                    Content="Historical Telemetry"
-                    Style="{StaticResource MaterialDesignFlatButton}" />
-                        <Button
-                    Margin="4"
-                    Foreground="Red"
-                    HorizontalAlignment="Center"
-                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
-                    Content="Close Menu"
-                    Style="{StaticResource MaterialDesignFlatButton}" />
-                    </StackPanel>
-                </materialDesign:DrawerHost.LeftDrawerContent>
-
-                <Grid
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Button
-                      IsEnabled="{Binding LockNavigation}"
-                      BorderThickness="0"
-                      Background="Red"
-                      Grid.Row="1"
-                      Grid.Column="2"
-                      Margin="-34,-380,-14,348"
-                      Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
-                      CommandParameter="{x:Static Dock.Left}"
-                      Content="{materialDesign:PackIcon Kind=Menu}" />
-                </Grid>
-            </materialDesign:DrawerHost>
             <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="906,-285,0,0" VerticalAlignment="Top" Width="100"/>
 
             <lvc:Gauge
@@ -210,6 +108,111 @@
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreWearRR}" Margin="1182,629,65,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black"  FontSize="22" Content="Previous Lap Time: " Margin="1027,60,137,638" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black"  FontSize="22" Content="{Binding PreviousLapTime}" Margin="1170,40,-6,614" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+            <materialDesign:DrawerHost
+              x:Name="DrawerHost"
+              Width="196"
+              Height="800"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Center"
+              BorderBrush="{DynamicResource MaterialDesignDivider}"
+              BorderThickness="0"
+              BottomDrawerBackground="{DynamicResource SecondaryHueLightBrush}"
+              BottomDrawerCornerRadius="20 20 0 0" RenderTransformOrigin="0.5,0.5">
+                <materialDesign:DrawerHost.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.63"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.989"/>
+                    </TransformGroup>
+                </materialDesign:DrawerHost.RenderTransform>
+
+
+
+
+                <materialDesign:DrawerHost.Style>
+                    <Style
+                  TargetType="materialDesign:DrawerHost"
+                  BasedOn="{StaticResource {x:Type materialDesign:DrawerHost}}">
+                        <Style.Triggers>
+                            <DataTrigger
+                      Binding="{Binding IsChecked, ElementName=BackgroundToggle}"
+                      Value="True">
+                                <Setter
+                        Property="OverlayBackground"
+                        Value="{DynamicResource PrimaryHueMidBrush}" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </materialDesign:DrawerHost.Style>
+                <materialDesign:DrawerHost.LeftDrawerContent>
+                    <StackPanel
+                  Margin="16">
+                        <TextBlock
+                    Margin="4"
+                    HorizontalAlignment="Center"
+                    Text="APEXSPEED F1" />
+                        <Button
+                    Margin="4"
+                    Foreground="Red"
+                    HorizontalAlignment="Center"
+                    mvx:Bi.nd="Command NavToHomeCommand"
+                    CommandParameter="{x:Static Dock.Left}"
+                    Content="Home"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+                        <Button
+                    Margin="4"
+                    Foreground="Red"
+                    HorizontalAlignment="Center"
+                    mvx:Bi.nd="Command NavToLiveTelemetryCommand"
+                    CommandParameter="{x:Static Dock.Left}"
+                    Content="Live Telemetry"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+                        <Button
+                    Margin="4"
+                    Foreground="Red"
+                    HorizontalAlignment="Center"
+                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                    Content="Historical Telemetry"
+                    mvx:Bi.nd="Command NavToHistoricalCommand"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+                        <Button
+                    Margin="4"
+                    Foreground="Red"
+                    HorizontalAlignment="Center"
+                    Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                    Content="Close Menu"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+                    </StackPanel>
+                </materialDesign:DrawerHost.LeftDrawerContent>
+
+                <Grid
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Button
+                      IsEnabled="{Binding LockNavigation}"
+                      BorderThickness="0"
+                      Background="Red"
+                      Grid.Row="1"
+                      Grid.Column="2"
+                      Margin="-34,-380,-14,348"
+                      Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                      CommandParameter="{x:Static Dock.Left}"
+                      Content="{materialDesign:PackIcon Kind=Menu}" />
+                </Grid>
+            </materialDesign:DrawerHost>
+
         </Grid>
     </Border>
 </views:MvxWpfView>
