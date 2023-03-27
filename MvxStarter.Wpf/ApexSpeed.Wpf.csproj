@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\Attention.png" />
     <None Remove="Images\Gerald_G_Formula_One_Car.png" />
     <None Remove="Images\Hard Tyre.png" />
     <None Remove="Images\Intermediate Tyre.png" />
@@ -31,6 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\Attention.png" />
     <Resource Include="Images\Gerald_G_Formula_One_Car.png" />
     <Resource Include="Images\Hard Tyre.png" />
     <Resource Include="Images\Intermediate Tyre.png" />

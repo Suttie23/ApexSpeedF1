@@ -12,11 +12,11 @@
         Icon="Images/Logo.png"
         WindowStartupLocation="CenterScreen"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
         FontFamily="{materialDesign:MaterialDesignFont}"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+    WindowStyle="None">
     <Grid>
 
     </Grid>
