@@ -187,6 +187,14 @@
                     Margin="4"
                     Foreground="Red"
                     HorizontalAlignment="Center"
+                    mvx:Bi.nd="Command NavToHomeCommand"
+                    CommandParameter="{x:Static Dock.Left}"
+                    Content="Home"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+                        <Button
+                    Margin="4"
+                    Foreground="Red"
+                    HorizontalAlignment="Center"
                     mvx:Bi.nd="Command NavToLiveTelemetryCommand"
                     CommandParameter="{x:Static Dock.Left}"
                     Content="Live Telemetry"

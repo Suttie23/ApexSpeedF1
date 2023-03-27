@@ -88,6 +88,14 @@
                     Margin="4"
                     Foreground="Red"
                     HorizontalAlignment="Center"
+                    mvx:Bi.nd="Command NavToLiveTelemetryCommand"
+                    CommandParameter="{x:Static Dock.Left}"
+                    Content="Live Telemetry"
+                    Style="{StaticResource MaterialDesignFlatButton}" />
+                        <Button
+                    Margin="4"
+                    Foreground="Red"
+                    HorizontalAlignment="Center"
                     Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
                     Content="Historical Telemetry"
                     Style="{StaticResource MaterialDesignFlatButton}" />
@@ -152,15 +160,15 @@
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreTempFR}" Margin="173,585,1074,34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreTempRL}" Margin="87,629,1160,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreTempRR}" Margin="172,629,1074,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
-            <Label Foreground="Black"  FontSize="22" Content="Current Lap Time: " Margin="82,58,1082,640" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.RowSpan="2"/>
-            <Label Foreground="Black"  FontSize="22" Content="{Binding CurrentLapTime}" Margin="219,20,945,602" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="22" Content="Current Lap Time: " Margin="22,58,1142,640" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="22" Content="{Binding CurrentLapTime}" Margin="159,20,1005,602" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
 
             <lvc:Gauge
                 Value="{Binding RPM}"
                 From="0" To="13000"
                 LabelsVisibility="Collapsed"
-                Foreground="Transparent" RenderTransformOrigin="0.504,0.487" Height="222" Margin="513,130,513,448">
+                Foreground="Transparent" RenderTransformOrigin="0.504,0.487" Height="222" Margin="527,130,499,448">
                 <lvc:Gauge.GaugeActiveFill>
                     <LinearGradientBrush>
                         <GradientStop Color="YellowGreen" Offset="0.0" />
@@ -169,13 +177,13 @@
                     </LinearGradientBrush>
                 </lvc:Gauge.GaugeActiveFill>
             </lvc:Gauge>
-            <Label Foreground="Black" FontSize="38" Content="{Binding RPM}" Margin="606,204,606,415" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Label Foreground="Black"  FontSize="38" Content="RPM" Margin="605,282,605,341" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Label Foreground="Black" Width="200" FontSize="38" Content="{Binding Gear}" Margin="587,351,587,248" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+            <Label Foreground="Black" FontSize="38" Content="{Binding RPM}" Margin="620,204,592,415" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="38" Content="RPM" Margin="620,292,590,331" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black" Width="200" FontSize="38" Content="{Binding Gear}" Margin="701,355,673,244" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black"  FontSize="22" Content="Lap Number:" Margin="582,58,582,640" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.RowSpan="2"/>
             <Label Foreground="Black"  FontSize="22" Content="{Binding CurrentLapNumber}" Margin="661,22,503,600" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Image x:Name="___Images_Soft_Tyre_png" Grid.Column="1" Margin="639,452,611,128" Grid.Row="1" Source="{Binding TyreCompound}" Stretch="Fill"/>
-            <Button BorderThickness="0" Background="Red" IsEnabled="{Binding LockNavigation}" mvx:Bi.nd="Command GetTelemetryCommand" Margin="589,590,561,67" Grid.Column="1" Grid.Row="1">Listen For UDP</Button>
+            <Image x:Name="___Images_Soft_Tyre_png" Margin="741,506,699,184" Source="{Binding TyreCompound}" Stretch="Fill"/>
+            <Button BorderThickness="0" Background="Red" IsEnabled="{Binding LockNavigation}" mvx:Bi.nd="Command GetTelemetryCommand" Margin="589,644,561,124">Listen For UDP</Button>
             <Button BorderThickness="0" Background="Red" IsEnabled="{Binding StopListeningActive}" mvx:Bi.nd="Command StopListeningCommand" Margin="589,638,561,19" Grid.Column="1" Grid.Row="1" Content="Stop Listening"/>
 
             <lvc:Gauge
@@ -191,17 +199,17 @@
                     </LinearGradientBrush>
                 </lvc:Gauge.GaugeActiveFill>
             </lvc:Gauge>
-            <Label Foreground="Black"  FontSize="38" Content="Brake" Margin="1108,282,102,341" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="38" Content="Brake" Margin="1108,283,102,373" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black" FontSize="38" Content="{Binding Brake}" Margin="1129,204,123,415" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Label  FontSize="38" Content="DRS" Style="{StaticResource DRSLabelStyle}" Margin="1108,360,102,263" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+            <Label  FontSize="38" Content="DRS" Style="{StaticResource DRSLabelStyle}" Margin="1108,396,102,294" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label  FontSize="38" Content="OVERTAKE" Style="{StaticResource ERSLabelStyle}" Margin="1082,452,76,171" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" Width="200" FontSize="30" Content="Tyre Wear" Margin="1094,533,80,80" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreWearFL}" Margin="1099,585,148,34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreWearFR}" Margin="1185,585,62,34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreWearRL}" Margin="1099,629,148,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreWearRR}" Margin="1182,629,65,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
-            <Label Foreground="Black"  FontSize="22" Content="Previous Lap Time: " Margin="1089,58,75,640" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.RowSpan="2"/>
-            <Label Foreground="Black"  FontSize="22" Content="{Binding PreviousLapTime}" Margin="1232,38,-68,616" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="22" Content="Previous Lap Time: " Margin="1027,60,137,638" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="22" Content="{Binding PreviousLapTime}" Margin="1170,40,-6,614" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         </Grid>
     </Border>
 </views:MvxWpfView>

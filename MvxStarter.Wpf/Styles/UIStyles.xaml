@@ -8,7 +8,7 @@
                 <Setter Property="Foreground" Value="GreenYellow" />
             </DataTrigger>
             <DataTrigger Binding="{Binding ERSDeploy}" Value="False">
-                <Setter Property="Foreground" Value="White" />
+                <Setter Property="Foreground" Value="Black" />
             </DataTrigger>
         </Style.Triggers>
     </Style>
@@ -20,7 +20,7 @@
                 <Setter Property="Foreground" Value="GreenYellow" />
             </DataTrigger>
             <DataTrigger Binding="{Binding DRSDeploy}" Value="False">
-                <Setter Property="Foreground" Value="White" />
+                <Setter Property="Foreground" Value="Black" />
             </DataTrigger>
         </Style.Triggers>
     </Style>
