@@ -79,6 +79,8 @@ namespace ApexSpeed.Core.ViewModels
         {
             LoadGraphDataACommand = new MvxCommand(LoadGraphDataA);
             LoadGraphDataBCommand = new MvxCommand(LoadGraphDataB);
+            RemoveGraphDataACommand = new MvxCommand(RemoveGraphDataA);
+            RemoveGraphDataBCommand = new MvxCommand(RemoveGraphDataB);
             _navigationService = navigationService;
 
             // Throttle Series
@@ -249,13 +251,37 @@ namespace ApexSpeed.Core.ViewModels
                     _obeservablePointsBrakeB.Add(new(wrapper.LapDistance, wrapper.Brake));
                     _obeservablePointsGearB.Add(new(wrapper.LapDistance, wrapper.Gear));
                     _obeservablePointsSpeedB.Add(new(wrapper.LapDistance, wrapper.SpeedMph));
-                    _obeservablePointsTimeB.Add(new(wrapper.LapDistance, wrapper.CurrentLapTime)); ;
+                    _obeservablePointsTimeB.Add(new(wrapper.LapDistance, wrapper.CurrentLapTime));
                 }
             }
             catch
             {
                 SelectedFileB = "";
             }
+
+        }
+
+        public IMvxCommand RemoveGraphDataACommand { get; set; }
+        public void RemoveGraphDataA()
+        {
+
+            _obeservablePointsThrottleA.Clear();
+            _obeservablePointsBrakeA.Clear();
+            _obeservablePointsGearA.Clear();
+            _obeservablePointsSpeedA.Clear();
+            _obeservablePointsTimeA.Clear();
+
+        }
+
+        public IMvxCommand RemoveGraphDataBCommand { get; set; }
+        public void RemoveGraphDataB()
+        {
+
+            _obeservablePointsThrottleB.Clear();
+            _obeservablePointsBrakeB.Clear();
+            _obeservablePointsGearB.Clear();
+            _obeservablePointsSpeedB.Clear();
+            _obeservablePointsTimeB.Clear();
 
         }
 

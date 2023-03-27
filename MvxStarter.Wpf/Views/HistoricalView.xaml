@@ -168,6 +168,8 @@
 
             <TextBox x:Name="LapATB" Visibility="Hidden" HorizontalAlignment="Left" Height="37" Margin="484,722,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileA, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="LapBTB" Visibility="Hidden" HorizontalAlignment="Left" Height="38" Margin="881,726,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileB, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="RemoveLapAButton" BorderThickness="0" Background="Red" mvx:Bi.nd="Command RemoveGraphDataACommand" Margin="916,493,492,275" Content="Remove Lap A"/>
+            <Button x:Name="RemoveLapBButton" BorderThickness="0" Background="Red" mvx:Bi.nd="Command RemoveGraphDataBCommand" Margin="1185,493,223,275" Content="Remove Lap B"/>
 
 
         </Grid>
