@@ -16,7 +16,6 @@
     <Border Background="White">
 
         <Grid>
-
             <Rectangle Fill="#F7F7F7"  HorizontalAlignment="Center" Height="62" VerticalAlignment="Top" Width="1574"/>
             <Image x:Name="___Images_Logo_png1" Margin="591,-19,591,738" Source="/Images/LogoText.png" Stretch="Fill" RenderTransformOrigin="0.49,0.466"/>
             <Button x:Name="ExitButton"
@@ -37,26 +36,84 @@
 
             </Grid>
 
+            <Button x:Name="ThrottleTipButton"
+                        Background="Red"
+                        Foreground="White"                        
+                        Margin="0,104,1016,0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource MaterialDesignIconButton}" Height="30" Width="28" Click="ThrottleTipButton_Click">
+                <materialDesign:PackIcon
+                            Kind="Help" />
+            </Button>
+
             <Grid Margin="29,333,1008,271" Background="#F7F7F7">
 
                 <lvc:CartesianChart ZoomMode="Both" Series="{Binding BrakeSeries}" Margin="19,10,19,10"/>
 
             </Grid>
+
+            <Button x:Name="BrakeTipButton"
+                        Background="Red"
+                        Foreground="White"                        
+                        Margin="0,348,1016,0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource MaterialDesignIconButton}" Height="30" Width="28" Click="BrakeTipButton_Click">
+                <materialDesign:PackIcon
+                            Kind="Help" />
+            </Button>
+
             <Grid Margin="29,567,1008,37" Background="#F7F7F7">
 
                 <lvc:CartesianChart ZoomMode="Both" Series="{Binding GearSeries}" Margin="19,10,19,10"/>
 
             </Grid>
+
+            <Button x:Name="GearTipButton"
+                        Background="Red"
+                        Foreground="White"                        
+                        Margin="0,578,1016,0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource MaterialDesignIconButton}" Height="30" Width="28" Click="GearTipButton_Click">
+                <materialDesign:PackIcon
+                            Kind="Help" />
+            </Button>
+
             <Grid Margin="591,567,446,37" Background="#F7F7F7">
 
                 <lvc:CartesianChart ZoomMode="Both" Series="{Binding SpeedSeries}" Margin="19,10,19,10"/>
 
             </Grid>
+
+            <Button x:Name="SpeedTipButton"
+                        Background="Red"
+                        Foreground="White"                        
+                        Margin="0,578,464,0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource MaterialDesignIconButton}" Height="30" Width="28" Click="SpeedTipButton_Click">
+                <materialDesign:PackIcon
+                            Kind="Help" />
+            </Button>
+
             <Grid Margin="1165,567,37,37" Background="#F7F7F7">
 
                 <lvc:CartesianChart ZoomMode="Both" Series="{Binding TimeSeries}" Margin="19,10,19,10"/>
 
             </Grid>
+
+            <Button x:Name="TimeTipButton"
+                        Background="Red"
+                        Foreground="White"                        
+                        Margin="0,578,55,0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Style="{StaticResource MaterialDesignIconButton}" Height="30" Width="28" Click="TimeTipButton_Click">
+                <materialDesign:PackIcon
+                            Kind="Help" />
+            </Button>
 
             <materialDesign:DrawerHost
               x:Name="DrawerHost"
@@ -101,7 +158,7 @@
                         <TextBlock
                     Margin="4"
                     HorizontalAlignment="Center"
-                    Text="APEXSPEED F1" />
+                    Text="HISTORICAL ANALYSIS" />
                         <Button
                     Margin="4"
                     Foreground="Red"

@@ -182,7 +182,7 @@
                         <TextBlock
                     Margin="4"
                     HorizontalAlignment="Center"
-                    Text="APEXSPEED F1" />
+                    Text="HOME" />
                         <Button
                     Margin="4"
                     Foreground="Red"
