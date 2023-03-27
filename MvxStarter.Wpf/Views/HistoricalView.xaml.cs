@@ -70,5 +70,17 @@ namespace ApexSpeed.Wpf.Views
             LapBTB.Text = filePathB;
 
         }
+
+        private void BarcelonaButton_Click(object sender, RoutedEventArgs e)
+        {
+            BarcelonaImg.Visibility = Visibility.Visible;
+            AustriaImg.Visibility = Visibility.Hidden;
+        }
+
+        private void AustriaButton_Click(object sender, RoutedEventArgs e)
+        {
+            BarcelonaImg.Visibility = Visibility.Hidden;
+            AustriaImg.Visibility = Visibility.Visible;
+        }
     }
 }

@@ -517,6 +517,8 @@ namespace MvxStarter.Core.ViewModels
                     PreviousLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].LastLapTimeMilliseconds / 1000);
                     LapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
 
+                    Debug.WriteLine(LapDistance);
+
                     // Determine whether the car is on an out lap or not 
                     if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance > 0 && _sessionTime > 3)
                     {

@@ -105,7 +105,7 @@ namespace ApexSpeed.Wpf.Views.AnalysisViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ApexSpeed.Wpf;component/views/analysisviews/gearanalysisview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ApexSpeed.Wpf;V1.0.0.0;component/views/analysisviews/gearanalysisview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\AnalysisViews\GearAnalysisView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

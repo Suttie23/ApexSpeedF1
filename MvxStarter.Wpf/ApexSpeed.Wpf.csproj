@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Images\Attention.png" />
+    <None Remove="Images\AustriaMap.png" />
     <None Remove="Images\BarcelonaMap.png" />
     <None Remove="Images\Gerald_G_Formula_One_Car.png" />
     <None Remove="Images\Hard Tyre.png" />
@@ -35,6 +36,7 @@
 
   <ItemGroup>
     <Resource Include="Images\Attention.png" />
+    <Resource Include="Images\AustriaMap.png" />
     <Resource Include="Images\BarcelonaMap.png" />
     <Resource Include="Images\Gerald_G_Formula_One_Car.png" />
     <Resource Include="Images\Hard Tyre.png" />
@@ -45,18 +47,6 @@
     <Resource Include="Images\Soft Tyre.png" />
     <Resource Include="Images\Wet Tyre.png" />
     <Resource Include="Images\WrenchSmall001-plain.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Views\AnalysisViews\TimeAnalysisView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\AnalysisViews\SpeedAnalysisView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\AnalysisViews\GearAnalysisView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
 
 </Project>

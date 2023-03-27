@@ -160,8 +160,7 @@
                       Content="{materialDesign:PackIcon Kind=Menu}" />
                 </Grid>
             </materialDesign:DrawerHost>
-            <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="906,-285,0,0" VerticalAlignment="Top" Width="100"/>
-            <Image x:Name="___Images_BarcelonaMap_png" Margin="671,117,80,421" Source="/Images/BarcelonaMap.png" Stretch="Fill"/>
+            <Image x:Name="BarcelonaImg" Margin="787,127,80,433" Source="/Images/BarcelonaMap.png" Stretch="Fill"/>
 
             <Button x:Name="UploadLapAButton" BorderThickness="0" Background="Red" mvx:Bi.nd="Command LoadGraphDataACommand" Margin="916,431,492,337" Content="Upload Lap A" Click="UploadLapAButton_Click"/>
             <Button x:Name="UploadLapBButton" BorderThickness="0" Background="Red" mvx:Bi.nd="Command LoadGraphDataBCommand" Margin="1185,431,223,337" Click="UploadLapBButton_Click">Upload Lap B</Button>
@@ -193,6 +192,99 @@
             <Label x:Name="label1" Content="Gear" HorizontalAlignment="Left" Margin="280,763,0,0" VerticalAlignment="Top"/>
             <Label x:Name="label1_Copy" Content="Speed" HorizontalAlignment="Left" Margin="860,763,0,0" VerticalAlignment="Top"/>
             <Label x:Name="label1_Copy1" Content="Time" HorizontalAlignment="Left" Margin="1330,763,0,0" VerticalAlignment="Top"/>
+            <Image Visibility="Hidden" x:Name="AustriaImg" Margin="843,48,252,400" Source="/Images/AustriaMap.png" Stretch="Fill"/>
+            <materialDesign:DrawerHost
+                x:Name="DrawerHost_Copy"
+                Width="146"
+                Height="487"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                BorderBrush="{DynamicResource MaterialDesignDivider}"
+                BorderThickness="0"
+                BottomDrawerBackground="{DynamicResource SecondaryHueLightBrush}"
+                BottomDrawerCornerRadius="20 20 0 0" RenderTransformOrigin="0.5,0.5" Margin="591,67,0,0">
+                <materialDesign:DrawerHost.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.63"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.989"/>
+                    </TransformGroup>
+                </materialDesign:DrawerHost.RenderTransform>
+
+
+
+
+                <materialDesign:DrawerHost.Style>
+                    <Style
+                        TargetType="{x:Type materialDesign:DrawerHost}"
+                        BasedOn="{StaticResource {x:Type materialDesign:DrawerHost}}">
+                        <Style.Triggers>
+                            <DataTrigger
+                                Binding="{Binding IsChecked, ElementName=BackgroundToggle}"
+                                Value="True">
+                                <Setter
+                                    Property="OverlayBackground"
+                                    Value="{DynamicResource PrimaryHueMidBrush}" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </materialDesign:DrawerHost.Style>
+                <materialDesign:DrawerHost.LeftDrawerContent>
+                    <StackPanel
+                        Margin="16">
+                        <TextBlock
+                            Margin="4"
+                            HorizontalAlignment="Center"
+                            Text="Select Track" />
+                        <Button x:Name="BarcelonaButton"
+                            Margin="4"
+                            Foreground="Red"
+                            HorizontalAlignment="Center"
+                            CommandParameter="{x:Static Dock.Left}"
+                            Content="Barcelona"
+                            Style="{StaticResource MaterialDesignFlatButton}" Click="BarcelonaButton_Click" />
+                        <Button x:Name="AustriaButton"
+                            Margin="4"
+                            Foreground="Red"
+                            HorizontalAlignment="Center"
+                            CommandParameter="{x:Static Dock.Left}"
+                            Content="Austria"
+                            Style="{StaticResource MaterialDesignFlatButton}" Click="AustriaButton_Click" />
+                        <Button
+                            Margin="4"
+                            Foreground="Red"
+                            HorizontalAlignment="Center"
+                            Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                            Content="Close Menu"
+                            Style="{StaticResource MaterialDesignFlatButton}" />
+                    </StackPanel>
+                </materialDesign:DrawerHost.LeftDrawerContent>
+
+                <Grid
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Button
+                        BorderThickness="0"
+                        Background="Red"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Margin="-28,-225,-20,193"
+                        Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                        CommandParameter="{x:Static Dock.Left}"
+                        Content="{materialDesign:PackIcon Kind=GoKartTrack}" />
+                </Grid>
+            </materialDesign:DrawerHost>
 
 
         </Grid>
