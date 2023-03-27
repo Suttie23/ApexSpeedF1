@@ -13,6 +13,7 @@
     <None Remove="Images\Hard Tyre.png" />
     <None Remove="Images\Intermediate Tyre.png" />
     <None Remove="Images\Logo.png" />
+    <None Remove="Images\LogoText.png" />
     <None Remove="Images\Medium Tyre.png" />
     <None Remove="Images\Soft Tyre.png" />
     <None Remove="Images\Wet Tyre.png" />
@@ -37,6 +38,7 @@
     <Resource Include="Images\Hard Tyre.png" />
     <Resource Include="Images\Intermediate Tyre.png" />
     <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\LogoText.png" />
     <Resource Include="Images\Medium Tyre.png" />
     <Resource Include="Images\Soft Tyre.png" />
     <Resource Include="Images\Wet Tyre.png" />

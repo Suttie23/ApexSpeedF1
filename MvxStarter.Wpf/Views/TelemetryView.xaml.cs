@@ -23,5 +23,10 @@ namespace MvxStarter.Wpf.Views
         {
             InitializeComponent();
         }
+
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.Shutdown();
+        }
     }
 }
