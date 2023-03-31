@@ -15,6 +15,7 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MvxStarter.Core.ViewModels
@@ -23,7 +24,8 @@ namespace MvxStarter.Core.ViewModels
     {
 
         private readonly IMvxNavigationService _navigationService;
-        UdpClient receivingUdpClient = new UdpClient(20777);
+        private CancellationTokenSource cts;
+        public UdpClient udpClient;
 
 
         // Telemetry variables
@@ -326,8 +328,6 @@ namespace MvxStarter.Core.ViewModels
         public IMvxCommand NavToHomeCommand => new MvxCommand(async () => await NavToHome());
         public async Task NavToHome()
         {
-            receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
-            receivingUdpClient.Close();
             await _navigationService.Navigate<HomeViewModel>();
         }
 
@@ -335,8 +335,6 @@ namespace MvxStarter.Core.ViewModels
         public IMvxCommand NavToHistoricalCommand => new MvxCommand(async () => await NavToHistorical());
         public async Task NavToHistorical()
         {
-            receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
-            receivingUdpClient.Close();
             await _navigationService.Navigate<HistoricalViewModel>();
         }
 
@@ -344,20 +342,22 @@ namespace MvxStarter.Core.ViewModels
         public IMvxCommand StopListeningCommand { get; set; }
         public void StopListening()
         {
-            receivingUdpClient.Client.Shutdown(SocketShutdown.Receive);
-            receivingUdpClient.Close();
+            cts?.Cancel();
             LockNavigation = true;
+            StopListeningActive = false;
         }
 
         // Get Telemetry Command
         public IMvxCommand GetTelemetryCommand { get; set; }
 
         // EVERYTHING BELOW SHOULD IDEALLY BE MADE INTO A SERVICE
-        public void GetTelemetry()
+        public async void GetTelemetry()
         {
             //Navigation Locking
             LockNavigation = false;
             StopListeningActive = true;
+
+            cts = new CancellationTokenSource();
 
             // For Lap Data Folder Creation
             var formatInfo = new CultureInfo("en-US").DateTimeFormat;
@@ -365,31 +365,32 @@ namespace MvxStarter.Core.ViewModels
             formatInfo.TimeSeparator = ".";
             _folderDT = DateTime.Now.ToString("g", formatInfo);
 
+            Task task = ReceiveDataAsync(cts.Token);
+
             try
             {
-                // Begin asynchronous listening
-                receivingUdpClient.BeginReceive(TelemetryReceiver, null);
-                Debug.WriteLine("Listening");
-
-            } catch ( Exception e)
-            {
-                Debug.WriteLine(e);
+                // Wait for the task to complete
+                await task;
             }
-            
+            catch (OperationCanceledException)
+            {
+                // Handle the cancellation
+                Debug.WriteLine("Task was cancelled.");
+                udpClient.Dispose();
+            }
+
         }
 
-        // Listener
-        void TelemetryReceiver(IAsyncResult res)
+        public async Task ReceiveDataAsync(CancellationToken cancellationToken)
         {
-            // Remote host IP
-            IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0);
-
-            // Return UDP datagram
-            byte[] receiveBytes = receivingUdpClient.EndReceive(res, ref RemoteIpEndPoint);
-
-            try
+            udpClient = new UdpClient(20777);
+            while (true)
             {
+                cancellationToken.ThrowIfCancellationRequested();
+                UdpReceiveResult result = await udpClient.ReceiveAsync();
+                byte[] receiveBytes = result.Buffer;
 
+                // process data
                 PacketType pt = CodemastersToolkit.GetPacketType(receiveBytes);
 
                 Packet pa = new Packet();
@@ -426,7 +427,8 @@ namespace MvxStarter.Core.ViewModels
                     if (telPack.FieldTelemetryData[telPack.PlayerCarIndex].DrsActive == true)
                     {
                         DRSDeploy = true;
-                    } else
+                    }
+                    else
                     {
                         DRSDeploy = false;
                     }
@@ -444,10 +446,11 @@ namespace MvxStarter.Core.ViewModels
 
                     // Determine ERS Deploy mode
                     // This value will be used in the "Styles" in ApexSpeed.Wpf to change the colour or the ERS Label
-                    if(statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString() == "Medium" || statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString() == "None")
+                    if (statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString() == "Medium" || statusPack.FieldCarStatusData[statusPack.PlayerCarIndex].SelectedErsDeployMode.ToString() == "None")
                     {
                         ERSDeploy = false;
-                    } else
+                    }
+                    else
                     {
                         ERSDeploy = true;
                     }
@@ -541,64 +544,46 @@ namespace MvxStarter.Core.ViewModels
                     LapList.Add(new LapSaveDataModel(Throttle, Brake, Gear, Speed, LapDistance, CurrentLapTime.TotalMinutes));
                 }
 
-                    // Determine whether a new lap has been started
-                    if (CurrentLapNumber > _previousLapNumber)
+                // Determine whether a new lap has been started
+                if (CurrentLapNumber > _previousLapNumber)
+                {
+                    // If the previous lap is 0
+                    if ((CurrentLapNumber - 1) == 0)
                     {
-                        // If the previous lap is 0
-                        if ((CurrentLapNumber - 1) == 0)
+                        // Do nothing
+                    }
+                    else
+                    {
+
+
+                        // Write LapList to JSON
+
+                        // Construct fileName string using variables assigned earlier
+                        string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (CurrentLapNumber - 1) + " (" + PreviousLapTime.TotalMinutes + " Seconds)" + ".json";
+
+                        // Create directory
+                        FileInfo fi = new FileInfo(fileName);
+                        if (!fi.Directory.Exists)
                         {
-                            // Do nothing
-                        } 
-                        else
-                        {
-
-
-                            // Write LapList to JSON
-
-                            // Construct fileName string using variables assigned earlier
-                            string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (CurrentLapNumber - 1) + " (" + PreviousLapTime.TotalMinutes + " Seconds)" + ".json";
-
-                            // Create directory
-                            FileInfo fi = new FileInfo(fileName);
-                            if (!fi.Directory.Exists)
-                            {
-                                System.IO.Directory.CreateDirectory(fi.DirectoryName);
-                            }
-
-                            LapList.RemoveAt(LapList.Count - 1);
-
-                            // JSON Serialise
-                            string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
-                            StreamWriter sw = new StreamWriter(fileName);
-                            sw.WriteLine(json);
-                            sw.Close();
-
-                            // Clear LapList for next lap
-                            LapList.Clear();
-
-                            _previousLapNumber = CurrentLapNumber;
+                            System.IO.Directory.CreateDirectory(fi.DirectoryName);
                         }
 
+                        LapList.RemoveAt(LapList.Count - 1);
+
+                        // JSON Serialise
+                        string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
+                        StreamWriter sw = new StreamWriter(fileName);
+                        sw.WriteLine(json);
+                        sw.Close();
+
+                        // Clear LapList for next lap
+                        LapList.Clear();
+
+                        _previousLapNumber = CurrentLapNumber;
                     }
-                
-            }
-            // Exception Handling
-            catch (Exception e)
-            {
-                if (e is ObjectDisposedException || e is SocketException)
-                {
-                    return;
-                }
-            }
 
-            // Begin Call Async Method
-            receivingUdpClient.BeginReceive(new AsyncCallback(TelemetryReceiver), null);
-
+                }             
+            }
         }
-
     }
-
 }
-
-
-
