@@ -27,7 +27,7 @@ namespace ApexSpeed.Core.Services.JSONWriter
                 System.IO.Directory.CreateDirectory(fi.DirectoryName);
             }
 
-            LapList.RemoveAt(LapList.Count - 1);
+            //LapList.RemoveAt(LapList.Count - 1);
 
             using(StreamWriter file = File.CreateText(_filename))
             {

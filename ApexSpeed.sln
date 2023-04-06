@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApexSpeed.Core", "MvxStarte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApexSpeed.Wpf", "MvxStarter.Wpf\ApexSpeed.Wpf.csproj", "{BE180F35-411C-476C-85D5-04E1D1F10669}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{03C15485-69FB-4B21-855A-0EEE57C86884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BE180F35-411C-476C-85D5-04E1D1F10669}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE180F35-411C-476C-85D5-04E1D1F10669}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE180F35-411C-476C-85D5-04E1D1F10669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03C15485-69FB-4B21-855A-0EEE57C86884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C15485-69FB-4B21-855A-0EEE57C86884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C15485-69FB-4B21-855A-0EEE57C86884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C15485-69FB-4B21-855A-0EEE57C86884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

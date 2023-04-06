@@ -1,0 +1,26 @@
+[
+  {
+    "Throttle": 0.58,
+    "Brake": 0.12,
+    "Gear": 6,
+    "SpeedMph": 140,
+    "LapDistance": 2313.12,
+    "CurrentLapTime": 23.1
+  },
+  {
+    "Throttle": 0.09,
+    "Brake": 0.98,
+    "Gear": 2,
+    "SpeedMph": 50,
+    "LapDistance": 1232.33,
+    "CurrentLapTime": 76.4
+  },
+  {
+    "Throttle": 0.342,
+    "Brake": 0.632,
+    "Gear": 2,
+    "SpeedMph": 50,
+    "LapDistance": 8435.33,
+    "CurrentLapTime": 132.4
+  }
+]
