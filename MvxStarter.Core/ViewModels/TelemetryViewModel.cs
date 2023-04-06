@@ -1,4 +1,5 @@
 ﻿using ApexSpeed.Core.Services;
+using ApexSpeed.Core.Services.UDPListener;
 using ApexSpeed.Core.ViewModels;
 using ApexSpeedApp.MVVM.Model;
 using Codemasters.F1_2021;
@@ -29,7 +30,11 @@ namespace MvxStarter.Core.ViewModels
         private readonly IUDPListenerService _udpListenerService;
         private CancellationTokenSource cts;
 
+        // Listner Helper
         public bool listenLoop = true;
+
+        // JSON Helper
+        private string _folderDT;
 
         // Navigation Locking Prop
         private bool _lockNav = true;
@@ -336,12 +341,18 @@ namespace MvxStarter.Core.ViewModels
 
             listenLoop = true;
 
+            // For Lap Data Folder Creation
+            var formatInfo = new CultureInfo("en-US").DateTimeFormat;
+            formatInfo.DateSeparator = "-";
+            formatInfo.TimeSeparator = ".";
+            _folderDT = DateTime.Now.ToString("g", formatInfo);
+
             while (listenLoop == true)
             {
                 try
                 {
                     // Telemetry Values
-                    Telemetry = await _udpListenerService.ReceiveTelemetryAsync(cts.Token);
+                    Telemetry = await _udpListenerService.ReceiveTelemetryAsync(cts.Token, _folderDT);
                 }
                 catch (OperationCanceledException)
                 {

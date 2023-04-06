@@ -11,16 +11,24 @@ using System.Threading.Tasks;
 using System.Threading;
 using MvxStarter.Core.ViewModels;
 using MvxStarter.Core.Models;
+using ApexSpeed.Core.Services.JSONWriter;
 
-namespace ApexSpeed.Core.Services
+namespace ApexSpeed.Core.Services.UDPListener
 {
     public class UDPListenerService : IUDPListenerService
     {
 
         private readonly int _port;
         private readonly UdpClient _udpClient;
+        private IJSONWriter _jsonWriterService;
 
-        public float _throttle;
+        //JSON Helper Variables
+        List<LapSaveDataModel> LapList = new List<LapSaveDataModel>();
+        private byte _previousLapNumber = 0;
+        private string _folderTrack;
+        private float _sessionTime;
+        private bool _validLap = false;
+        private string _folderDT;
 
         public TelemetryModel telemetryModel = new TelemetryModel();
 
@@ -28,13 +36,16 @@ namespace ApexSpeed.Core.Services
         {
             _port = port;
             _udpClient = new UdpClient(_port);
+            _jsonWriterService = new JSONWriter.JSONWriter();
 
         }
 
         // General Telemetry
-        public async Task<TelemetryModel> ReceiveTelemetryAsync(CancellationToken cancellationToken)
+        public async Task<TelemetryModel> ReceiveTelemetryAsync(CancellationToken cancellationToken, string folderDT)
         {
 
+            _folderDT = folderDT;
+           
             while (true)
             {
                 cancellationToken.ThrowIfCancellationRequested();
@@ -63,6 +74,18 @@ namespace ApexSpeed.Core.Services
                     telemetryModel.TyreTempFR = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.FrontRight;
                     telemetryModel.TyreTempRL = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearLeft;
                     telemetryModel.TyreTempRR = telPack.FieldTelemetryData[telPack.PlayerCarIndex].TyreSurfaceTemperature.RearRight;
+
+                }
+
+                // If Session Packet
+                if (pt == PacketType.Session)
+                {
+                    SessionPacket lobPack = new SessionPacket();
+                    lobPack.LoadBytes(receiveBytes);
+
+                    // Setting _folderTrack variable for writing to JSON
+                    _folderTrack = lobPack.SessionTrack.ToString();
+                    _sessionTime = lobPack.SessionTime;
 
                 }
 
@@ -113,6 +136,7 @@ namespace ApexSpeed.Core.Services
                     }
                 }
 
+                // If CarDamage Packet
                 if (pt == PacketType.CarDamage)
                 {
                     //Create new Damage packet and load in the data
@@ -124,6 +148,18 @@ namespace ApexSpeed.Core.Services
                     telemetryModel.TyreWearFR = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.FrontRight, 0);
                     telemetryModel.TyreWearRL = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.RearLeft, 0);
                     telemetryModel.TyreWearRR = (float)Math.Round(damagePack.FieldCarDamageData[damagePack.PlayerCarIndex].TyreWear.RearRight, 0);
+
+                }
+
+                // If Session Packet
+                if (pt == PacketType.Session)
+                {
+                    SessionPacket lobPack = new SessionPacket();
+                    lobPack.LoadBytes(receiveBytes);
+
+                    // Setting _folderTrack variable for writing to JSON
+                    _folderTrack = lobPack.SessionTrack.ToString();
+                    _sessionTime = lobPack.SessionTime;
 
                 }
 
@@ -140,13 +176,48 @@ namespace ApexSpeed.Core.Services
                     telemetryModel.PreviousLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].LastLapTimeMilliseconds / 1000);
                     telemetryModel.LapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
 
+                    // Determine whether the car is on an out lap or not 
+                    if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance > 0 && _sessionTime > 3)
+                    {
+                        // If the value is positive, the car is not on an outlap
+                        _validLap = true;
+                    }
+                    else
+                    {
+                        // If the value is negative, the car is on an outlap
+                        _validLap = false;
+                    }
+
+                    //Writing to JSON
+                    // If starting a new lap
+                    if (_validLap == true)
+                    {
+                        // Add telemetry to list
+                        LapList.Add(new LapSaveDataModel(telemetryModel.Throttle, telemetryModel.Brake, telemetryModel.Gear, telemetryModel.Speed, telemetryModel.LapDistance, telemetryModel.CurrentLapTime.TotalMinutes));
+                    }
+
+                    // Determine whether a new lap has been started
+                    if (telemetryModel.CurrentLapNumber > _previousLapNumber)
+                    {
+                        // If the previous lap is 0
+                        if ((telemetryModel.CurrentLapNumber - 1) == 0)
+                        {
+                            // Do nothing
+                        }
+                        else
+                        {
+                            await _jsonWriterService.WriteLapData(_folderTrack, _folderDT, telemetryModel.CurrentLapNumber, telemetryModel.PreviousLapTime, LapList);
+                            LapList.Clear();
+                            _previousLapNumber = telemetryModel.CurrentLapNumber;
+                        }
+
+                        return telemetryModel;
+
+                    }
                 }
 
-                return telemetryModel;
 
             }
-
-
         }
 
         public void ListenerDispose()
