@@ -8,6 +8,6 @@ namespace ApexSpeed.Core.Services.JSONWriter
 {
     public interface IJSONWriter
     {
-        Task WriteLapData(string folderTrack, string folderDT, byte currentLapNumber, TimeSpan previousLapTime, List<LapSaveDataModel> LapList);
+        Task WriteLapData(List<LapSaveDataModel> LapList, string filename);
     }
 }

@@ -11,26 +11,17 @@ namespace ApexSpeed.Core.Services.JSONWriter
     public class JSONWriter : IJSONWriter
     {
 
-        public string _folderTrack;
-        public string _folderDT;
-        public byte _currentLapNumber;
-        public TimeSpan _previousLapTime;
+        public string _filename;
         List<LapSaveDataModel> _lapList = new List<LapSaveDataModel>();
 
-        public async Task WriteLapData(string folderTrack, string folderDT, byte currentLapNumber, TimeSpan previousLapTime, List<LapSaveDataModel> LapList)
+        public async Task WriteLapData(List<LapSaveDataModel> LapList, string filename)
         {
 
-            _folderTrack = folderTrack;
-            _folderDT = folderDT;
-            _currentLapNumber = currentLapNumber;
-            _previousLapTime = previousLapTime;
             _lapList = LapList;
-
-            // Construct fileName string using variables assigned earlier
-            string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (_currentLapNumber - 1) + " (" + _previousLapTime.TotalMinutes + " Seconds)" + ".json";
+            _filename = filename;
 
             // Create directory
-            FileInfo fi = new FileInfo(fileName);
+            FileInfo fi = new FileInfo(_filename);
             if (!fi.Directory.Exists)
             {
                 System.IO.Directory.CreateDirectory(fi.DirectoryName);
@@ -38,14 +29,16 @@ namespace ApexSpeed.Core.Services.JSONWriter
 
             LapList.RemoveAt(LapList.Count - 1);
 
-            // JSON Serialise
-            string json = JsonConvert.SerializeObject(LapList, Newtonsoft.Json.Formatting.Indented);
-            StreamWriter sw = new StreamWriter(fileName);
-            sw.WriteLine(json);
-            sw.Close();
+            using(StreamWriter file = File.CreateText(_filename))
+            {
+                JsonSerializer serializer = new JsonSerializer
+                {
+                    Formatting = Formatting.Indented
+                };
 
-            // Clear LapList for next lap
-            LapList.Clear();
+                await Task.Run(() => serializer.Serialize(file, LapList));
+            }
+
         }
 
     }

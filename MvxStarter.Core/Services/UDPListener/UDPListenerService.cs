@@ -206,14 +206,17 @@ namespace ApexSpeed.Core.Services.UDPListener
                         }
                         else
                         {
-                            await _jsonWriterService.WriteLapData(_folderTrack, _folderDT, telemetryModel.CurrentLapNumber, telemetryModel.PreviousLapTime, LapList);
+                            // Construct fileName string using variables assigned earlier
+                            string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (telemetryModel.CurrentLapNumber - 1) + " (" + telemetryModel.PreviousLapTime.TotalMinutes + " Seconds)" + ".json";
+
+                            await _jsonWriterService.WriteLapData(LapList, fileName);
                             LapList.Clear();
                             _previousLapNumber = telemetryModel.CurrentLapNumber;
                         }
 
-                        return telemetryModel;
-
                     }
+
+                    return telemetryModel;
                 }
 
 
@@ -222,8 +225,19 @@ namespace ApexSpeed.Core.Services.UDPListener
 
         public void ListenerDispose()
         {
-            _udpClient.Dispose();
+            if (_udpClient !=null)
+            {
+                try 
+                {
+                    _udpClient.Dispose();
+                }
+                catch
+                {
+
+                }
+            }
         }
+
 
 
     }

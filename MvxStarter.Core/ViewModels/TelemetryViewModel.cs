@@ -35,6 +35,7 @@ namespace MvxStarter.Core.ViewModels
 
         // JSON Helper
         private string _folderDT;
+        private byte _previousLapNumber = 0;
 
         // Navigation Locking Prop
         private bool _lockNav = true;
@@ -393,6 +394,7 @@ namespace MvxStarter.Core.ViewModels
                 CurrentLapTime = Telemetry.CurrentLapTime;
                 PreviousLapTime = Telemetry.PreviousLapTime;
                 LapDistance = Telemetry.LapDistance;
+
             }
         }
 
