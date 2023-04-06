@@ -26,9 +26,10 @@ namespace MvxStarter.Core.ViewModels
     {
 
         private readonly IMvxNavigationService _navigationService;
+        private readonly IUDPListenerService _udpListenerService;
         private CancellationTokenSource cts;
 
-        private readonly IUDPListenerService _udpListenerService;
+        public bool listenLoop = true;
 
         // Navigation Locking Prop
         private bool _lockNav = true;
@@ -311,6 +312,7 @@ namespace MvxStarter.Core.ViewModels
         public IMvxCommand NavToHomeCommand => new MvxCommand(async () => await NavToHome());
         public async Task NavToHome()
         {
+            _udpListenerService.ListenerDispose();
             await _navigationService.Navigate<HomeViewModel>();
         }
 
@@ -318,6 +320,7 @@ namespace MvxStarter.Core.ViewModels
         public IMvxCommand NavToHistoricalCommand => new MvxCommand(async () => await NavToHistorical());
         public async Task NavToHistorical()
         {
+            _udpListenerService.ListenerDispose();
             await _navigationService.Navigate<HistoricalViewModel>();
         }
 
@@ -329,11 +332,24 @@ namespace MvxStarter.Core.ViewModels
             //Navigation Locking
             LockNavigation = false;
             StopListeningActive = true;
+            cts = new CancellationTokenSource();
 
-            while (true)
+            listenLoop = true;
+
+            while (listenLoop == true)
             {
-                // Telemetry Values
-                Telemetry = await _udpListenerService.ReceiveTelemetryAsync();
+                try
+                {
+                    // Telemetry Values
+                    Telemetry = await _udpListenerService.ReceiveTelemetryAsync(cts.Token);
+                }
+                catch (OperationCanceledException)
+                {
+                    // Handle the cancellation
+                    Debug.WriteLine("Task was cancelled.");
+                    _udpListenerService.ListenerDispose();
+                }
+
 
                 // General Telemetry Values
                 Throttle = Telemetry.Throttle;
@@ -373,6 +389,8 @@ namespace MvxStarter.Core.ViewModels
         public IMvxCommand StopListeningCommand { get; set; }
         public void StopListening()
         {
+            cts?.Cancel();
+            listenLoop = false;
             LockNavigation = true;
             StopListeningActive = false;
         }

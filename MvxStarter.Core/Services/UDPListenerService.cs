@@ -32,11 +32,12 @@ namespace ApexSpeed.Core.Services
         }
 
         // General Telemetry
-        public async Task<TelemetryModel> ReceiveTelemetryAsync()
+        public async Task<TelemetryModel> ReceiveTelemetryAsync(CancellationToken cancellationToken)
         {
 
             while (true)
             {
+                cancellationToken.ThrowIfCancellationRequested();
                 UdpReceiveResult result = await _udpClient.ReceiveAsync();
                 byte[] receiveBytes = result.Buffer;
 
@@ -146,6 +147,11 @@ namespace ApexSpeed.Core.Services
             }
 
 
+        }
+
+        public void ListenerDispose()
+        {
+            _udpClient.Dispose();
         }
 
 
