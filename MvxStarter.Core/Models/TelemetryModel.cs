@@ -4,36 +4,42 @@ using System.Text;
 
 namespace MvxStarter.Core.Models
 {
-    internal class TelemetryModel
+    public class TelemetryModel
     {
+
         //Telemetry
-        public int Throttle { get; set; }
-        public int RPM { get; set; }
-        public int Brake { get; set; }
+        public float Throttle { get; set; }
+        public float RPM { get; set; }
+        public float Brake { get; set; }
         public ushort Speed { get; set; }
         public sbyte Gear { get; set; }
-        public byte DRS { get; set; }
+        public bool DRS { get; set; }
 
         //Version
         public string Version { get; set; }
 
         //Tyre Temp
-        public int TyreTempFL { get; set; }
-        public int TyreTempFR { get; set; }
-        public int TyreTempRL { get; set; }
-        public int TyreTempRR { get; set; }
+        public float TyreTempFL { get; set; }
+        public float TyreTempFR { get; set; }
+        public float TyreTempRL { get; set; }
+        public float TyreTempRR { get; set; }
 
         //Tyre Wear
-        public int TyreWearFL { get; set; }
-        public int TyreWearFR { get; set; }
-        public int TyreWearRL { get; set; }
-        public int TyreWearRR { get; set; }
+        public float TyreWearFL { get; set; }
+        public float TyreWearFR { get; set; }
+        public float TyreWearRL { get; set; }
+        public float TyreWearRR { get; set; }
 
         //Status
         public float FuelLevel { get; set; }
-        public float FuelRemainingLaps { get; set; }
-        public byte TyreCompound { get; set; }
-        public string ERSDeploy { get; set; }
+        public float FuelLevelRemainingLaps { get; set; }
+        public string TyreCompound { get; set; }
+        public bool ERSDeploy { get; set; }
 
+        //Lap Data
+        public byte CurrentLapNumber { get; set; }
+        public TimeSpan CurrentLapTime { get; set; }
+        public TimeSpan PreviousLapTime { get; set; }
+        public float LapDistance { get; set; }
     }
 }
