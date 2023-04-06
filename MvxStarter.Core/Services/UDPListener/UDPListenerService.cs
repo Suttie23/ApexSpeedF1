@@ -45,10 +45,10 @@ namespace ApexSpeed.Core.Services.UDPListener
         {
 
             _folderDT = folderDT;
-           
+            cancellationToken.ThrowIfCancellationRequested();
+
             while (true)
-            {
-                cancellationToken.ThrowIfCancellationRequested();
+            {               
                 UdpReceiveResult result = await _udpClient.ReceiveAsync();
                 byte[] receiveBytes = result.Buffer;
 

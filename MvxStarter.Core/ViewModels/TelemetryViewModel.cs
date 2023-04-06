@@ -362,6 +362,7 @@ namespace MvxStarter.Core.ViewModels
                     _udpListenerService.ListenerDispose();
                 }
 
+            
 
                 // General Telemetry Values
                 Throttle = Telemetry.Throttle;
@@ -394,8 +395,8 @@ namespace MvxStarter.Core.ViewModels
                 CurrentLapTime = Telemetry.CurrentLapTime;
                 PreviousLapTime = Telemetry.PreviousLapTime;
                 LapDistance = Telemetry.LapDistance;
-
             }
+           
         }
 
         // Stop Listening Command
