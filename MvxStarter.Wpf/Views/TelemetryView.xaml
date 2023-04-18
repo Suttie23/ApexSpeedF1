@@ -34,6 +34,7 @@
 
             <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="906,-285,0,0" VerticalAlignment="Top" Width="100"/>
 
+            <!-- Throttle Gauge -->
             <lvc:Gauge
                 Value="{Binding Throttle}"
                 From="0" To="1"
@@ -47,6 +48,8 @@
                     </LinearGradientBrush>
                 </lvc:Gauge.GaugeActiveFill>
             </lvc:Gauge>
+
+            <!-- Left Side Labels -->
             <Label Foreground="Black"  FontSize="38" Content="Throttle" Margin="105,282,1105,341" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black" FontSize="38" Content="{Binding Throttle}" Margin="123,204,1129,415" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black" Width="200" FontSize="38" Content="MPH:" Margin="42,351,1132,254" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
@@ -61,7 +64,7 @@
             <Label Foreground="Black"  FontSize="22" Content="Current Lap Time: " Margin="22,58,1142,640" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black"  FontSize="22" Content="{Binding CurrentLapTime}" Margin="159,20,1005,602" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
-
+            <!-- RPM Gauge -->
             <lvc:Gauge
                 Value="{Binding RPM}"
                 From="0" To="13000"
@@ -75,6 +78,8 @@
                     </LinearGradientBrush>
                 </lvc:Gauge.GaugeActiveFill>
             </lvc:Gauge>
+
+            <!-- Center Labels, Buttons and Tyre Display -->
             <Label Foreground="Black" FontSize="38" Content="{Binding RPM}" Margin="620,204,592,415" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black"  FontSize="38" Content="RPM" Margin="620,292,590,331" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black" Width="200" FontSize="38" Content="{Binding Gear}" Margin="701,355,673,244" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
@@ -84,6 +89,7 @@
             <Button BorderThickness="0" Background="Red" IsEnabled="{Binding LockNavigation}" mvx:Bi.nd="Command GetTelemetryCommand" Margin="589,644,561,124">Listen For UDP</Button>
             <Button BorderThickness="0" Background="Red" IsEnabled="{Binding StopListeningActive}" mvx:Bi.nd="Command StopListeningCommand" Margin="589,638,561,19" Grid.Column="1" Grid.Row="1" Content="Stop Listening"/>
 
+            <!-- Brake Gauge -->
             <lvc:Gauge
                     Value="{Binding Brake}"
                     From="0" To="1"
@@ -97,6 +103,8 @@
                     </LinearGradientBrush>
                 </lvc:Gauge.GaugeActiveFill>
             </lvc:Gauge>
+
+            <!-- Right Side Labels -->
             <Label Foreground="Black"  FontSize="38" Content="Brake" Margin="1108,283,102,373" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black" FontSize="38" Content="{Binding Brake}" Margin="1129,204,123,415" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label  FontSize="38" Content="DRS" Style="{StaticResource DRSLabelStyle}" Margin="1108,396,102,294" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
@@ -109,6 +117,7 @@
             <Label Foreground="Black"  FontSize="22" Content="Previous Lap Time: " Margin="1027,60,137,638" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black"  FontSize="22" Content="{Binding PreviousLapTime}" Margin="1170,40,-6,614" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
+            <!-- Navigation Drawer Code-->
             <materialDesign:DrawerHost
               x:Name="DrawerHost"
               Width="196"
@@ -127,9 +136,6 @@
                         <TranslateTransform Y="-0.989"/>
                     </TransformGroup>
                 </materialDesign:DrawerHost.RenderTransform>
-
-
-
 
                 <materialDesign:DrawerHost.Style>
                     <Style
@@ -212,6 +218,7 @@
                       Content="{materialDesign:PackIcon Kind=Menu}" />
                 </Grid>
             </materialDesign:DrawerHost>
+            <!-- End Navigation Drawer Code-->
 
         </Grid>
     </Border>

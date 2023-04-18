@@ -30,10 +30,9 @@
                             Kind="ExitToApp" />
             </Button>
 
+            <!-- Throttle Chart -->
             <Grid Margin="29,95,1008,509" Background="#F7F7F7">
-
                 <lvc:CartesianChart ZoomMode="Both" Series="{Binding ThrottleSeries}" Margin="19,10,19,10"/>
-
             </Grid>
 
             <Button x:Name="ThrottleTipButton"
@@ -47,10 +46,9 @@
                             Kind="Help" />
             </Button>
 
+            <!-- Brake Chart -->
             <Grid Margin="29,333,1008,271" Background="#F7F7F7">
-
                 <lvc:CartesianChart ZoomMode="Both" Series="{Binding BrakeSeries}" Margin="19,10,19,10"/>
-
             </Grid>
 
             <Button x:Name="BrakeTipButton"
@@ -64,10 +62,9 @@
                             Kind="Help" />
             </Button>
 
+            <!-- Gear Chart -->
             <Grid Margin="29,567,1008,37" Background="#F7F7F7">
-
                 <lvc:CartesianChart ZoomMode="Both" Series="{Binding GearSeries}" Margin="19,10,19,10"/>
-
             </Grid>
 
             <Button x:Name="GearTipButton"
@@ -81,10 +78,9 @@
                             Kind="Help" />
             </Button>
 
+            <!-- Speed Chart -->
             <Grid Margin="591,567,446,37" Background="#F7F7F7">
-
                 <lvc:CartesianChart ZoomMode="Both" Series="{Binding SpeedSeries}" Margin="19,10,19,10"/>
-
             </Grid>
 
             <Button x:Name="SpeedTipButton"
@@ -98,10 +94,9 @@
                             Kind="Help" />
             </Button>
 
+            <!-- Time Chart -->
             <Grid Margin="1165,567,37,37" Background="#F7F7F7">
-
                 <lvc:CartesianChart ZoomMode="Both" Series="{Binding TimeSeries}" Margin="19,10,19,10"/>
-
             </Grid>
 
             <Button x:Name="TimeTipButton"
@@ -115,6 +110,7 @@
                             Kind="Help" />
             </Button>
 
+            <!-- Navigation Drawer Code-->
             <materialDesign:DrawerHost
               x:Name="DrawerHost"
               Width="196"
@@ -133,9 +129,6 @@
                         <TranslateTransform Y="-0.989"/>
                     </TransformGroup>
                 </materialDesign:DrawerHost.RenderTransform>
-
-
-
 
                 <materialDesign:DrawerHost.Style>
                     <Style
@@ -217,15 +210,20 @@
                       Content="{materialDesign:PackIcon Kind=Menu}" />
                 </Grid>
             </materialDesign:DrawerHost>
-            <Image x:Name="BarcelonaImg" Margin="787,127,80,433" Source="/Images/BarcelonaMap.png" Stretch="Fill"/>
+            <!-- End Navigation Drawer Code-->
 
+            
+            <Image x:Name="BarcelonaImg" Margin="787,127,80,433" Source="/Images/BarcelonaMap.png" Stretch="Fill"/>
+   
+            
             <Button x:Name="UploadLapAButton" BorderThickness="0" Background="Red" mvx:Bi.nd="Command LoadGraphDataACommand" Margin="916,431,492,337" Content="Upload Lap A" Click="UploadLapAButton_Click"/>
             <Button x:Name="UploadLapBButton" BorderThickness="0" Background="Red" mvx:Bi.nd="Command LoadGraphDataBCommand" Margin="1185,431,223,337" Click="UploadLapBButton_Click">Upload Lap B</Button>
-
             <TextBox x:Name="LapATB" Visibility="Hidden" HorizontalAlignment="Left" Height="37" Margin="484,722,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileA, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="LapBTB" Visibility="Hidden" HorizontalAlignment="Left" Height="38" Margin="881,726,0,0" TextWrapping="Wrap" Text="{Binding SelectedFileB, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
             <Button x:Name="RemoveLapAButton" BorderThickness="0" Background="Red" mvx:Bi.nd="Command RemoveGraphDataACommand" Margin="916,493,492,275" Content="Remove Lap A"/>
             <Button x:Name="RemoveLapBButton" BorderThickness="0" Background="Red" mvx:Bi.nd="Command RemoveGraphDataBCommand" Margin="1185,493,223,275" Content="Remove Lap B"/>
+            
+            
             <Label x:Name="label" Content="Throttle" HorizontalAlignment="Left" Margin="554,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
                 <Label.RenderTransform>
                     <TransformGroup>
@@ -250,6 +248,8 @@
             <Label x:Name="label1_Copy" Content="Speed" HorizontalAlignment="Left" Margin="860,763,0,0" VerticalAlignment="Top"/>
             <Label x:Name="label1_Copy1" Content="Time" HorizontalAlignment="Left" Margin="1330,763,0,0" VerticalAlignment="Top"/>
             <Image Visibility="Hidden" x:Name="AustriaImg" Margin="843,48,252,400" Source="/Images/AustriaMap.png" Stretch="Fill"/>
+
+            <!-- Track Map Drawer Code-->
             <materialDesign:DrawerHost
                 x:Name="DrawerHost_Copy"
                 Width="146"
@@ -268,9 +268,6 @@
                         <TranslateTransform Y="-0.989"/>
                     </TransformGroup>
                 </materialDesign:DrawerHost.RenderTransform>
-
-
-
 
                 <materialDesign:DrawerHost.Style>
                     <Style
@@ -342,6 +339,7 @@
                         Content="{materialDesign:PackIcon Kind=GoKartTrack}" />
                 </Grid>
             </materialDesign:DrawerHost>
+            <!-- End Track Map Drawer Code-->
 
 
         </Grid>

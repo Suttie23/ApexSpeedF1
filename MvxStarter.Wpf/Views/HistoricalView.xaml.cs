@@ -35,6 +35,7 @@ namespace ApexSpeed.Wpf.Views
             App.Current.Shutdown();
         }
 
+        // Upload LAP A Data
         private void UploadLapAButton_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
@@ -49,9 +50,11 @@ namespace ApexSpeed.Wpf.Views
 
             }
 
+            // Sets hidden texbox value
             LapATB.Text = filePathA;
         }
 
+        // Upload LAP B Data
         private void UploadLapBButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -67,22 +70,27 @@ namespace ApexSpeed.Wpf.Views
 
             }
 
+            // Sets hidden texbox value
             LapBTB.Text = filePathB;
 
         }
 
+        // These are currently hard coded, in future, they should be automatically detected
+        // Track Map Setting (Barcelona)
         private void BarcelonaButton_Click(object sender, RoutedEventArgs e)
         {
             BarcelonaImg.Visibility = Visibility.Visible;
             AustriaImg.Visibility = Visibility.Hidden;
         }
 
+        // Track Map Setting (Austria)
         private void AustriaButton_Click(object sender, RoutedEventArgs e)
         {
             BarcelonaImg.Visibility = Visibility.Hidden;
             AustriaImg.Visibility = Visibility.Visible;
         }
 
+        // TOOLTIPS
         private void ThrottleTipButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("1) When analysing your throttle, keep an eye on how aggressive you are being. You may be losing time due to loss of traction on corner exit!\n\n" +
@@ -122,5 +130,6 @@ namespace ApexSpeed.Wpf.Views
                 , "Speed Tips"
             );
         }
+        // END TOOLTIPS
     }
 }

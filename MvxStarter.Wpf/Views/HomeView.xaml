@@ -30,6 +30,7 @@
                             Kind="ExitToApp" />
             </Button>
 
+            <!-- Welcome Card -->
             <materialDesign:Card Margin="130,134,1074,345">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -57,10 +58,10 @@
                                                        &#xA;Alternatively, click the YouTube icon to watch a short setup video!"
                             TextWrapping="Wrap" />
                     </StackPanel>
-
                 </Grid>
             </materialDesign:Card>
 
+            <!-- Setup Card -->
             <materialDesign:Card Margin="602,134,602,76">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -110,6 +111,7 @@
                 </Grid>
             </materialDesign:Card>
 
+            <!-- Warning Card -->
             <materialDesign:Card Margin="1074,134,130,345">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -139,6 +141,7 @@
                 </Grid>
             </materialDesign:Card>
 
+            <!-- Navigation Drawer Code-->
             <materialDesign:DrawerHost
               x:Name="DrawerHost"
               Width="196"
@@ -157,9 +160,6 @@
                         <TranslateTransform Y="-0.989"/>
                     </TransformGroup>
                 </materialDesign:DrawerHost.RenderTransform>
-
-
-
 
                 <materialDesign:DrawerHost.Style>
                     <Style
@@ -241,7 +241,8 @@
                       Content="{materialDesign:PackIcon Kind=Menu}" />
                 </Grid>
             </materialDesign:DrawerHost>
-            <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="906,-285,0,0" VerticalAlignment="Top" Width="100"/>
+            <!-- End Navigation Drawer Code-->
+            
         </Grid>
     </Border>
 </views:MvxWpfView>
