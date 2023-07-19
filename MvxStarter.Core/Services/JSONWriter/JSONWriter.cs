@@ -27,7 +27,8 @@ namespace ApexSpeed.Core.Services.JSONWriter
                 System.IO.Directory.CreateDirectory(fi.DirectoryName);
             }
 
-            //LapList.RemoveAt(LapList.Count - 1);
+            // Ensures following lap data does not spill over to the current lap data
+            LapList.RemoveAt(LapList.Count - 1);
 
             using(StreamWriter file = File.CreateText(_filename))
             {
