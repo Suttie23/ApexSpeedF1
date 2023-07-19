@@ -272,6 +272,16 @@ namespace MvxStarter.Core.ViewModels
             }
         }
 
+        private String _formatCurrentLapTime;
+        public String FormatCurrentLapTime
+        {
+            get { return _formatCurrentLapTime; }
+            set
+            {
+                SetProperty(ref _formatCurrentLapTime, value);
+            }
+        }
+
         private TimeSpan _previousLapTime;
         public TimeSpan PreviousLapTime
         {
@@ -279,6 +289,16 @@ namespace MvxStarter.Core.ViewModels
             set
             {
                 SetProperty(ref _previousLapTime, value);
+            }
+        }
+
+        private String _formatPreviousLapTime;
+        public String FormatPreviousLapTime
+        {
+            get { return _formatPreviousLapTime; }
+            set
+            {
+                SetProperty(ref _formatPreviousLapTime, value);
             }
         }
 
@@ -393,7 +413,9 @@ namespace MvxStarter.Core.ViewModels
                 // Lap Data
                 CurrentLapNumber = Telemetry.CurrentLapNumber;
                 CurrentLapTime = Telemetry.CurrentLapTime;
+                FormatCurrentLapTime = Telemetry.FormatCurrentLapTime;
                 PreviousLapTime = Telemetry.PreviousLapTime;
+                FormatPreviousLapTime = Telemetry.FormatPreviousLapTime;
                 LapDistance = Telemetry.LapDistance;
             }
            

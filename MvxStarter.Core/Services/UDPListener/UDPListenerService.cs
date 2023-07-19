@@ -172,9 +172,12 @@ namespace ApexSpeed.Core.Services.UDPListener
                     lapPack.LoadBytes(receiveBytes);
 
                     telemetryModel.CurrentLapNumber = lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapNumber;
-                    telemetryModel.CurrentLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapTimeMilliseconds / 1000);
-                    telemetryModel.PreviousLapTime = TimeSpan.FromMinutes(lapPack.FieldLapData[lapPack.PlayerCarIndex].LastLapTimeMilliseconds / 1000);
+                    telemetryModel.CurrentLapTime = TimeSpan.FromMilliseconds(lapPack.FieldLapData[lapPack.PlayerCarIndex].CurrentLapTimeMilliseconds);
+                    telemetryModel.PreviousLapTime = TimeSpan.FromMilliseconds(lapPack.FieldLapData[lapPack.PlayerCarIndex].LastLapTimeMilliseconds);
                     telemetryModel.LapDistance = lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance;
+
+                    telemetryModel.FormatCurrentLapTime = telemetryModel.CurrentLapTime.ToString(@"m\:ss\.fff");
+                    telemetryModel.FormatPreviousLapTime = telemetryModel.PreviousLapTime.ToString(@"m\:ss\.fff");
 
                     // Determine whether the car is on an out lap or not 
                     if (lapPack.FieldLapData[lapPack.PlayerCarIndex].LapDistance > 0 && _sessionTime > 3)
@@ -193,7 +196,7 @@ namespace ApexSpeed.Core.Services.UDPListener
                     if (_validLap == true)
                     {
                         // Add telemetry to list
-                        LapList.Add(new LapSaveDataModel(telemetryModel.Throttle, telemetryModel.Brake, telemetryModel.Gear, telemetryModel.Speed, telemetryModel.LapDistance, telemetryModel.CurrentLapTime.TotalMinutes));
+                        LapList.Add(new LapSaveDataModel(telemetryModel.Throttle, telemetryModel.Brake, telemetryModel.Gear, telemetryModel.Speed, telemetryModel.LapDistance, telemetryModel.CurrentLapTime.TotalSeconds));
                     }
 
                     // Determine whether a new lap has been started
@@ -207,7 +210,7 @@ namespace ApexSpeed.Core.Services.UDPListener
                         else
                         {
                             // Construct fileName string using variables assigned earlier
-                            string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (telemetryModel.CurrentLapNumber - 1) + " (" + telemetryModel.PreviousLapTime.TotalMinutes + " Seconds)" + ".json";
+                            string fileName = @"..\..\..\..\Lap Files\" + _folderTrack + " " + _folderDT + "/Lap " + (telemetryModel.CurrentLapNumber - 1) + " (" + telemetryModel.PreviousLapTime.TotalSeconds + " Seconds)" + ".json";
 
                             await _jsonWriterService.WriteLapData(LapList, fileName);
                             LapList.Clear();

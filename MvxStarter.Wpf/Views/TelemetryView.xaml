@@ -61,8 +61,7 @@
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreTempFR}" Margin="173,585,1074,34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreTempRL}" Margin="87,629,1160,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreTempRR}" Margin="172,629,1074,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
-            <Label Foreground="Black"  FontSize="22" Content="Current Lap Time: " Margin="22,58,1142,640" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Label Foreground="Black"  FontSize="22" Content="{Binding CurrentLapTime}" Margin="159,20,1005,602" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="22" Content="{Binding FormatCurrentLapTime}" Margin="77,20,1087,602" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
             <!-- RPM Gauge -->
             <lvc:Gauge
@@ -83,8 +82,8 @@
             <Label Foreground="Black" FontSize="38" Content="{Binding RPM}" Margin="620,204,592,415" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black"  FontSize="38" Content="RPM" Margin="620,292,590,331" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label Foreground="Black" Width="200" FontSize="38" Content="{Binding Gear}" Margin="701,355,673,244" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Label Foreground="Black"  FontSize="22" Content="Lap Number:" Margin="582,58,582,640" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.RowSpan="2"/>
-            <Label Foreground="Black"  FontSize="22" Content="{Binding CurrentLapNumber}" Margin="661,22,503,600" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="22" Content="Lap Number" Margin="595,31,569,667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="22" Content="{Binding CurrentLapNumber}" Margin="718,22,692,600" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Image x:Name="___Images_Soft_Tyre_png" Margin="741,506,699,184" Source="{Binding TyreCompound}" Stretch="Fill"/>
             <Button BorderThickness="0" Background="Red" IsEnabled="{Binding LockNavigation}" mvx:Bi.nd="Command GetTelemetryCommand" Margin="589,644,561,124">Listen For UDP</Button>
             <Button BorderThickness="0" Background="Red" IsEnabled="{Binding StopListeningActive}" mvx:Bi.nd="Command StopListeningCommand" Margin="589,638,561,19" Grid.Column="1" Grid.Row="1" Content="Stop Listening"/>
@@ -114,8 +113,7 @@
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreWearFR}" Margin="1185,585,62,34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreWearRL}" Margin="1099,629,148,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label Foreground="Black" FontSize="30" Content="{Binding TyreWearRR}" Margin="1182,629,65,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
-            <Label Foreground="Black"  FontSize="22" Content="Previous Lap Time: " Margin="1027,60,137,638" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Label Foreground="Black"  FontSize="22" Content="{Binding PreviousLapTime}" Margin="1170,40,-6,614" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="22" Content="{Binding FormatPreviousLapTime}" Margin="1090,40,74,614" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
             <!-- Navigation Drawer Code-->
             <materialDesign:DrawerHost
@@ -218,6 +216,8 @@
                       Content="{materialDesign:PackIcon Kind=Menu}" />
                 </Grid>
             </materialDesign:DrawerHost>
+            <Label Foreground="Black"  FontSize="22" Content="Current Lap Time" Margin="77,31,1087,667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Foreground="Black"  FontSize="22" Content="Previous Lap Time" Margin="1085,31,79,667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <!-- End Navigation Drawer Code-->
 
         </Grid>

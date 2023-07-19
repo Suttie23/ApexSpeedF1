@@ -39,7 +39,9 @@ namespace MvxStarter.Core.Models
         //Lap Data
         public byte CurrentLapNumber { get; set; }
         public TimeSpan CurrentLapTime { get; set; }
+        public String FormatCurrentLapTime { get; set; }
         public TimeSpan PreviousLapTime { get; set; }
+        public String FormatPreviousLapTime { get; set; }
         public float LapDistance { get; set; }
     }
 }
