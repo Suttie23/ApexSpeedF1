@@ -51,7 +51,13 @@ Step 3: Navigate to Options > Settings > Telemetry Settings and ensure that your
 
 Step 4: Navigate to the "Live Telemetry" page and click "Listen for UDP"
 
-Step 5: Begin an F1 Session (Time trial, Grand Prix, etc) and you should see the live page updating as expected. 
+Step 5: Begin an F1 Session (Time trial, Grand Prix, etc) and you should see the live page updating as expected.
+
+## Special Thanks
+
+A big thank you to those at Napier for supporting me through this project.
+
+A special thank you to [Tim Hanewich](https://github.com/TimHanewich) for his work on the [Codemasters / F1 2021 toolkit](https://github.com/TimHanewich/Codemasters.F1_2021). His work saved countless hours of document diving and coding in order to decode the UDP datastructures provided by codemasters and provided a brilliant and easy to use framework allowing me to complete this project.
 
 
 
