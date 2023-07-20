@@ -37,4 +37,22 @@ The application will record each datapoint transmitted from the car and will sto
 
 FULL DEMONSTRATION VIDEO: https://www.youtube.com/watch?v=oiiQ4QWR4-U&lc=Ugw9HKPf8v4A3w5sWKt4AaABAg
 
+## Setup Guide
+
+_Note, this is to be used when a build is avaliable. I will NOT be showing how to set up the application via an IDE manually_
+
+Step 1: Download the ApexSpeed F1 build and run the application.
+
+Step 2: Launch the F1 2021 game.
+
+Step 3: Navigate to Options > Settings > Telemetry Settings and ensure that your page looks as seen below:
+
+![image](https://github.com/Suttie23/ApexSpeedF1/assets/76448183/5b1e48bd-d027-4012-b2f7-2748d1abfb55)
+
+Step 4: Navigate to the "Live Telemetry" page and click "Listen for UDP"
+
+Step 5: Begin an F1 Session (Time trial, Grand Prix, etc) and you should see the live page updating as expected. 
+
+
+
 
